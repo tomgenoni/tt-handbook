@@ -1,0 +1,10 @@
+<super-navbar>
+  <super-navbar-title>
+    {{ data.title }}
+  </super-navbar-title>
+</super-navbar>
+
+
+<div class="fence">
+    {{ data.longText }}
+</div>

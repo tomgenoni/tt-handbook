@@ -1,0 +1,19 @@
+<super-navbar>
+  <super-navbar-title>
+    {{ fields.title }}
+  </super-navbar-title>
+</super-navbar>
+
+<div class="fence">
+    {{ fields.indexIntro }}
+</div>
+
+<ul class="tp-block-list tp-block-list--all">
+{% for link in links %}
+    <li>
+        <super-navigate view-id="content#{{ link.filename }}">
+        {{ link.title }}
+        </super-navigate>
+    </li>
+{% endfor %}
+</ul>
