@@ -27,6 +27,37 @@ gulp.task('build', function() {
 
     categories = dedupe(categories);
 
+    // Build the index file
+    var indexContent = [];
+    var indexLinks = [];
+
+    content.items.forEach(function(item){
+        if ( !item.fields.category) {
+            indexContent = {
+                title: item.fields.title,
+                indexIntro: item.fields.indexIntro
+            }
+        }
+
+        if ( item.sys.contentType.sys.id == 'index' && item.fields.category) {
+            indexLinks.push({
+                title: item.fields.title,
+                filename: filename(item.fields.title)
+            })
+        }
+    });
+
+    gulp.src('templates/index.nj')
+       .pipe(data(function(file) {
+            return {
+               'fields': indexContent,
+               'links': indexLinks
+            }
+       }))
+       .pipe(nunjucksRender())
+       .pipe(rename('index.html'))
+       .pipe(gulp.dest('./dist/'));
+
 
     categories.forEach(function(category){
         var pages = [];
@@ -41,13 +72,6 @@ gulp.task('build', function() {
                 })
             }
         })
-
-        // var pages = [
-        //     {
-        //         title: 'foo',
-        //         filename: 'bar'
-        //     }
-        // ]
 
         // Sub index files
         content.items.forEach(function(item){
