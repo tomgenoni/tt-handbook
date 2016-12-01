@@ -6,5 +6,7 @@
 
 
 <div class="fence">
-    {{ data.longText }}
+{% markdown %}
+{{ data.longText }}
+{% endmarkdown %}
 </div>

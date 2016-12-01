@@ -13,7 +13,7 @@
 <ul class="tp-block-list tp-block-list--all">
 {% for link in links %}
     <li>
-        <super-navigate view-id="content#{{ category }}/{{ link.filename }}" class="nav-link">
+        <super-navigate view-id="content#{{ link.filename }}/index" class="nav-link">
         {{ link.title }}
         </super-navigate>
     </li>

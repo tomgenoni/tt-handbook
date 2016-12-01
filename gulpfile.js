@@ -1,9 +1,16 @@
 var gulp           = require('gulp'),
+    nunjucks       = require('nunjucks'),
+    markdown       = require('nunjucks-markdown'),
+    marked         = require('marked'),
+    gulpnunjucks   = require('gulp-nunjucks'),
     data           = require('gulp-data'),
     rename         = require('gulp-rename'),
-    content        = require('./data/data.json')
-    nunjucksRender = require('gulp-nunjucks-render');
+    content        = require('./data/data.json');
 
+// Markdown stuff
+var templates = '/templates';
+var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(templates));
+markdown.register(env, marked);
 
 function dedupe(arr) {
     return deduped = arr.filter( (el, i, arr) => arr.indexOf(el) === i);
@@ -35,7 +42,7 @@ gulp.task('build', function() {
         if ( !item.fields.category) {
             indexContent = {
                 title: item.fields.title,
-                indexIntro: item.fields.indexIntro
+                introText: item.fields.introText
             }
         }
 
@@ -47,14 +54,14 @@ gulp.task('build', function() {
         }
     });
 
-    gulp.src('templates/index.nj')
+    gulp.src('templates/root.nj')
        .pipe(data(function(file) {
             return {
                'fields': indexContent,
                'links': indexLinks
             }
        }))
-       .pipe(nunjucksRender())
+       .pipe(gulpnunjucks.compile("", {env: env}))
        .pipe(rename('index.html'))
        .pipe(gulp.dest('./dist/'));
 
@@ -83,10 +90,11 @@ gulp.task('build', function() {
                    .pipe(data(function(file) {
                         return {
                            'fields': item.fields,
+                           'category': filename(item.fields.category),
                            'links': pages
                         }
                    }))
-                   .pipe(nunjucksRender())
+                   .pipe(gulpnunjucks.compile("", {env: env}))
                    .pipe(rename('index.html'))
                    .pipe(gulp.dest('./dist/' + filename(category)));
 
@@ -99,7 +107,7 @@ gulp.task('build', function() {
                    .pipe(data(function(file) {
                        return { 'data': item.fields }
                    }))
-                   .pipe(nunjucksRender())
+                   .pipe(gulpnunjucks.compile("", {env: env}))
                    .pipe(rename(filename(item.fields.title) + '.html'))
                    .pipe(gulp.dest('./dist/' + filename(category)));
 
