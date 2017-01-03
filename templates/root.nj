@@ -11,11 +11,16 @@
 </div>
 
 <ul class="tp-block-list tp-block-list--all">
+<li>
+    <super-navigate view-id="content#benefits/menu" class="nav-link">
+    Menu
+    </super-navigate>
+</li>
 {% for link in links %}
-    <li>
-        <super-navigate view-id="content#{{ link.filename }}/index" class="nav-link">
-        {{ link.title }}
-        </super-navigate>
-    </li>
+<li>
+    <super-navigate view-id="content#{{ link.filename }}/index" class="nav-link">
+    {{ link.title }}
+    </super-navigate>
+</li>
 {% endfor %}
 </ul>

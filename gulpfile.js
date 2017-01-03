@@ -12,6 +12,11 @@ var templates = '/templates';
 var env = new nunjucks.Environment(new nunjucks.FileSystemLoader(templates));
 markdown.register(env, marked);
 
+marked.setOptions({
+    renderer: new marked.Renderer(),
+    sanitize: true
+});
+
 function dedupe(arr) {
     return deduped = arr.filter( (el, i, arr) => arr.indexOf(el) === i);
 }
