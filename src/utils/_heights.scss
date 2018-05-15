@@ -1,17 +1,21 @@
+@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/tp-ui-core-function/_index';
+@import '@thumbtack/tp-ui-core-mixin/_index';
+
 .h1 {
-    height: spacer(2);
+    height: tp-spacer(2);
 }
 .h2 {
-    height: spacer(4);
+    height: tp-spacer(4);
 }
 .h3 {
-    height: spacer(8);
+    height: tp-spacer(8);
 }
 .h4 {
-    height: spacer(16);
+    height: tp-spacer(16);
 }
 .h5 {
-    height: spacer(32);
+    height: tp-spacer(32);
 }
 
 /* Height Percentages - Based off of height of parent */
@@ -63,19 +67,19 @@
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:h1 {
-        height: spacer(2);
+        height: tp-spacer(2);
     }
     .s\:h2 {
-        height: spacer(4);
+        height: tp-spacer(4);
     }
     .s\:h3 {
-        height: spacer(8);
+        height: tp-spacer(8);
     }
     .s\:h4 {
-        height: spacer(16);
+        height: tp-spacer(16);
     }
     .s\:h5 {
-        height: spacer(32);
+        height: tp-spacer(32);
     }
     .s\:h-1\/4 {
         height: 25%;
@@ -117,19 +121,19 @@
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:h1 {
-        height: spacer(2);
+        height: tp-spacer(2);
     }
     .m\:h2 {
-        height: spacer(4);
+        height: tp-spacer(4);
     }
     .m\:h3 {
-        height: spacer(8);
+        height: tp-spacer(8);
     }
     .m\:h4 {
-        height: spacer(16);
+        height: tp-spacer(16);
     }
     .m\:h5 {
-        height: spacer(32);
+        height: tp-spacer(32);
     }
     .m\:h-1\/4 {
         height: 25%;
@@ -171,19 +175,19 @@
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:h1 {
-        height: spacer(2);
+        height: tp-spacer(2);
     }
     .l\:h2 {
-        height: spacer(4);
+        height: tp-spacer(4);
     }
     .l\:h3 {
-        height: spacer(8);
+        height: tp-spacer(8);
     }
     .l\:h4 {
-        height: spacer(16);
+        height: tp-spacer(16);
     }
     .l\:h5 {
-        height: spacer(32);
+        height: tp-spacer(32);
     }
     .l\:h-1\/4 {
         height: 25%;

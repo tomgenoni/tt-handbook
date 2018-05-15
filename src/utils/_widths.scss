@@ -1,17 +1,21 @@
+@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/tp-ui-core-function/_index';
+@import '@thumbtack/tp-ui-core-mixin/_index';
+
 .w1 {
-    width: spacer(2);
+    width: tp-spacer(2);
 }
 .w2 {
-    width: spacer(4);
+    width: tp-spacer(4);
 }
 .w3 {
-    width: spacer(8);
+    width: tp-spacer(8);
 }
 .w4 {
-    width: spacer(16);
+    width: tp-spacer(16);
 }
 .w5 {
-    width: spacer(32);
+    width: tp-spacer(32);
 }
 
 .w-1\/12 {
@@ -80,19 +84,19 @@
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:w1 {
-        width: spacer(2);
+        width: tp-spacer(2);
     }
     .s\:w2 {
-        width: spacer(4);
+        width: tp-spacer(4);
     }
     .s\:w3 {
-        width: spacer(8);
+        width: tp-spacer(8);
     }
     .s\:w4 {
-        width: spacer(16);
+        width: tp-spacer(16);
     }
     .s\:w5 {
-        width: spacer(32);
+        width: tp-spacer(32);
     }
     
     .s\:w-1\/12 {
@@ -162,19 +166,19 @@
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:w1 {
-        width: spacer(2);
+        width: tp-spacer(2);
     }
     .m\:w2 {
-        width: spacer(4);
+        width: tp-spacer(4);
     }
     .m\:w3 {
-        width: spacer(8);
+        width: tp-spacer(8);
     }
     .m\:w4 {
-        width: spacer(16);
+        width: tp-spacer(16);
     }
     .m\:w5 {
-        width: spacer(32);
+        width: tp-spacer(32);
     }
     
     .m\:w-1\/12 {
@@ -244,19 +248,19 @@
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:w1 {
-        width: spacer(2);
+        width: tp-spacer(2);
     }
     .l\:w2 {
-        width: spacer(4);
+        width: tp-spacer(4);
     }
     .l\:w3 {
-        width: spacer(8);
+        width: tp-spacer(8);
     }
     .l\:w4 {
-        width: spacer(16);
+        width: tp-spacer(16);
     }
     .l\:w5 {
-        width: spacer(32);
+        width: tp-spacer(32);
     }
     
     .l\:w-1\/12 {

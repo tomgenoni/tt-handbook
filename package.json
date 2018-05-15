@@ -23,9 +23,13 @@
     "@thumbtack/tp-ui-core-function": "^1.0.5",
     "@thumbtack/tp-ui-core-mixin": "^3.0.0",
     "@thumbtack/tp-ui-core-reset": "^2.0.0",
+    "@thumbtack/tp-ui-element-body": "^2.0.3",
     "@thumbtack/tp-ui-element-button": "^2.0.5",
+    "@thumbtack/tp-ui-element-input": "^2.0.5",
     "@thumbtack/tp-ui-element-type": "^4.0.3",
     "@thumbtack/tp-ui-layout-wrap": "^1.2.1",
+    "browser-sync": "^2.24.4",
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob": "^1.0.9"
