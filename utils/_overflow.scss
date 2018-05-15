@@ -1,0 +1,160 @@
+.overflow-visible {
+    overflow: visible;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.overflow-scroll {
+    overflow: scroll;
+}
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-x-visible {
+    overflow-x: visible;
+}
+.overflow-x-hidden {
+    overflow-x: hidden;
+}
+.overflow-x-scroll {
+    overflow-x: scroll;
+}
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.overflow-y-visible {
+    overflow-y: visible;
+}
+.overflow-y-hidden {
+    overflow-y: hidden;
+}
+.overflow-y-scroll {
+    overflow-y: scroll;
+}
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:overflow-visible {
+        overflow: visible;
+    }
+    .s\:overflow-hidden {
+        overflow: hidden;
+    }
+    .s\:overflow-scroll {
+        overflow: scroll;
+    }
+    .s\:overflow-auto {
+        overflow: auto;
+    }
+    .s\:overflow-x-visible {
+        overflow-x: visible;
+    }
+    .s\:overflow-x-hidden {
+        overflow-x: hidden;
+    }
+    .s\:overflow-x-scroll {
+        overflow-x: scroll;
+    }
+    .s\:overflow-x-auto {
+        overflow-x: auto;
+    }
+
+    .s\:overflow-y-visible {
+        overflow-y: visible;
+    }
+    .s\:overflow-y-hidden {
+        overflow-y: hidden;
+    }
+    .s\:overflow-y-scroll {
+        overflow-y: scroll;
+    }
+    .s\:overflow-y-auto {
+        overflow-y: auto;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:overflow-visible {
+        overflow: visible;
+    }
+    .m\:overflow-hidden {
+        overflow: hidden;
+    }
+    .m\:overflow-scroll {
+        overflow: scroll;
+    }
+    .m\:overflow-auto {
+        overflow: auto;
+    }
+
+    .m\:overflow-x-visible {
+        overflow-x: visible;
+    }
+    .m\:overflow-x-hidden {
+        overflow-x: hidden;
+    }
+    .m\:overflow-x-scroll {
+        overflow-x: scroll;
+    }
+    .m\:overflow-x-auto {
+        overflow-x: auto;
+    }
+
+    .m\:overflow-y-visible {
+        overflow-y: visible;
+    }
+    .m\:overflow-y-hidden {
+        overflow-y: hidden;
+    }
+    .m\:overflow-y-scroll {
+        overflow-y: scroll;
+    }
+    .m\:overflow-y-auto {
+        overflow-y: auto;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:overflow-visible {
+        overflow: visible;
+    }
+    .l\:overflow-hidden {
+        overflow: hidden;
+    }
+    .l\:overflow-scroll {
+        overflow: scroll;
+    }
+    .l\:overflow-auto {
+        overflow: auto;
+    }
+
+    .l\:overflow-x-visible {
+        overflow-x: visible;
+    }
+    .l\:overflow-x-hidden {
+        overflow-x: hidden;
+    }
+    .l\:overflow-x-scroll {
+        overflow-x: scroll;
+    }
+    .l\:overflow-x-auto {
+        overflow-x: auto;
+    }
+
+    .l\:overflow-y-visible {
+        overflow-y: visible;
+    }
+    .l\:overflow-y-hidden {
+        overflow-y: hidden;
+    }
+    .l\:overflow-y-scroll {
+        overflow-y: scroll;
+    }
+    .l\:overflow-y-auto {
+        overflow-y: auto;
+    }
+}

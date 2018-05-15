@@ -1,0 +1,57 @@
+.b--dotted {
+    border-style: dotted;
+}
+.b--dashed {
+    border-style: dashed;
+}
+.b--solid {
+    border-style: solid;
+}
+.b--none {
+    border-style: none;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:b--dotted {
+        border-style: dotted;
+    }
+    .s\:b--dashed {
+        border-style: dashed;
+    }
+    .s\:b--solid {
+        border-style: solid;
+    }
+    .s\:b--none {
+        border-style: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:b--dotted {
+        border-style: dotted;
+    }
+    .m\:b--dashed {
+        border-style: dashed;
+    }
+    .m\:b--solid {
+        border-style: solid;
+    }
+    .m\:b--none {
+        border-style: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:b--dotted {
+        border-style: dotted;
+    }
+    .l\:b--dashed {
+        border-style: dashed;
+    }
+    .l\:b--solid {
+        border-style: solid;
+    }
+    .l\:b--none {
+        border-style: none;
+    }
+}

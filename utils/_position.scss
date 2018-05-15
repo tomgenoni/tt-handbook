@@ -1,0 +1,57 @@
+.static {
+    position: static;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.fixed {
+    position: fixed;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:static {
+        position: static;
+    }
+    .s\:relative {
+        position: relative;
+    }
+    .s\:absolute {
+        position: absolute;
+    }
+    .s\:fixed {
+        position: fixed;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:static {
+        position: static;
+    }
+    .m\:relative {
+        position: relative;
+    }
+    .m\:absolute {
+        position: absolute;
+    }
+    .m\:fixed {
+        position: fixed;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:static {
+        position: static;
+    }
+    .l\:relative {
+        position: relative;
+    }
+    .l\:absolute {
+        position: absolute;
+    }
+    .l\:fixed {
+        position: fixed;
+    }
+}

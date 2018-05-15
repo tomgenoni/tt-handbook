@@ -1,0 +1,57 @@
+.v-base {
+    vertical-align: baseline;
+}
+.v-mid {
+    vertical-align: middle;
+}
+.v-top {
+    vertical-align: top;
+}
+.v-btm {
+    vertical-align: bottom;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:v-base {
+        vertical-align: baseline;
+    }
+    .s\:v-mid {
+        vertical-align: middle;
+    }
+    .s\:v-top {
+        vertical-align: top;
+    }
+    .s\:v-btm {
+        vertical-align: bottom;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:v-base {
+        vertical-align: baseline;
+    }
+    .m\:v-mid {
+        vertical-align: middle;
+    }
+    .m\:v-top {
+        vertical-align: top;
+    }
+    .m\:v-btm {
+        vertical-align: bottom;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:v-base {
+        vertical-align: baseline;
+    }
+    .l\:v-mid {
+        vertical-align: middle;
+    }
+    .l\:v-top {
+        vertical-align: top;
+    }
+    .l\:v-btm {
+        vertical-align: bottom;
+    }
+}

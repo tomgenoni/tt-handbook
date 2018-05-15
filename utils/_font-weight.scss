@@ -1,0 +1,33 @@
+.normal {
+    font-weight: 400;
+}
+.b {
+    font-weight: 700;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:normal {
+        font-weight: 400;
+    }
+    .s\:b {
+        font-weight: 700;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:normal {
+        font-weight: 400;
+    }
+    .m\:b {
+        font-weight: 700;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:normal {
+        font-weight: 400;
+    }
+    .l\:b {
+        font-weight: 700;
+    }
+}

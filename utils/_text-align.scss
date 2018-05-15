@@ -1,0 +1,57 @@
+.tl {
+    text-align: left;
+}
+.tr {
+    text-align: right;
+}
+.tc {
+    text-align: center;
+}
+.tj {
+    text-align: justify;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:tl {
+        text-align: left;
+    }
+    .s\:tr {
+        text-align: right;
+    }
+    .s\:tc {
+        text-align: center;
+    }
+    .s\:tj {
+        text-align: justify;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:tl {
+        text-align: left;
+    }
+    .m\:tr {
+        text-align: right;
+    }
+    .m\:tc {
+        text-align: center;
+    }
+    .m\:tj {
+        text-align: justify;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:tl {
+        text-align: left;
+    }
+    .l\:tr {
+        text-align: right;
+    }
+    .l\:tc {
+        text-align: center;
+    }
+    .l\:tj {
+        text-align: justify;
+    }
+}

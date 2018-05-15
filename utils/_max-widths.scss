@@ -1,0 +1,153 @@
+.mw-100 {
+    max-width: 100%;
+}
+
+/* Max Width Scale */
+
+.mw1 {
+    max-width: spacer(2);
+}
+.mw2 {
+    max-width: spacer(4);
+}
+.mw3 {
+    max-width: spacer(8);
+}
+.mw4 {
+    max-width: spacer(16);
+}
+.mw5 {
+    max-width: spacer(32);
+}
+.mw6 {
+    max-width: spacer(64);
+}
+.mw7 {
+    max-width: spacer(92);
+}
+.mw8 {
+    max-width: spacer(128);
+}
+.mw9 {
+    max-width: spacer(192);
+}
+
+/* Max Width String Properties */
+
+.mw-none {
+    max-width: none;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:mw-100 {
+        max-width: 100%;
+    }
+
+    .s\:mw1 {
+        max-width: spacer(2);
+    }
+    .s\:mw2 {
+        max-width: spacer(4);
+    }
+    .s\:mw3 {
+        max-width: spacer(8);
+    }
+    .s\:mw4 {
+        max-width: spacer(16);
+    }
+    .s\:mw5 {
+        max-width: spacer(32);
+    }
+    .s\:mw6 {
+        max-width: spacer(64);
+    }
+    .s\:mw7 {
+        max-width: spacer(92);
+    }
+    .s\:mw8 {
+        max-width: spacer(128);
+    }
+    .s\:mw9 {
+        max-width: spacer(192);
+    }
+
+    .s\:mw-none {
+        max-width: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:mw-100 {
+        max-width: 100%;
+    }
+
+    .m\:mw1 {
+        max-width: spacer(2);
+    }
+    .m\:mw2 {
+        max-width: spacer(4);
+    }
+    .m\:mw3 {
+        max-width: spacer(8);
+    }
+    .m\:mw4 {
+        max-width: spacer(16);
+    }
+    .m\:mw5 {
+        max-width: spacer(32);
+    }
+    .m\:mw6 {
+        max-width: spacer(64);
+    }
+    .m\:mw7 {
+        max-width: spacer(92);
+    }
+    .m\:mw8 {
+        max-width: spacer(128);
+    }
+    .m\:mw9 {
+        max-width: spacer(192);
+    }
+
+    .m\:mw-none {
+        max-width: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:mw-100 {
+        max-width: 100%;
+    }
+
+    .l\:mw1 {
+        max-width: spacer(2);
+    }
+    .l\:mw2 {
+        max-width: spacer(4);
+    }
+    .l\:mw3 {
+        max-width: spacer(8);
+    }
+    .l\:mw4 {
+        max-width: spacer(16);
+    }
+    .l\:mw5 {
+        max-width: spacer(32);
+    }
+    .l\:mw6 {
+        max-width: spacer(64);
+    }
+    .l\:mw7 {
+        max-width: spacer(92);
+    }
+    .l\:mw8 {
+        max-width: spacer(128);
+    }
+    .l\:mw9 {
+        max-width: spacer(192);
+    }
+
+    .l\:mw-none {
+        max-width: none;
+    }
+}

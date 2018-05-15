@@ -1,0 +1,57 @@
+.ttc {
+    text-transform: capitalize;
+}
+.ttl {
+    text-transform: lowercase;
+}
+.ttu {
+    text-transform: uppercase;
+}
+.ttn {
+    text-transform: none;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:ttc {
+        text-transform: capitalize;
+    }
+    .s\:ttl {
+        text-transform: lowercase;
+    }
+    .s\:ttu {
+        text-transform: uppercase;
+    }
+    .s\:ttn {
+        text-transform: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:ttc {
+        text-transform: capitalize;
+    }
+    .m\:ttl {
+        text-transform: lowercase;
+    }
+    .m\:ttu {
+        text-transform: uppercase;
+    }
+    .m\:ttn {
+        text-transform: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:ttc {
+        text-transform: capitalize;
+    }
+    .l\:ttl {
+        text-transform: lowercase;
+    }
+    .l\:ttu {
+        text-transform: uppercase;
+    }
+    .l\:ttn {
+        text-transform: none;
+    }
+}

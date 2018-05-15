@@ -1,0 +1,55 @@
+/* Equivalent to .overflow-y-scroll */
+.overflow-container {
+    overflow-y: scroll;
+}
+
+.center {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+.ml-auto {
+    margin-left: auto;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .s\:mr-auto {
+        margin-right: auto;
+    }
+    .s\:ml-auto {
+        margin-left: auto;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .m\:mr-auto {
+        margin-right: auto;
+    }
+    .m\:ml-auto {
+        margin-left: auto;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:center {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .l\:mr-auto {
+        margin-right: auto;
+    }
+    .l\:ml-auto {
+        margin-left: auto;
+    }
+}

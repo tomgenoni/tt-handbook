@@ -1,0 +1,278 @@
+.top-0 {
+    top: 0;
+}
+.right-0 {
+    right: 0;
+}
+.bottom-0 {
+    bottom: 0;
+}
+.left-0 {
+    left: 0;
+}
+
+.top-1 {
+    top: spacer(1);
+}
+.right-1 {
+    right: spacer(1);
+}
+.bottom-1 {
+    bottom: spacer(1);
+}
+.left-1 {
+    left: spacer(1);
+}
+
+.top-2 {
+    top: spacer(2);
+}
+.right-2 {
+    right: spacer(2);
+}
+.bottom-2 {
+    bottom: spacer(2);
+}
+.left-2 {
+    left: spacer(2);
+}
+
+.top--1 {
+    top: spacer(-1);
+}
+.right--1 {
+    right: spacer(-1);
+}
+.bottom--1 {
+    bottom: spacer(-1);
+}
+.left--1 {
+    left: spacer(-1);
+}
+
+.top--2 {
+    top: spacer(-2);
+}
+.right--2 {
+    right: spacer(-2);
+}
+.bottom--2 {
+    bottom: spacer(-2);
+}
+.left--2 {
+    left: spacer(-2);
+}
+
+.absolute--fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:top-0 {
+        top: 0;
+    }
+    .s\:left-0 {
+        left: 0;
+    }
+    .s\:right-0 {
+        right: 0;
+    }
+    .s\:bottom-0 {
+        bottom: 0;
+    }
+    .s\:top-1 {
+        top: spacer(1);
+    }
+    .s\:left-1 {
+        left: spacer(1);
+    }
+    .s\:right-1 {
+        right: spacer(1);
+    }
+    .s\:bottom-1 {
+        bottom: spacer(1);
+    }
+    .s\:top-2 {
+        top: spacer(2);
+    }
+    .s\:left-2 {
+        left: spacer(2);
+    }
+    .s\:right-2 {
+        right: spacer(2);
+    }
+    .s\:bottom-2 {
+        bottom: spacer(2);
+    }
+    .s\:top--1 {
+        top: spacer(-1);
+    }
+    .s\:right--1 {
+        right: spacer(-1);
+    }
+    .s\:bottom--1 {
+        bottom: spacer(-1);
+    }
+    .s\:left--1 {
+        left: spacer(-1);
+    }
+    .s\:top--2 {
+        top: spacer(-2);
+    }
+    .s\:right--2 {
+        right: spacer(-2);
+    }
+    .s\:bottom--2 {
+        bottom: spacer(-2);
+    }
+    .s\:left--2 {
+        left: spacer(-2);
+    }
+    .s\:absolute--fill {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:top-0 {
+        top: 0;
+    }
+    .m\:left-0 {
+        left: 0;
+    }
+    .m\:right-0 {
+        right: 0;
+    }
+    .m\:bottom-0 {
+        bottom: 0;
+    }
+    .m\:top-1 {
+        top: spacer(1);
+    }
+    .m\:left-1 {
+        left: spacer(1);
+    }
+    .m\:right-1 {
+        right: spacer(1);
+    }
+    .m\:bottom-1 {
+        bottom: spacer(1);
+    }
+    .m\:top-2 {
+        top: spacer(2);
+    }
+    .m\:left-2 {
+        left: spacer(2);
+    }
+    .m\:right-2 {
+        right: spacer(2);
+    }
+    .m\:bottom-2 {
+        bottom: spacer(2);
+    }
+    .m\:top--1 {
+        top: spacer(-1);
+    }
+    .m\:right--1 {
+        right: spacer(-1);
+    }
+    .m\:bottom--1 {
+        bottom: spacer(-1);
+    }
+    .m\:left--1 {
+        left: spacer(-1);
+    }
+    .m\:top--2 {
+        top: spacer(-2);
+    }
+    .m\:right--2 {
+        right: spacer(-2);
+    }
+    .m\:bottom--2 {
+        bottom: spacer(-2);
+    }
+    .m\:left--2 {
+        left: spacer(-2);
+    }
+    .m\:absolute--fill {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:top-0 {
+        top: 0;
+    }
+    .l\:left-0 {
+        left: 0;
+    }
+    .l\:right-0 {
+        right: 0;
+    }
+    .l\:bottom-0 {
+        bottom: 0;
+    }
+    .l\:top-1 {
+        top: spacer(1);
+    }
+    .l\:left-1 {
+        left: spacer(1);
+    }
+    .l\:right-1 {
+        right: spacer(1);
+    }
+    .l\:bottom-1 {
+        bottom: spacer(1);
+    }
+    .l\:top-2 {
+        top: spacer(2);
+    }
+    .l\:left-2 {
+        left: spacer(2);
+    }
+    .l\:right-2 {
+        right: spacer(2);
+    }
+    .l\:bottom-2 {
+        bottom: spacer(2);
+    }
+    .l\:top--1 {
+        top: spacer(-1);
+    }
+    .l\:right--1 {
+        right: spacer(-1);
+    }
+    .l\:bottom--1 {
+        bottom: spacer(-1);
+    }
+    .l\:left--1 {
+        left: spacer(-1);
+    }
+    .l\:top--2 {
+        top: spacer(-2);
+    }
+    .l\:right--2 {
+        right: spacer(-2);
+    }
+    .l\:bottom--2 {
+        bottom: spacer(-2);
+    }
+    .l\:left--2 {
+        left: spacer(-2);
+    }
+    .l\:absolute--fill {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

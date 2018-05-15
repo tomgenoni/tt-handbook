@@ -1,0 +1,105 @@
+.bg-center {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg-top {
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.bg-right {
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.bg-bottom {
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.bg-left {
+    background-repeat: no-repeat;
+    background-position: center left;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:bg-center {
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .s\:bg-top {
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .s\:bg-right {
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .s\:bg-bottom {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .s\:bg-left {
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:bg-center {
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .m\:bg-top {
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .m\:bg-right {
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .m\:bg-bottom {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .m\:bg-left {
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:bg-center {
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .l\:bg-top {
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .l\:bg-right {
+        background-repeat: no-repeat;
+        background-position: center right;
+    }
+
+    .l\:bg-bottom {
+        background-repeat: no-repeat;
+        background-position: bottom center;
+    }
+
+    .l\:bg-left {
+        background-repeat: no-repeat;
+        background-position: center left;
+    }
+}

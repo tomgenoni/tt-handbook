@@ -1,0 +1,45 @@
+.word-normal {
+    word-break: normal;
+}
+.word-wrap {
+    word-break: break-all;
+}
+.word-nowrap {
+    word-break: keep-all;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:word-normal {
+        word-break: normal;
+    }
+    .s\:word-wrap {
+        word-break: break-all;
+    }
+    .s\:word-nowrap {
+        word-break: keep-all;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:word-normal {
+        word-break: normal;
+    }
+    .m\:word-wrap {
+        word-break: break-all;
+    }
+    .m\:word-nowrap {
+        word-break: keep-all;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:word-normal {
+        word-break: normal;
+    }
+    .l\:word-wrap {
+        word-break: break-all;
+    }
+    .l\:word-nowrap {
+        word-break: keep-all;
+    }
+}

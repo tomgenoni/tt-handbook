@@ -1,0 +1,45 @@
+.ws-normal {
+    white-space: normal;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.pre {
+    white-space: pre;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:ws-normal {
+        white-space: normal;
+    }
+    .s\:nowrap {
+        white-space: nowrap;
+    }
+    .s\:pre {
+        white-space: pre;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:ws-normal {
+        white-space: normal;
+    }
+    .m\:nowrap {
+        white-space: nowrap;
+    }
+    .m\:pre {
+        white-space: pre;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:ws-normal {
+        white-space: normal;
+    }
+    .l\:nowrap {
+        white-space: nowrap;
+    }
+    .l\:pre {
+        white-space: pre;
+    }
+}

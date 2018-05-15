@@ -1,0 +1,160 @@
+.dn {
+    display: none;
+}
+.di {
+    display: inline;
+}
+.db {
+    display: block;
+}
+.dib {
+    display: inline-block;
+}
+.dit {
+    display: inline-table;
+}
+.dt {
+    display: table;
+}
+.dtc {
+    display: table-cell;
+}
+.dt-row {
+    display: table-row;
+}
+.dt-row-group {
+    display: table-row-group;
+}
+.dt-column {
+    display: table-column;
+}
+.dt-column-group {
+    display: table-column-group;
+}
+.dt--fixed {
+    table-layout: fixed;
+    width: 100%;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:dn {
+        display: none;
+    }
+    .s\:di {
+        display: inline;
+    }
+    .s\:db {
+        display: block;
+    }
+    .s\:dib {
+        display: inline-block;
+    }
+    .s\:dit {
+        display: inline-table;
+    }
+    .s\:dt {
+        display: table;
+    }
+    .s\:dtc {
+        display: table-cell;
+    }
+    .s\:dt-row {
+        display: table-row;
+    }
+    .s\:dt-row-group {
+        display: table-row-group;
+    }
+    .s\:dt-column {
+        display: table-column;
+    }
+    .s\:dt-column-group {
+        display: table-column-group;
+    }
+
+    .s\:dt--fixed {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:dn {
+        display: none;
+    }
+    .m\:di {
+        display: inline;
+    }
+    .m\:db {
+        display: block;
+    }
+    .m\:dib {
+        display: inline-block;
+    }
+    .m\:dit {
+        display: inline-table;
+    }
+    .m\:dt {
+        display: table;
+    }
+    .m\:dtc {
+        display: table-cell;
+    }
+    .m\:dt-row {
+        display: table-row;
+    }
+    .m\:dt-row-group {
+        display: table-row-group;
+    }
+    .m\:dt-column {
+        display: table-column;
+    }
+    .m\:dt-column-group {
+        display: table-column-group;
+    }
+
+    .m\:dt--fixed {
+        table-layout: fixed;
+        width: 100%;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:dn {
+        display: none;
+    }
+    .l\:di {
+        display: inline;
+    }
+    .l\:db {
+        display: block;
+    }
+    .l\:dib {
+        display: inline-block;
+    }
+    .l\:dit {
+        display: inline-table;
+    }
+    .l\:dt {
+        display: table;
+    }
+    .l\:dtc {
+        display: table-cell;
+    }
+    .l\:dt-row {
+        display: table-row;
+    }
+    .l\:dt-row-group {
+        display: table-row-group;
+    }
+    .l\:dt-column {
+        display: table-column;
+    }
+    .l\:dt-column-group {
+        display: table-column-group;
+    }
+
+    .l\:dt--fixed {
+        table-layout: fixed;
+        width: 100%;
+    }
+}

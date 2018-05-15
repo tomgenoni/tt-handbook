@@ -1,0 +1,45 @@
+.strike {
+    text-decoration: line-through;
+}
+.underline {
+    text-decoration: underline;
+}
+.no-underline {
+    text-decoration: none;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:strike {
+        text-decoration: line-through;
+    }
+    .s\:underline {
+        text-decoration: underline;
+    }
+    .s\:no-underline {
+        text-decoration: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:strike {
+        text-decoration: line-through;
+    }
+    .m\:underline {
+        text-decoration: underline;
+    }
+    .m\:no-underline {
+        text-decoration: none;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:strike {
+        text-decoration: line-through;
+    }
+    .l\:underline {
+        text-decoration: underline;
+    }
+    .l\:no-underline {
+        text-decoration: none;
+    }
+}
