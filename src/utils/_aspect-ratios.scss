@@ -1,0 +1,120 @@
+@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/tp-ui-core-function/_index';
+@import '@thumbtack/tp-ui-core-mixin/_index';
+
+.aspect-ratio {
+  height: 0;
+  position: relative;
+}
+
+.aspect-ratio--16x9 { padding-bottom: 56.25%; }
+.aspect-ratio--9x16 { padding-bottom: 177.77%; }
+
+.aspect-ratio--4x3 {  padding-bottom: 75%; }
+.aspect-ratio--3x4 {  padding-bottom: 133.33%; }
+
+.aspect-ratio--6x4 {  padding-bottom: 66.6%; }
+.aspect-ratio--4x6 {  padding-bottom: 150%; }
+
+.aspect-ratio--8x5 {  padding-bottom: 62.5%; }
+.aspect-ratio--5x8 {  padding-bottom: 160%; }
+
+.aspect-ratio--7x5 {  padding-bottom: 71.42%; }
+.aspect-ratio--5x7 {  padding-bottom: 140%; }
+
+.aspect-ratio--1x1 {  padding-bottom: 100%; }
+
+.aspect-ratio--object {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+@include tp-respond-above($tp-breakpoint__small){
+    .s\:aspect-ratio {
+      height: 0;
+      position: relative;
+    }
+    .s\:aspect-ratio--16x9 { padding-bottom: 56.25%; }
+    .s\:aspect-ratio--9x16 { padding-bottom: 177.77%; }
+    .s\:aspect-ratio--4x3 {  padding-bottom: 75%; }
+    .s\:aspect-ratio--3x4 {  padding-bottom: 133.33%; }
+    .s\:aspect-ratio--6x4 {  padding-bottom: 66.6%; }
+    .s\:aspect-ratio--4x6 {  padding-bottom: 150%; }
+    .s\:aspect-ratio--8x5 {  padding-bottom: 62.5%; }
+    .s\:aspect-ratio--5x8 {  padding-bottom: 160%; }
+    .s\:aspect-ratio--7x5 {  padding-bottom: 71.42%; }
+    .s\:aspect-ratio--5x7 {  padding-bottom: 140%; }
+    .s\:aspect-ratio--1x1 {  padding-bottom: 100%; }
+    .s\:aspect-ratio--object {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium){
+    .m\:aspect-ratio {
+      height: 0;
+      position: relative;
+    }
+    .m\:aspect-ratio--16x9 { padding-bottom: 56.25%; }
+    .m\:aspect-ratio--9x16 { padding-bottom: 177.77%; }
+    .m\:aspect-ratio--4x3 {  padding-bottom: 75%; }
+    .m\:aspect-ratio--3x4 {  padding-bottom: 133.33%; }
+    .m\:aspect-ratio--6x4 {  padding-bottom: 66.6%; }
+    .m\:aspect-ratio--4x6 {  padding-bottom: 150%; }
+    .m\:aspect-ratio--8x5 {  padding-bottom: 62.5%; }
+    .m\:aspect-ratio--5x8 {  padding-bottom: 160%; }
+    .m\:aspect-ratio--7x5 {  padding-bottom: 71.42%; }
+    .m\:aspect-ratio--5x7 {  padding-bottom: 140%; }
+    .m\:aspect-ratio--1x1 {  padding-bottom: 100%; }
+    .m\:aspect-ratio--object {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large){
+    .l\:aspect-ratio {
+      height: 0;
+      position: relative;
+    }
+    .l\:aspect-ratio--16x9 { padding-bottom: 56.25%; }
+    .l\:aspect-ratio--9x16 { padding-bottom: 177.77%; }
+    .l\:aspect-ratio--4x3 {  padding-bottom: 75%; }
+    .l\:aspect-ratio--3x4 {  padding-bottom: 133.33%; }
+    .l\:aspect-ratio--6x4 {  padding-bottom: 66.6%; }
+    .l\:aspect-ratio--4x6 {  padding-bottom: 150%; }
+    .l\:aspect-ratio--8x5 {  padding-bottom: 62.5%; }
+    .l\:aspect-ratio--5x8 {  padding-bottom: 160%; }
+    .l\:aspect-ratio--7x5 {  padding-bottom: 71.42%; }
+    .l\:aspect-ratio--5x7 {  padding-bottom: 140%; }
+    .l\:aspect-ratio--1x1 {  padding-bottom: 100%; }
+    .l\:aspect-ratio--object {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+}
