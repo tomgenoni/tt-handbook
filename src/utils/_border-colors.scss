@@ -1,0 +1,45 @@
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+
+.b--black {
+    border-color: $tp-color__black;
+}
+
+.b--black-300 {
+    border-color: $tp-color__black-300;
+}
+
+.b--blue {
+    border-color: $tp-color__blue;
+}
+
+.b--indigo {
+    border-color: $tp-color__indigo;
+}
+
+.b--purple {
+    border-color: $tp-color__purple;
+}
+
+.b--green {
+    border-color: $tp-color__green;
+}
+
+.b--yellow {
+    border-color: $tp-color__yellow;
+}
+
+.b--red {
+    border-color: $tp-color__red;
+}
+
+.b--gray {
+    border-color: $tp-color__gray;
+}
+
+.b--gray-200 {
+    border-color: $tp-color__gray-200;
+}
+
+.b--gray-300 {
+    border-color: $tp-color__gray-300;
+}

@@ -1,109 +1,109 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
-@import '@thumbtack/tp-ui-core-function/_index';
-@import '@thumbtack/tp-ui-core-mixin/_index';
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import './node_modules/@thumbtack/tp-ui-core-function/_index';
+@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
-.grid {
+.cols {
     display: flex;
     flex-wrap: wrap;
     margin-left: tp-spacer(-2);
 }
-.grid .col {
+.cols .col {
     padding-left: tp-spacer(2);
 }
 
-.grid--wide {
+.cols--wide {
     margin-left: tp-spacer(-4);
 }
 
-.grid--wide .col {
+.cols--wide .col {
     padding-left: tp-spacer(4);
 }
 
-.grid--flush {
+.cols--flush {
     margin-left: 0;
 }
 
-.grid--flush .col {
+.cols--flush .col {
     padding-left: 0;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:grid {
+    .s\:cols {
         display: flex;
         flex-wrap: wrap;
         margin-left: tp-spacer(-2);
     }
-    .s\:grid .col {
+    .s\:cols .col {
         padding-left: tp-spacer(2);
     }
-    
-    .s\:grid--wide {
+
+    .s\:cols--wide {
         margin-left: tp-spacer(-4);
     }
-    
-    .s\:grid--wide .col {
+
+    .s\:cols--wide .col {
         padding-left: tp-spacer(4);
     }
-    
-    .s\:grid--flush {
+
+    .s\:cols--flush {
         margin-left: 0;
     }
-    
-    .s\:grid--flush .col {
+
+    .s\:cols--flush .col {
         padding-left: 0;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:grid {
+    .m\:cols {
         display: flex;
         flex-wrap: wrap;
         margin-left: tp-spacer(-2);
     }
-    .m\:grid .col {
+    .m\:cols .col {
         padding-left: tp-spacer(2);
     }
-    
-    .m\:grid--wide {
+
+    .m\:cols--wide {
         margin-left: tp-spacer(-4);
     }
-    
-    .m\:grid--wide .col {
+
+    .m\:cols--wide .col {
         padding-left: tp-spacer(4);
     }
-    
-    .m\:grid--flush {
+
+    .m\:cols--flush {
         margin-left: 0;
     }
-    
-    .m\:grid--flush .col {
+
+    .m\:cols--flush .col {
         padding-left: 0;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:grid {
+    .l\:cols {
         display: flex;
         flex-wrap: wrap;
         margin-left: tp-spacer(-2);
     }
-    .l\:grid .col {
+    .l\:cols .col {
         padding-left: tp-spacer(2);
     }
-    
-    .l\:grid--wide {
+
+    .l\:cols--wide {
         margin-left: tp-spacer(-4);
     }
-    
-    .l\:grid--wide .col {
+
+    .l\:cols--wide .col {
         padding-left: tp-spacer(4);
     }
-    
-    .l\:grid--flush {
+
+    .l\:cols--flush {
         margin-left: 0;
     }
-    
-    .l\:grid--flush .col {
+
+    .l\:cols--flush .col {
         padding-left: 0;
     }
 }
