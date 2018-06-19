@@ -1,0 +1,249 @@
+@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import "@thumbtack/tp-ui-core-mixin/_index";
+
+.nudge-top-1 {
+    top: 1px;
+}
+.nudge-top-2 {
+    top: 2px;
+}
+.nudge-top-3 {
+    top: 3px;
+}
+.nudge-top-4 {
+    top: 4px;
+}
+.nudge-top-5 {
+    top: 5px;
+}
+.nudge-right-1 {
+    right: 1px;
+}
+.nudge-right-2 {
+    right: 2px;
+}
+.nudge-right-3 {
+    right: 3px;
+}
+.nudge-right-4 {
+    right: 4px;
+}
+.nudge-right-5 {
+    right: 5px;
+}
+.nudge-bottom-1 {
+    bottom: 1px;
+}
+.nudge-bottom-2 {
+    bottom: 2px;
+}
+.nudge-bottom-3 {
+    bottom: 3px;
+}
+.nudge-bottom-4 {
+    bottom: 4px;
+}
+.nudge-bottom-5 {
+    bottom: 5px;
+}
+.nudge-left-1 {
+    left: 1px;
+}
+.nudge-left-2 {
+    left: 2px;
+}
+.nudge-left-3 {
+    left: 3px;
+}
+.nudge-left-4 {
+    left: 4px;
+}
+.nudge-left-5 {
+    left: 5px;
+}
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:nudge-top-1 {
+        top: 1px;
+    }
+    .s\:nudge-top-2 {
+        top: 2px;
+    }
+    .s\:nudge-top-3 {
+        top: 3px;
+    }
+    .s\:nudge-top-4 {
+        top: 4px;
+    }
+    .s\:nudge-top-5 {
+        top: 5px;
+    }
+    .s\:nudge-right-1 {
+        right: 1px;
+    }
+    .s\:nudge-right-2 {
+        right: 2px;
+    }
+    .s\:nudge-right-3 {
+        right: 3px;
+    }
+    .s\:nudge-right-4 {
+        right: 4px;
+    }
+    .s\:nudge-right-5 {
+        right: 5px;
+    }
+    .s\:nudge-bottom-1 {
+        bottom: 1px;
+    }
+    .s\:nudge-bottom-2 {
+        bottom: 2px;
+    }
+    .s\:nudge-bottom-3 {
+        bottom: 3px;
+    }
+    .s\:nudge-bottom-4 {
+        bottom: 4px;
+    }
+    .s\:nudge-bottom-5 {
+        bottom: 5px;
+    }
+    .s\:nudge-left-1 {
+        left: 1px;
+    }
+    .s\:nudge-left-2 {
+        left: 2px;
+    }
+    .s\:nudge-left-3 {
+        left: 3px;
+    }
+    .s\:nudge-left-4 {
+        left: 4px;
+    }
+    .s\:nudge-left-5 {
+        left: 5px;
+    }
+}
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:nudge-top-1 {
+        top: 1px;
+    }
+    .m\:nudge-top-2 {
+        top: 2px;
+    }
+    .m\:nudge-top-3 {
+        top: 3px;
+    }
+    .m\:nudge-top-4 {
+        top: 4px;
+    }
+    .m\:nudge-top-5 {
+        top: 5px;
+    }
+    .m\:nudge-right-1 {
+        right: 1px;
+    }
+    .m\:nudge-right-2 {
+        right: 2px;
+    }
+    .m\:nudge-right-3 {
+        right: 3px;
+    }
+    .m\:nudge-right-4 {
+        right: 4px;
+    }
+    .m\:nudge-right-5 {
+        right: 5px;
+    }
+    .m\:nudge-bottom-1 {
+        bottom: 1px;
+    }
+    .m\:nudge-bottom-2 {
+        bottom: 2px;
+    }
+    .m\:nudge-bottom-3 {
+        bottom: 3px;
+    }
+    .m\:nudge-bottom-4 {
+        bottom: 4px;
+    }
+    .m\:nudge-bottom-5 {
+        bottom: 5px;
+    }
+    .m\:nudge-left-1 {
+        left: 1px;
+    }
+    .m\:nudge-left-2 {
+        left: 2px;
+    }
+    .m\:nudge-left-3 {
+        left: 3px;
+    }
+    .m\:nudge-left-4 {
+        left: 4px;
+    }
+    .m\:nudge-left-5 {
+        left: 5px;
+    }
+}
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:nudge-top-1 {
+        top: 1px;
+    }
+    .l\:nudge-top-2 {
+        top: 2px;
+    }
+    .l\:nudge-top-3 {
+        top: 3px;
+    }
+    .l\:nudge-top-4 {
+        top: 4px;
+    }
+    .l\:nudge-top-5 {
+        top: 5px;
+    }
+    .l\:nudge-right-1 {
+        right: 1px;
+    }
+    .l\:nudge-right-2 {
+        right: 2px;
+    }
+    .l\:nudge-right-3 {
+        right: 3px;
+    }
+    .l\:nudge-right-4 {
+        right: 4px;
+    }
+    .l\:nudge-right-5 {
+        right: 5px;
+    }
+    .l\:nudge-bottom-1 {
+        bottom: 1px;
+    }
+    .l\:nudge-bottom-2 {
+        bottom: 2px;
+    }
+    .l\:nudge-bottom-3 {
+        bottom: 3px;
+    }
+    .l\:nudge-bottom-4 {
+        bottom: 4px;
+    }
+    .l\:nudge-bottom-5 {
+        bottom: 5px;
+    }
+    .l\:nudge-left-1 {
+        left: 1px;
+    }
+    .l\:nudge-left-2 {
+        left: 2px;
+    }
+    .l\:nudge-left-3 {
+        left: 3px;
+    }
+    .l\:nudge-left-4 {
+        left: 4px;
+    }
+    .l\:nudge-left-5 {
+        left: 5px;
+    }
+}
