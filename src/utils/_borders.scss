@@ -1,109 +1,109 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .ba {
-    border-style: solid;
-    border-width: 1px;
+    border-style: solid !important;
+    border-width: 1px !important;
 }
 .bt {
-    border-top-style: solid;
-    border-top-width: 1px;
+    border-top-style: solid !important;
+    border-top-width: 1px !important;
 }
 .br {
-    border-right-style: solid;
-    border-right-width: 1px;
+    border-right-style: solid !important;
+    border-right-width: 1px !important;
 }
 .bb {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    border-bottom-style: solid !important;
+    border-bottom-width: 1px !important;
 }
 .bl {
-    border-left-style: solid;
-    border-left-width: 1px;
+    border-left-style: solid !important;
+    border-left-width: 1px !important;
 }
 .bn {
-    border-style: none;
-    border-width: 0;
+    border-style: none !important;
+    border-width: 0 !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:ba {
-        border-style: solid;
-        border-width: 1px;
+        border-style: solid !important;
+        border-width: 1px !important;
     }
     .s\:bt {
-        border-top-style: solid;
-        border-top-width: 1px;
+        border-top-style: solid !important;
+        border-top-width: 1px !important;
     }
     .s\:br {
-        border-right-style: solid;
-        border-right-width: 1px;
+        border-right-style: solid !important;
+        border-right-width: 1px !important;
     }
     .s\:bb {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+        border-bottom-style: solid !important;
+        border-bottom-width: 1px !important;
     }
     .s\:bl {
-        border-left-style: solid;
-        border-left-width: 1px;
+        border-left-style: solid !important;
+        border-left-width: 1px !important;
     }
     .s\:bn {
-        border-style: none;
-        border-width: 0;
+        border-style: none !important;
+        border-width: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:ba {
-        border-style: solid;
-        border-width: 1px;
+        border-style: solid !important;
+        border-width: 1px !important;
     }
     .m\:bt {
-        border-top-style: solid;
-        border-top-width: 1px;
+        border-top-style: solid !important;
+        border-top-width: 1px !important;
     }
     .m\:br {
-        border-right-style: solid;
-        border-right-width: 1px;
+        border-right-style: solid !important;
+        border-right-width: 1px !important;
     }
     .m\:bb {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+        border-bottom-style: solid !important;
+        border-bottom-width: 1px !important;
     }
     .m\:bl {
-        border-left-style: solid;
-        border-left-width: 1px;
+        border-left-style: solid !important;
+        border-left-width: 1px !important;
     }
     .m\:bn {
-        border-style: none;
-        border-width: 0;
+        border-style: none !important;
+        border-width: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:ba {
-        border-style: solid;
-        border-width: 1px;
+        border-style: solid !important;
+        border-width: 1px !important;
     }
     .l\:bt {
-        border-top-style: solid;
-        border-top-width: 1px;
+        border-top-style: solid !important;
+        border-top-width: 1px !important;
     }
     .l\:br {
-        border-right-style: solid;
-        border-right-width: 1px;
+        border-right-style: solid !important;
+        border-right-width: 1px !important;
     }
     .l\:bb {
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+        border-bottom-style: solid !important;
+        border-bottom-width: 1px !important;
     }
     .l\:bl {
-        border-left-style: solid;
-        border-left-width: 1px;
+        border-left-style: solid !important;
+        border-left-width: 1px !important;
     }
     .l\:bn {
-        border-style: none;
-        border-width: 0;
+        border-style: none !important;
+        border-width: 0 !important;
     }
 }

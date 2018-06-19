@@ -1,157 +1,157 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .mw-100 {
-    max-width: 100%;
+    max-width: 100% !important;
 }
 
 /* Max Width Scale */
 
 .mw1 {
-    max-width: tp-spacer(2);
+    max-width: tp-spacer(2) !important;
 }
 .mw2 {
-    max-width: tp-spacer(4);
+    max-width: tp-spacer(4) !important;
 }
 .mw3 {
-    max-width: tp-spacer(8);
+    max-width: tp-spacer(8) !important;
 }
 .mw4 {
-    max-width: tp-spacer(16);
+    max-width: tp-spacer(16) !important;
 }
 .mw5 {
-    max-width: tp-spacer(32);
+    max-width: tp-spacer(32) !important;
 }
 .mw6 {
-    max-width: tp-spacer(64);
+    max-width: tp-spacer(64) !important;
 }
 .mw7 {
-    max-width: tp-spacer(92);
+    max-width: tp-spacer(92) !important;
 }
 .mw8 {
-    max-width: tp-spacer(128);
+    max-width: tp-spacer(128) !important;
 }
 .mw9 {
-    max-width: tp-spacer(192);
+    max-width: tp-spacer(192) !important;
 }
 
 /* Max Width String Properties */
 
 .mw-none {
-    max-width: none;
+    max-width: none !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:mw-100 {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
     .s\:mw1 {
-        max-width: tp-spacer(2);
+        max-width: tp-spacer(2) !important;
     }
     .s\:mw2 {
-        max-width: tp-spacer(4);
+        max-width: tp-spacer(4) !important;
     }
     .s\:mw3 {
-        max-width: tp-spacer(8);
+        max-width: tp-spacer(8) !important;
     }
     .s\:mw4 {
-        max-width: tp-spacer(16);
+        max-width: tp-spacer(16) !important;
     }
     .s\:mw5 {
-        max-width: tp-spacer(32);
+        max-width: tp-spacer(32) !important;
     }
     .s\:mw6 {
-        max-width: tp-spacer(64);
+        max-width: tp-spacer(64) !important;
     }
     .s\:mw7 {
-        max-width: tp-spacer(92);
+        max-width: tp-spacer(92) !important;
     }
     .s\:mw8 {
-        max-width: tp-spacer(128);
+        max-width: tp-spacer(128) !important;
     }
     .s\:mw9 {
-        max-width: tp-spacer(192);
+        max-width: tp-spacer(192) !important;
     }
 
     .s\:mw-none {
-        max-width: none;
+        max-width: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:mw-100 {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
     .m\:mw1 {
-        max-width: tp-spacer(2);
+        max-width: tp-spacer(2) !important;
     }
     .m\:mw2 {
-        max-width: tp-spacer(4);
+        max-width: tp-spacer(4) !important;
     }
     .m\:mw3 {
-        max-width: tp-spacer(8);
+        max-width: tp-spacer(8) !important;
     }
     .m\:mw4 {
-        max-width: tp-spacer(16);
+        max-width: tp-spacer(16) !important;
     }
     .m\:mw5 {
-        max-width: tp-spacer(32);
+        max-width: tp-spacer(32) !important;
     }
     .m\:mw6 {
-        max-width: tp-spacer(64);
+        max-width: tp-spacer(64) !important;
     }
     .m\:mw7 {
-        max-width: tp-spacer(92);
+        max-width: tp-spacer(92) !important;
     }
     .m\:mw8 {
-        max-width: tp-spacer(128);
+        max-width: tp-spacer(128) !important;
     }
     .m\:mw9 {
-        max-width: tp-spacer(192);
+        max-width: tp-spacer(192) !important;
     }
 
     .m\:mw-none {
-        max-width: none;
+        max-width: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:mw-100 {
-        max-width: 100%;
+        max-width: 100% !important;
     }
 
     .l\:mw1 {
-        max-width: tp-spacer(2);
+        max-width: tp-spacer(2) !important;
     }
     .l\:mw2 {
-        max-width: tp-spacer(4);
+        max-width: tp-spacer(4) !important;
     }
     .l\:mw3 {
-        max-width: tp-spacer(8);
+        max-width: tp-spacer(8) !important;
     }
     .l\:mw4 {
-        max-width: tp-spacer(16);
+        max-width: tp-spacer(16) !important;
     }
     .l\:mw5 {
-        max-width: tp-spacer(32);
+        max-width: tp-spacer(32) !important;
     }
     .l\:mw6 {
-        max-width: tp-spacer(64);
+        max-width: tp-spacer(64) !important;
     }
     .l\:mw7 {
-        max-width: tp-spacer(92);
+        max-width: tp-spacer(92) !important;
     }
     .l\:mw8 {
-        max-width: tp-spacer(128);
+        max-width: tp-spacer(128) !important;
     }
     .l\:mw9 {
-        max-width: tp-spacer(192);
+        max-width: tp-spacer(192) !important;
     }
 
     .l\:mw-none {
-        max-width: none;
+        max-width: none !important;
     }
 }

@@ -1,135 +1,135 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .bw-0 {
-    border-width: 0;
+    border-width: 0 !important;
 }
 .bw-1 {
-    border-width: 1px;
+    border-width: 1px !important;
 }
 .bw-2 {
-    border-width: 2px;
+    border-width: 2px !important;
 }
 .bw-3 {
-    border-width: 3px;
+    border-width: 3px !important;
 }
 .bw-4 {
-    border-width: 4px;
+    border-width: 4px !important;
 }
 .bw-5 {
-    border-width: 5px;
+    border-width: 5px !important;
 }
 
 /* Resets */
 .bt-0 {
-    border-top-width: 0;
+    border-top-width: 0 !important;
 }
 .br-0 {
-    border-right-width: 0;
+    border-right-width: 0 !important;
 }
 .bb-0 {
-    border-bottom-width: 0;
+    border-bottom-width: 0 !important;
 }
 .bl-0 {
-    border-left-width: 0;
+    border-left-width: 0 !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:bw-0 {
-        border-width: 0;
+        border-width: 0 !important;
     }
     .s\:bw-1 {
-        border-width: 1px;
+        border-width: 1px !important;
     }
     .s\:bw-2 {
-        border-width: 2px;
+        border-width: 2px !important;
     }
     .s\:bw-3 {
-        border-width: 3px;
+        border-width: 3px !important;
     }
     .s\:bw-4 {
-        border-width: 4px;
+        border-width: 4px !important;
     }
     .s\:bw-5 {
-        border-width: 5px;
+        border-width: 5px !important;
     }
     .s\:bt-0 {
-        border-top-width: 0;
+        border-top-width: 0 !important;
     }
     .s\:br-0 {
-        border-right-width: 0;
+        border-right-width: 0 !important;
     }
     .s\:bb-0 {
-        border-bottom-width: 0;
+        border-bottom-width: 0 !important;
     }
     .s\:bl-0 {
-        border-left-width: 0;
+        border-left-width: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:bw-0 {
-        border-width: 0;
+        border-width: 0 !important;
     }
     .m\:bw-1 {
-        border-width: 1px;
+        border-width: 1px !important;
     }
     .m\:bw-2 {
-        border-width: 2px;
+        border-width: 2px !important;
     }
     .m\:bw-3 {
-        border-width: 3px;
+        border-width: 3px !important;
     }
     .m\:bw-4 {
-        border-width: 4px;
+        border-width: 4px !important;
     }
     .m\:bw-5 {
-        border-width: 5px;
+        border-width: 5px !important;
     }
     .m\:bt-0 {
-        border-top-width: 0;
+        border-top-width: 0 !important;
     }
     .m\:br-0 {
-        border-right-width: 0;
+        border-right-width: 0 !important;
     }
     .m\:bb-0 {
-        border-bottom-width: 0;
+        border-bottom-width: 0 !important;
     }
     .m\:bl-0 {
-        border-left-width: 0;
+        border-left-width: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:bw-0 {
-        border-width: 0;
+        border-width: 0 !important;
     }
     .l\:bw-1 {
-        border-width: 1px;
+        border-width: 1px !important;
     }
     .l\:bw-2 {
-        border-width: 2px;
+        border-width: 2px !important;
     }
     .l\:bw-3 {
-        border-width: 3px;
+        border-width: 3px !important;
     }
     .l\:bw-4 {
-        border-width: 4px;
+        border-width: 4px !important;
     }
     .l\:bw-5 {
-        border-width: 5px;
+        border-width: 5px !important;
     }
     .l\:bt-0 {
-        border-top-width: 0;
+        border-top-width: 0 !important;
     }
     .l\:br-0 {
-        border-right-width: 0;
+        border-right-width: 0 !important;
     }
     .l\:bb-0 {
-        border-bottom-width: 0;
+        border-bottom-width: 0 !important;
     }
     .l\:bl-0 {
-        border-left-width: 0;
+        border-left-width: 0 !important;
     }
 }

@@ -1,61 +1,61 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .v-base {
-    vertical-align: baseline;
+    vertical-align: baseline !important;
 }
 .v-mid {
-    vertical-align: middle;
+    vertical-align: middle !important;
 }
 .v-top {
-    vertical-align: top;
+    vertical-align: top !important;
 }
 .v-btm {
-    vertical-align: bottom;
+    vertical-align: bottom !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:v-base {
-        vertical-align: baseline;
+        vertical-align: baseline !important;
     }
     .s\:v-mid {
-        vertical-align: middle;
+        vertical-align: middle !important;
     }
     .s\:v-top {
-        vertical-align: top;
+        vertical-align: top !important;
     }
     .s\:v-btm {
-        vertical-align: bottom;
+        vertical-align: bottom !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:v-base {
-        vertical-align: baseline;
+        vertical-align: baseline !important;
     }
     .m\:v-mid {
-        vertical-align: middle;
+        vertical-align: middle !important;
     }
     .m\:v-top {
-        vertical-align: top;
+        vertical-align: top !important;
     }
     .m\:v-btm {
-        vertical-align: bottom;
+        vertical-align: bottom !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:v-base {
-        vertical-align: baseline;
+        vertical-align: baseline !important;
     }
     .l\:v-mid {
-        vertical-align: middle;
+        vertical-align: middle !important;
     }
     .l\:v-top {
-        vertical-align: top;
+        vertical-align: top !important;
     }
     .l\:v-btm {
-        vertical-align: bottom;
+        vertical-align: bottom !important;
     }
 }

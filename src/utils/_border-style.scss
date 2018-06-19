@@ -1,61 +1,61 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .b--dotted {
-    border-style: dotted;
+    border-style: dotted !important;
 }
 .b--dashed {
-    border-style: dashed;
+    border-style: dashed !important;
 }
 .b--solid {
-    border-style: solid;
+    border-style: solid !important;
 }
 .b--none {
-    border-style: none;
+    border-style: none !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:b--dotted {
-        border-style: dotted;
+        border-style: dotted !important;
     }
     .s\:b--dashed {
-        border-style: dashed;
+        border-style: dashed !important;
     }
     .s\:b--solid {
-        border-style: solid;
+        border-style: solid !important;
     }
     .s\:b--none {
-        border-style: none;
+        border-style: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:b--dotted {
-        border-style: dotted;
+        border-style: dotted !important;
     }
     .m\:b--dashed {
-        border-style: dashed;
+        border-style: dashed !important;
     }
     .m\:b--solid {
-        border-style: solid;
+        border-style: solid !important;
     }
     .m\:b--none {
-        border-style: none;
+        border-style: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:b--dotted {
-        border-style: dotted;
+        border-style: dotted !important;
     }
     .l\:b--dashed {
-        border-style: dashed;
+        border-style: dashed !important;
     }
     .l\:b--solid {
-        border-style: solid;
+        border-style: solid !important;
     }
     .l\:b--none {
-        border-style: none;
+        border-style: none !important;
     }
 }

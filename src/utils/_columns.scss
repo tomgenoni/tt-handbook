@@ -3,107 +3,107 @@
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .cols {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: tp-spacer(-2);
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: tp-spacer(-2) !important;
 }
 .cols .col {
-    padding-left: tp-spacer(2);
+    padding-left: tp-spacer(2) !important;
 }
 
 .cols--wide {
-    margin-left: tp-spacer(-4);
+    margin-left: tp-spacer(-4) !important;
 }
 
 .cols--wide .col {
-    padding-left: tp-spacer(4);
+    padding-left: tp-spacer(4) !important;
 }
 
 .cols--flush {
-    margin-left: 0;
+    margin-left: 0 !important;
 }
 
 .cols--flush .col {
-    padding-left: 0;
+    padding-left: 0 !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:cols {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: tp-spacer(-2);
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin-left: tp-spacer(-2) !important;
     }
     .s\:cols .col {
-        padding-left: tp-spacer(2);
+        padding-left: tp-spacer(2) !important;
     }
 
     .s\:cols--wide {
-        margin-left: tp-spacer(-4);
+        margin-left: tp-spacer(-4) !important;
     }
 
     .s\:cols--wide .col {
-        padding-left: tp-spacer(4);
+        padding-left: tp-spacer(4) !important;
     }
 
     .s\:cols--flush {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .s\:cols--flush .col {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:cols {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: tp-spacer(-2);
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin-left: tp-spacer(-2) !important;
     }
     .m\:cols .col {
-        padding-left: tp-spacer(2);
+        padding-left: tp-spacer(2) !important;
     }
 
     .m\:cols--wide {
-        margin-left: tp-spacer(-4);
+        margin-left: tp-spacer(-4) !important;
     }
 
     .m\:cols--wide .col {
-        padding-left: tp-spacer(4);
+        padding-left: tp-spacer(4) !important;
     }
 
     .m\:cols--flush {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .m\:cols--flush .col {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:cols {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: tp-spacer(-2);
+        display: flex !important;
+        flex-wrap: wrap !important;
+        margin-left: tp-spacer(-2) !important;
     }
     .l\:cols .col {
-        padding-left: tp-spacer(2);
+        padding-left: tp-spacer(2) !important;
     }
 
     .l\:cols--wide {
-        margin-left: tp-spacer(-4);
+        margin-left: tp-spacer(-4) !important;
     }
 
     .l\:cols--wide .col {
-        padding-left: tp-spacer(4);
+        padding-left: tp-spacer(4) !important;
     }
 
     .l\:cols--flush {
-        margin-left: 0;
+        margin-left: 0 !important;
     }
 
     .l\:cols--flush .col {
-        padding-left: 0;
+        padding-left: 0 !important;
     }
 }

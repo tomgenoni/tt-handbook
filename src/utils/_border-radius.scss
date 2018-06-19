@@ -1,161 +1,161 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .br0 {
-    border-radius: 0;
+    border-radius: 0 !important;
 }
 .br1 {
-    border-radius: 2px;
+    border-radius: 2px !important;
 }
 .br2 {
-    border-radius: 4px;
+    border-radius: 4px !important;
 }
 .br3 {
-    border-radius: 8px;
+    border-radius: 8px !important;
 }
 .br4 {
-    border-radius: 12px;
+    border-radius: 12px !important;
 }
 .br-100 {
-    border-radius: 100%;
+    border-radius: 100% !important;
 }
 .br-pill {
-    border-radius: 9999px;
+    border-radius: 9999px !important;
 }
 .br--bottom {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
 }
 .br--top {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 .br--right {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
 }
 .br--left {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:br0 {
-        border-radius: 0;
+        border-radius: 0 !important;
     }
     .s\:br1 {
-        border-radius: 2px;
+        border-radius: 2px !important;
     }
     .s\:br2 {
-        border-radius: 4px;
+        border-radius: 4px !important;
     }
     .s\:br3 {
-        border-radius: 8px;
+        border-radius: 8px !important;
     }
     .s\:br4 {
-        border-radius: 12px;
+        border-radius: 12px !important;
     }
     .s\:br-100 {
-        border-radius: 100%;
+        border-radius: 100% !important;
     }
     .s\:br-pill {
-        border-radius: 9999px;
+        border-radius: 9999px !important;
     }
     .s\:br--bottom {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
     }
     .s\:br--top {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
     .s\:br--right {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
     }
     .s\:br--left {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:br0 {
-        border-radius: 0;
+        border-radius: 0 !important;
     }
     .m\:br1 {
-        border-radius: 2px;
+        border-radius: 2px !important;
     }
     .m\:br2 {
-        border-radius: 4px;
+        border-radius: 4px !important;
     }
     .m\:br3 {
-        border-radius: 8px;
+        border-radius: 8px !important;
     }
     .m\:br4 {
-        border-radius: 12px;
+        border-radius: 12px !important;
     }
     .m\:br-100 {
-        border-radius: 100%;
+        border-radius: 100% !important;
     }
     .m\:br-pill {
-        border-radius: 9999px;
+        border-radius: 9999px !important;
     }
     .m\:br--bottom {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
     }
     .m\:br--top {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
     .m\:br--right {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
     }
     .m\:br--left {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:br0 {
-        border-radius: 0;
+        border-radius: 0 !important;
     }
     .l\:br1 {
-        border-radius: 2px;
+        border-radius: 2px !important;
     }
     .l\:br2 {
-        border-radius: 4px;
+        border-radius: 4px !important;
     }
     .l\:br3 {
-        border-radius: 8px;
+        border-radius: 8px !important;
     }
     .l\:br4 {
-        border-radius: 12px;
+        border-radius: 12px !important;
     }
     .l\:br-100 {
-        border-radius: 100%;
+        border-radius: 100% !important;
     }
     .l\:br-pill {
-        border-radius: 9999px;
+        border-radius: 9999px !important;
     }
     .l\:br--bottom {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
     }
     .l\:br--top {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
     .l\:br--right {
-        border-top-left-radius: 0;
-        border-bottom-left-radius: 0;
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
     }
     .l\:br--left {
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
     }
 }

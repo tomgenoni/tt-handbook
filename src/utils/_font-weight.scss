@@ -1,37 +1,37 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .normal {
-    font-weight: 400;
+    font-weight: 400 !important;
 }
 .b {
-    font-weight: 700;
+    font-weight: 700 !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:normal {
-        font-weight: 400;
+        font-weight: 400 !important;
     }
     .s\:b {
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:normal {
-        font-weight: 400;
+        font-weight: 400 !important;
     }
     .m\:b {
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:normal {
-        font-weight: 400;
+        font-weight: 400 !important;
     }
     .l\:b {
-        font-weight: 700;
+        font-weight: 700 !important;
     }
 }

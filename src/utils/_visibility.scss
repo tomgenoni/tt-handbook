@@ -1,20 +1,18 @@
-@import "@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import '@thumbtack/thumbprint-tokens/dist/scss/_index';
 @import '@thumbtack/tp-ui-core-function/_index';
 @import '@thumbtack/tp-ui-core-mixin/_index';
 
 .clip {
     position: fixed !important;
     _position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-    clip: rect(1px, 1px, 1px, 1px);
+    clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:clip {
         position: fixed !important;
         _position: absolute !important;
-        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-        clip: rect(1px, 1px, 1px, 1px);
+        clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
 
@@ -22,8 +20,7 @@
     .m\:clip {
         position: fixed !important;
         _position: absolute !important;
-        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-        clip: rect(1px, 1px, 1px, 1px);
+        clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
 
@@ -31,7 +28,6 @@
     .l\:clip {
         position: fixed !important;
         _position: absolute !important;
-        clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-        clip: rect(1px, 1px, 1px, 1px);
+        clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
