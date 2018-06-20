@@ -7,7 +7,12 @@
     flex-wrap: wrap !important;
     margin-left: tp-spacer(-2) !important;
 }
-.cols .col {
+
+.col {
+    width: 100%; // Default full width for mobile
+}
+
+.cols > .col {
     padding-left: tp-spacer(2) !important;
 }
 
@@ -15,7 +20,7 @@
     margin-left: tp-spacer(-4) !important;
 }
 
-.cols--wide .col {
+.cols--wide > .col {
     padding-left: tp-spacer(4) !important;
 }
 
@@ -23,7 +28,7 @@
     margin-left: 0 !important;
 }
 
-.cols--flush .col {
+.cols--flush > .col {
     padding-left: 0 !important;
 }
 
@@ -33,7 +38,7 @@
         flex-wrap: wrap !important;
         margin-left: tp-spacer(-2) !important;
     }
-    .s\:cols .col {
+    .s\:cols > .col {
         padding-left: tp-spacer(2) !important;
     }
 
@@ -41,7 +46,7 @@
         margin-left: tp-spacer(-4) !important;
     }
 
-    .s\:cols--wide .col {
+    .s\:cols--wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
@@ -49,7 +54,7 @@
         margin-left: 0 !important;
     }
 
-    .s\:cols--flush .col {
+    .s\:cols--flush > .col {
         padding-left: 0 !important;
     }
 }
@@ -60,7 +65,7 @@
         flex-wrap: wrap !important;
         margin-left: tp-spacer(-2) !important;
     }
-    .m\:cols .col {
+    .m\:cols > .col {
         padding-left: tp-spacer(2) !important;
     }
 
@@ -68,7 +73,7 @@
         margin-left: tp-spacer(-4) !important;
     }
 
-    .m\:cols--wide .col {
+    .m\:cols--wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
@@ -76,7 +81,7 @@
         margin-left: 0 !important;
     }
 
-    .m\:cols--flush .col {
+    .m\:cols--flush > .col {
         padding-left: 0 !important;
     }
 }
@@ -87,7 +92,7 @@
         flex-wrap: wrap !important;
         margin-left: tp-spacer(-2) !important;
     }
-    .l\:cols .col {
+    .l\:cols > .col {
         padding-left: tp-spacer(2) !important;
     }
 
@@ -95,7 +100,7 @@
         margin-left: tp-spacer(-4) !important;
     }
 
-    .l\:cols--wide .col {
+    .l\:cols--wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
@@ -103,7 +108,7 @@
         margin-left: 0 !important;
     }
 
-    .l\:cols--flush .col {
+    .l\:cols--flush > .col {
         padding-left: 0 !important;
     }
 }

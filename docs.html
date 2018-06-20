@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/root.css">
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+        }
+
+        P {
+            color: #666;
+        }
+
+        p+p {
+            margin-top: 16px;
+        }
+
+        section {
+            margin-top: 64px;
+        }
+
+        #search-bar {
+            box-shadow: 0 2px 3px rgba(0,0,0,.1);
+            transform: translateY(-105%);
+            transition: transform 100ms;
+        }
+
+        #search-bar.is-active {
+            transform: translateY(0);
+            transition: transform 100ms;
+        }
+
+        #search-btn,
+        #search-close {
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="wrap" class="flex flex-column h-100">
+        <div id="search-bar" class="flex flex-none h3 items-center fixed w-100 bg-white">
+            <input id="search-input" type="text" placeholder="Search" class="ph4 tp-text-input h3 br0 bn">
+            <svg id="search-close" class="mh3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="28" height="28" viewBox="0 0 28 28" data-thumbprint-id="navigation-close--medium"> <path fill-rule="evenodd" d="M15.414375,14.000125 L20.707375,8.707125 C21.098375,8.316125 21.098375,7.684125 20.707375,7.293125 C20.315375,6.902125 19.684375,6.902125 19.293375,7.293125 L14.000375,12.586125 L8.707375,7.293125 C8.315375,6.902125 7.684375,6.902125 7.293375,7.293125 C6.901375,7.684125 6.901375,8.316125 7.293375,8.707125 L12.586375,14.000125 L7.293375,19.293125 C6.901375,19.684125 6.901375,20.316125 7.293375,20.707125 C7.487375,20.902125 7.743375,21.000125 8.000375,21.000125 C8.256375,21.000125 8.512375,20.902125 8.707375,20.707125 L14.000375,15.414125 L19.293375,20.707125 C19.487375,20.902125 19.743375,21.000125 20.000375,21.000125 C20.256375,21.000125 20.512375,20.902125 20.707375,20.707125 C21.098375,20.316125 21.098375,19.684125 20.707375,19.293125 L15.414375,14.000125 Z"/> </svg>
+        </div>
+        <header class="bg-blue white ph4 flex-none h3 flex items-center">
+            <div class="flex items-center">
+                <svg class="mr3" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 36 36">
+                    <g fill="none" fill-rule="evenodd">
+                        <path fill="#FFF" d="M0 17.957c0 9.917 8.04 17.957 17.957 17.957 9.917 0 17.957-8.04 17.957-17.957C35.914 8.039 27.874 0 17.957 0 8.04 0 0 8.04 0 17.957z"></path>
+                        <path fill="#009FD9" d="M20.091 24.618a9.26 9.26 0 0 1-1.238 4.625l-.896 1.555-.896-1.555a9.26 9.26 0 0 1-1.238-4.625v-7.42c1.06-1.474 2.64-1.996 4.268-1.996v9.416zM9.183 13.523V9.53H26.73v3.993H9.183z"></path>
+                    </g>
+                </svg>
+                <div class="b dn s:db">Thumbprint</div>
+            </div>
+            <div class="ml-auto flex items-center">
+                <div class="ml3 b">Product</div>
+                <div class="ml3 b">API</div>
+                <div class="ml4">
+                    <svg id="search-btn" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="currentColor" data-thumbprint-id="navigation-search--medium">
+                        <path d="M19.0245,17.611 C20.2585,16.071 20.9995,14.122 20.9995,12 C20.9995,7.037 16.9635,3 11.9995,3 C7.0365,3 2.9995,7.037 2.9995,12 C2.9995,16.963 7.0365,21 11.9995,21 C14.1215,21 16.0705,20.258 17.6105,19.025 L23.2935,24.707 C23.4875,24.902 23.7435,25 23.9995,25 C24.2565,25 24.5125,24.902 24.7065,24.707 C25.0985,24.316 25.0985,23.684 24.7065,23.293 L19.0245,17.611 Z M4.9995,12 C4.9995,8.141 8.1415,5 11.9995,5 C15.8585,5 18.9995,8.141 18.9995,12 C18.9995,15.859 15.8585,19 11.9995,19 C8.1415,19 4.9995,15.859 4.9995,12 Z"
+                        /> </svg>
+                </div>
+            </div>
+        </header>
+        <main class="flex flex-auto">
+            <div id="sidenav" class="flex-column flex-none w5 br b--gray-300 dn l:flex">
+                <div class="flex-none bb pv3 b--gray-300">
+                    <h3 class="ph4 pv1 b">Product</h3>
+                    <ul>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Overview</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Principles</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Release Notes</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-auto overflow-y-auto pv3">
+                    <h3 class="ph4 pv1 b">Foundations</h3>
+                    <ul class="mb3">
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Avatars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Loaders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Date Picker</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Progress Bar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Toggles</a>
+                        </li>
+                    </ul>
+                    <h3 class="ph4 pv1 b">Patterns</h3>
+                    <ul class="mb3">
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Loaders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Loaders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Date Picker</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Progress Bar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Toggles</a>
+                        </li>
+                    </ul>
+                    <h3 class="ph4 pv1 b">Foundations</h3>
+                    <ul class="mb3">
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Avatars</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black bg-gray-300">Loaders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Date Picker</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Progress Bar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Toggles</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Loaders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Loaders</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Date Picker</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Progress Bar</a>
+                        </li>
+                        <li>
+                            <a href="#" class="ph4 pv1 db black">Toggles</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex-none bt ph4 pv3 b--gray-300">
+                    <div class="flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" width="18" height="18" viewBox="0 0 18 18" data-thumbprint-id="navigation-help--small">
+                            <path fill-rule="evenodd" d="M9.02150874,5.09574585 C7.92706412,5.09574585 6.94666583,5.64908303 6.46146872,6.5386251 C6.26438866,6.90384766 6.39844312,7.35912509 6.76259105,7.55624521 C7.12473817,7.75536655 7.58292431,7.61928363 7.78100478,7.25606229 C8.00009379,6.856819 8.4852909,6.59666046 9.02150874,6.59666046 C9.67477413,6.59666046 10.3740582,6.88383546 10.3740582,7.68732509 C10.3670554,7.99351167 9.49770219,8.85403605 8.61634414,9.42038117 C8.2672023,9.64551836 8.16716166,10.1088007 8.39025229,10.4570129 C8.53431081,10.6811495 8.77540876,10.8022232 9.02250914,10.8022232 C9.16156564,10.8022232 9.30162253,10.7631994 9.42667334,10.6831507 C10.0009066,10.3149263 11.8746678,9.01013117 11.8746678,7.68732509 C11.8746678,6.18641047 10.6731797,5.09574585 9.02150874,5.09574585 M13.2452246,13.2457122 C10.9042736,15.5831366 7.09572639,15.5861384 4.75477538,13.2457122 C2.41482477,10.905286 2.41482477,7.09596473 4.75477538,4.75553853 C5.92525088,3.58482513 7.46187514,2.99946843 9.0005002,2.99946843 C10.5391253,2.99946843 12.0747491,3.58482513 13.2452246,4.75553853 C15.5861756,7.09596473 15.5861756,10.905286 13.2452246,13.2457122 M14.6597993,3.34067635 C11.5405321,0.21977455 6.46046832,0.21977455 3.34020071,3.34067635 C0.219933098,6.46157815 0.219933098,11.5376714 3.34020071,14.6605744 C4.90083471,16.2215256 6.95066746,17 9.0005002,17 C11.0493325,17 13.0991653,16.2215256 14.6597993,14.6605744 C17.7800669,11.5376714 17.7800669,6.46157815 14.6597993,3.34067635 M9.54972333,11.620722 C9.47969488,11.5516799 9.39966236,11.5016494 9.30962579,11.4616251 C9.12054897,11.3815763 8.91946728,11.3815763 8.72939006,11.4616251 C8.63935349,11.5016494 8.55932097,11.5516799 8.49029293,11.620722 C8.41926408,11.6917653 8.37024416,11.7718141 8.33122831,11.861869 C8.29121205,11.9619299 8.26920311,12.0519848 8.26920311,12.1530464 C8.26920311,12.2521068 8.29121205,12.3521677 8.33122831,12.4422226 C8.37024416,12.5322775 8.41926408,12.6123263 8.49029293,12.6823689 C8.55932097,12.7524116 8.63935349,12.8134488 8.72939006,12.8424665 C8.81942664,12.8824909 8.91946728,12.9035037 9.01950793,12.9035037 C9.12054897,12.9035037 9.21958921,12.8824909 9.30962579,12.8424665 C9.39966236,12.8134488 9.47969488,12.7524116 9.54972333,12.6823689 C9.62075218,12.6123263 9.66977209,12.5322775 9.70978835,12.4422226 C9.75080501,12.3521677 9.76981274,12.2521068 9.76981274,12.1530464 C9.76981274,12.0519848 9.75080501,11.9619299 9.70978835,11.861869 C9.67977616,11.7718141 9.62075218,11.6917653 9.54972333,11.620722"
+                            /> </svg>
+                        <div class="b ml2">Help</div>
+                    </div>
+                </div>
+            </div>
+            <div id="content" class="flex-auto ph4 overflow-y-auto">
+                <div class="mw7 center pt4 m:pt5 pb4">
+                    <h1 class="tp-title-1 mb3">A Quick Brown Fox</h1>
+                    <p class="tp-title-4 normal mw6">
+                        The short description of what this page is about.
+                    </p>
+
+                    <section>
+
+                        <div class="cols cols--wide mt3">
+                            <div class="col m:w-1/2 mb3 m:mb0">
+                                <div class="tp-title-3 mb2">Types</div>
+                                <p>
+                                    A wrapper is generally used at the component level to prevent content from becoming too wide and to center content when window
+                                    exceeds the max-width.
+                                </p>
+                            </div>
+                            <div class="col m:w-1/2">
+                                <div class="tp-body-2 mb2">Default</div>
+                                <div class="cols mb3">
+                                    <div class="col w-1/2">
+                                        <button class="tp-button">Default</button>
+                                    </div>
+                                    <div class="col w-1/2">
+                                        <button class="tp-button" disabled>Disabled</button>
+                                    </div>
+                                </div>
+                                <div class="tp-body-2 mb2">Secondary</div>
+                                <div class="cols mb3">
+                                    <div class="col w-1/2">
+                                        <button class="tp-button tp-button--secondary">Secondary</button>
+                                    </div>
+                                    <div class="col w-1/2">
+                                        <button class="tp-button tp-button--secondary" disabled>Disabled</button>
+                                    </div>
+                                </div>
+                                <div class="tp-body-2 mb2">Caution</div>
+                                <div class="cols mb3">
+                                    <div class="col w-1/2">
+                                        <button class="tp-button tp-button--caution">Caution</button>
+                                    </div>
+                                    <div class="col w-1/2">
+                                        <button class="tp-button tp-button--caution" disabled>Disabled</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section>
+
+                        <div class="cols cols--wide mt3">
+                            <div class="col m:w-1/2 mb3 m:mb0">
+                                <div class="tp-title-3 mb2">Sizes</div>
+                                <p>
+                                    A wrapper is generally used at the component level to prevent content from becoming too wide and to center content when window
+                                    exceeds the max-width.
+                                </p>
+                            </div>
+                            <div class="col m:w-1/2">
+                                <div class="cols mb3">
+                                    <div class="col w-1/2">
+
+                                        <button class="tp-button">Default</button>
+
+                                    </div>
+                                    <div class="col w-1/2">
+
+                                        <button class="tp-button tp-button--small">Small</button>
+
+                                    </div>
+                                </div>
+                                <div class="cols mb3">
+                                    <div class="col w-1/2">
+                                        <button class="tp-button tp-button--secondary">Default</button>
+
+                                    </div>
+                                    <div class="col w-1/2">
+
+                                        <button class="tp-button tp-button--secondary tp-button--small">Small</button>
+
+                                    </div>
+                                </div>
+                                <div class="cols mb3">
+                                    <div class="col w-1/2">
+
+                                        <button class="tp-button tp-button--caution">Default</button>
+
+                                    </div>
+                                    <div class="col w-1/2">
+
+                                        <button class="tp-button tp-button--caution tp-button--small" disabled>Small</button>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script>
+
+    const searchBtn = document.querySelector('#search-btn');
+    const searchBar = document.querySelector('#search-bar');
+    const searchInput = document.querySelector('#search-input');
+    const searchClose = document.querySelector('#search-close');
+
+    searchBtn.addEventListener('click', function(){
+        searchBar.classList.add('is-active');
+        searchInput.focus();
+    })
+
+    searchClose.addEventListener('click', function(){
+        searchBar.classList.remove('is-active');
+        searchInput.blur();
+    })
+
+</script>
+
+</body>
+
+</html>
