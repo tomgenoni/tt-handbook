@@ -5,27 +5,30 @@ const fs = require("fs");
 let rawdata = fs.readFileSync("./data/index.json");
 let json = JSON.parse(rawdata);
 let css = json.children;
+let zoo = [];
 
-let data = {};
+function removeSlashes(str) {
+    return str.replace(/(\\)/g, "");
+}
 
-for (var i in css) {
-    if (i.startsWith(".")) {
-        console.log("class: " + i);
-        for (var prop in css[i].attributes) {
-            console.log("prop: " + prop);
-            console.log("value: " + css[i].attributes[prop]);
-        }
-        console.log("------");
-    } else {
-        for (var className in css[i].children) {
-            console.log("class: " + className);
-            for (var prop in css[i].children[className].attributes) {
-                console.log("prop: " + prop);
-                console.log(
-                    "value: " + css[i].children[className].attributes[prop]
-                );
+function cleanJSON(data) {
+    for (var i in data) {
+        var obj = {};
+        obj.declarations = [];
+
+        if (i.startsWith(".")) {
+            obj["className"] = removeSlashes(i);
+            for (var prop in data[i].attributes) {
+                obj.declarations.push({
+                    property: prop,
+                    value: data[i].attributes[prop]
+                });
             }
-            console.log("------");
+            console.log(obj);
+        } else {
+            cleanJSON(data[i].children);
         }
     }
 }
+
+cleanJSON(css);

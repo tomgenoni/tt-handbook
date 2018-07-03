@@ -5,15 +5,17 @@
 
           },
           "attributes":{
-            "background-size":"cover !important"
-        }
+             "background-size":"cover !important",
+             "color":"green"
+          }
        },
        ".contain":{
           "children":{
 
           },
           "attributes":{
-             "background-size":"contain !important"
+             "background-size":"contain !important",
+             "color":"red"
           }
        },
        "@media (min-width: 482px)":{
@@ -23,7 +25,8 @@
 
                 },
                 "attributes":{
-                   "background-size":"cover !important"
+                   "background-size":"cover !important",
+                   "color":"green"
                 }
              },
              ".s\\:contain":{
@@ -31,7 +34,8 @@
 
                 },
                 "attributes":{
-                   "background-size":"contain !important"
+                   "background-size":"contain !important",
+                   "color":"red"
                 }
              }
           },
@@ -46,7 +50,8 @@
 
                 },
                 "attributes":{
-                   "background-size":"cover !important"
+                   "background-size":"cover !important",
+                   "color":"green"
                 }
              },
              ".m\\:contain":{
@@ -54,7 +59,8 @@
 
                 },
                 "attributes":{
-                   "background-size":"contain !important"
+                   "background-size":"contain !important",
+                   "color":"red"
                 }
              }
           },
@@ -69,7 +75,8 @@
 
                 },
                 "attributes":{
-                   "background-size":"cover !important"
+                   "background-size":"cover !important",
+                   "color":"green"
                 }
              },
              ".l\\:contain":{
@@ -77,7 +84,8 @@
 
                 },
                 "attributes":{
-                   "background-size":"contain !important"
+                   "background-size":"contain !important",
+                   "color":"red"
                 }
              }
           },
