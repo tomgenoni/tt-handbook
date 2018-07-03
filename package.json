@@ -29,6 +29,7 @@
     "@thumbtack/tp-ui-element-type": "^4.0.3",
     "@thumbtack/tp-ui-layout-wrap": "^1.2.1",
     "browser-sync": "^2.24.4",
+    "css-to-json": "^2.1.0",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^4.0.1",
