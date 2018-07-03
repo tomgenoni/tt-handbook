@@ -1,0 +1,92 @@
+{
+    "children":{
+       ".cover":{
+          "children":{
+
+          },
+          "attributes":{
+            "background-size":"cover !important"
+        }
+       },
+       ".contain":{
+          "children":{
+
+          },
+          "attributes":{
+             "background-size":"contain !important"
+          }
+       },
+       "@media (min-width: 482px)":{
+          "children":{
+             ".s\\:cover":{
+                "children":{
+
+                },
+                "attributes":{
+                   "background-size":"cover !important"
+                }
+             },
+             ".s\\:contain":{
+                "children":{
+
+                },
+                "attributes":{
+                   "background-size":"contain !important"
+                }
+             }
+          },
+          "attributes":{
+
+          }
+       },
+       "@media (min-width: 701px)":{
+          "children":{
+             ".m\\:cover":{
+                "children":{
+
+                },
+                "attributes":{
+                   "background-size":"cover !important"
+                }
+             },
+             ".m\\:contain":{
+                "children":{
+
+                },
+                "attributes":{
+                   "background-size":"contain !important"
+                }
+             }
+          },
+          "attributes":{
+
+          }
+       },
+       "@media (min-width: 1026px)":{
+          "children":{
+             ".l\\:cover":{
+                "children":{
+
+                },
+                "attributes":{
+                   "background-size":"cover !important"
+                }
+             },
+             ".l\\:contain":{
+                "children":{
+
+                },
+                "attributes":{
+                   "background-size":"contain !important"
+                }
+             }
+          },
+          "attributes":{
+
+          }
+       }
+    },
+    "attributes":{
+
+    }
+ }
