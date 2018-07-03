@@ -24,11 +24,13 @@ function cleanJSON(data) {
                     value: data[i].attributes[prop]
                 });
             }
-            console.log(obj);
         } else {
             cleanJSON(data[i].children);
         }
+        zoo.push(obj);
     }
 }
 
 cleanJSON(css);
+
+console.log(zoo);
