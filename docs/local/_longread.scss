@@ -1,0 +1,119 @@
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import './node_modules/@thumbtack/tp-ui-core-function/_index';
+@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+
+@import './node_modules/@thumbtack/tp-ui-element-type/_index';
+
+.longread {
+
+    // Default spacing between items
+
+    p,
+    p + * {
+        margin-top: tp-spacer(2.5);
+    }
+
+    section {
+        margin-bottom: 64px;
+    }
+
+    // Headings
+
+    h1 {
+        @include tp-title-3;
+        letter-spacing: 0;
+        margin-top: tp-spacer(8);
+    }
+
+    * + h2 {
+        margin-top: tp-spacer(5);
+    }
+
+    h2 {
+        @include tp-title-5;
+        margin-bottom: tp-spacer(2);
+    }
+
+    * + h3 {
+        margin-top: tp-spacer(4);
+    }
+
+    h3 {
+        @include tp-title-5;
+        margin-bottom: tp-spacer(2);
+    }
+
+
+    h4 {
+        font-weight: 700;
+    }
+
+    h4 + p {
+        margin-top: 0;
+    }
+
+    pre {
+        margin-top: tp-spacer(3);
+    }
+
+    code {
+        font-family: 'Source Code Pro', monospace;
+        font-weight: 500;
+        font-size: 13px;
+    }
+
+    ul:not(.scope) {
+        margin-top: tp-spacer(2.5);
+        margin-bottom: tp-spacer(2.5);
+        padding-left: tp-spacer(2.5);
+
+        li {
+            list-style: disc;
+        }
+    }
+
+    ol:not(.scope) {
+        margin-top: tp-spacer(2.5);
+        margin-bottom: tp-spacer(2.5);
+        padding-left: tp-spacer(2.5);
+
+        li {
+            list-style: decimal;
+        }
+    }
+
+    li:not(.scope) {
+        margin-left: tp-spacer(2);
+    }
+
+    * + table {
+        margin-top: tp-spacer(3);
+    }
+
+    table {
+        width: 100%;
+
+        th {
+            text-align: left;
+
+            &[align='center'] {
+                text-align: center;
+            }
+            &[align='right'] {
+                text-align: right;
+            }
+        }
+
+        th, td {
+            padding: 0 10px 6px;
+            border-bottom: 1px solid #d3d4d5;
+        }
+        td {
+            padding: 6px 10px;
+
+            code {
+                background: transparent;
+            }
+        }
+    }
+}

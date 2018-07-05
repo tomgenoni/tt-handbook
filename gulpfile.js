@@ -2,22 +2,41 @@ var gulp = require("gulp"),
     fs = require("fs"),
     sass = require("gulp-sass"),
     gulpFn = require("gulp-fn"),
+    wrap = require("gulp-wrap"),
     clean = require("gulp-clean"),
+    concat = require("gulp-concat"),
+    markdown = require("gulp-markdown"),
     cssjson = require("cssjson");
 
 gulp.task("clean", function() {
     return gulp.src("./tmp", { read: false }).pipe(clean());
 });
 
-gulp.task("css", function() {
+gulp.task("css:each", function() {
     return gulp
         .src("src/utils/**/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("./tmp"));
 });
 
-gulp.task("copy", function() {
+gulp.task("css:docs", function() {
+    return gulp
+        .src("docs/docs.scss")
+        .pipe(sass())
+        .pipe(gulp.dest("./dist"));
+});
+
+gulp.task("copy:markdown", function() {
     return gulp.src("./src/utils/**/readme.md").pipe(gulp.dest("./tmp"));
+});
+
+gulp.task("doc", function() {
+    return gulp
+        .src("./tmp/**/readme.md")
+        .pipe(concat("index.html"))
+        .pipe(markdown())
+        .pipe(wrap({ src: "./docs/template.html" }))
+        .pipe(gulp.dest("./dist/"));
 });
 
 gulp.task("json", function() {
@@ -30,8 +49,8 @@ gulp.task("json", function() {
             let css = json.children;
             let simpleJSON = [];
 
-            function noSlash(str) {
-                return str.replace(/(\\)/g, "");
+            function cleanClass(str) {
+                return str.replace(/(\.|\\)/g, "");
             }
             function noImportant(str) {
                 return str.replace(/(\s!important)/g, "");
@@ -44,7 +63,7 @@ gulp.task("json", function() {
                     };
 
                     if (i.startsWith(".")) {
-                        obj["className"] = noSlash(i);
+                        obj["className"] = cleanClass(i);
                         for (var prop in data[i].attributes) {
                             obj.declarations.push({
                                 property: prop,
@@ -68,6 +87,7 @@ gulp.task("json", function() {
 
             function buildHTML(json) {
                 html = "\n\n";
+                html += "<h2>Class list</h2>\n";
                 html += "<div class='bg-gray-200 bt b--gray-300'>\n";
                 json.forEach(function(i) {
                     html += "<div class='flex bb b--gray-300 pv2 ph3'>\n";

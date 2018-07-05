@@ -1,3 +1,3 @@
-# Title
+# Border colors
 
-description
+Applies border color to any active border.

@@ -1,0 +1,21 @@
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import './node_modules/@thumbtack/tp-ui-core-function/_index';
+@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+
+
+body {
+    color: $tp-color__black-300;
+}
+
+h1, h2, h3, h4, h5 {
+    color: $tp-color__black;
+}
+
+h1 {
+    letter-spacing: -.7px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}

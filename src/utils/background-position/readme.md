@@ -1,3 +1,3 @@
-# Title
+# Background position
 
-description
+Sets location of a background image.
