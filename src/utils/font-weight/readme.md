@@ -1,3 +1,3 @@
-# Title
+# Font-weight
 
-description
+Our Mark font only supports two weights: `400` and `700`.

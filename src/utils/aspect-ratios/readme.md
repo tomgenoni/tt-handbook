@@ -10,19 +10,19 @@
         <div class="col w-1/3">
             <div>
                 <div class="ar ar--16x9 cover" style="background:url(https://placebear.com/420/320?image=2"></div>
-                <code class="mt1">ar ar--16x9</code>
+                <code class="mt1 clipboard">ar ar--16x9</code>
             </div>
         </div>
         <div class="col w-1/3">
             <div>
                 <div class="ar ar--4x3 cover" style="background:url(https://placebear.com/420/320?image=2"></div>
-                <code class="mt1">ar ar--4x3</code>
+                <code class="mt1 clipboard">ar ar--4x3</code>
             </div>
         </div>
         <div class="col w-1/3">
             <div>
                 <div class="ar ar--1x1 cover" style="background:url(https://placebear.com/420/320?image=2"></div>
-                <code class="mt1">ar ar--1x1</code>
+                <code class="mt1 clipboard">ar ar--1x1</code>
             </div>
         </div>
     </div>

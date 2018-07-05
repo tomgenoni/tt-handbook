@@ -1,3 +1,3 @@
-# Title
+# Color
 
-description
+Colors for text and backgrounds.

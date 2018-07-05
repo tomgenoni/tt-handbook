@@ -19,3 +19,14 @@ img {
     max-width: 100%;
     display: block;
 }
+
+.clipboard:hover {
+    cursor: pointer;
+    color: #009fd9;
+}
+
+.clipboard.success:after {
+    content: ' ✔';
+    font-size: 12px;
+    color: #009fd9;
+}

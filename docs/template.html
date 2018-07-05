@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Utilities</title>
     <link rel="stylesheet" href="docs.css">
 </head>
 <body>
@@ -15,5 +15,24 @@
             <%= contents %>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js"></script>
+    <script src="clipboard.min.js"></script>
+    <script>
+
+        var clipboard = new ClipboardJS('.clipboard', {
+            target: function(trigger) {
+                return trigger;
+            }
+        });
+
+        clipboard.on('success', function(e) {
+            e.trigger.classList.add("success")
+            setTimeout(function(){
+                e.trigger.classList.remove("success")
+            }, 2000)
+            e.clearSelection();
+        });
+
+    </script>
 </body>
 </html>

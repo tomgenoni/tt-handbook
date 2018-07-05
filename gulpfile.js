@@ -88,14 +88,21 @@ gulp.task("json", function() {
             function buildHTML(json) {
                 html = "\n\n";
                 html += "<h2>Class list</h2>\n";
-                html += "<div class='bg-gray-200 bt b--gray-300'>\n";
+                html += "<div class='bt b--gray-300'>\n";
                 json.forEach(function(i) {
-                    html += "<div class='flex bb b--gray-300 pv2 ph3'>\n";
-                    html += "<code class='w-2/5'>" + i.className + "</code>\n";
-                    html += "<code class='w-3/5'>";
+                    html += "<div class='flex bb b--gray-300'>\n";
+                    html +=
+                        "<code class='w-2/5 pv2 s:ph3 clipboard'>" +
+                        i.className +
+                        "</code>\n";
+                    html += "<code class='w-3/5 pv2 s:ph3'>";
                     i.declarations.forEach(function(i) {
                         html +=
-                            "<div>" + i.property + ": " + i.value + ";</div>\n";
+                            "<div style='opacity:.7'>" +
+                            i.property +
+                            ": " +
+                            i.value +
+                            ";</div>\n";
                     });
                     html += "</code>\n";
                     html += "</div>\n";

@@ -3,14 +3,12 @@
 
 .clip {
     position: fixed !important;
-    _position: absolute !important;
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:clip {
         position: fixed !important;
-        _position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
@@ -18,7 +16,6 @@
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:clip {
         position: fixed !important;
-        _position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
@@ -26,7 +23,6 @@
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:clip {
         position: fixed !important;
-        _position: absolute !important;
         clip: rect(1px, 1px, 1px, 1px) !important;
     }
 }
