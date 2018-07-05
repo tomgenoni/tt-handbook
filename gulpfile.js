@@ -1,20 +1,37 @@
 var gulp = require("gulp"),
-    sass = require("gulp-sass");
+    fs = require("fs"),
+    sass = require("gulp-sass"),
+    path = require("path"),
+    gulpFn = require("gulp-fn"),
+    cssjson = require("cssjson");
 
-function swallowError(error) {
-    console.log(error.message.toString());
-    this.emit("end");
-}
-
-gulp.task("sass", function() {
+gulp.task("css", function() {
     return gulp
-        .src("src/**/*.scss")
+        .src("src/utils/**/*.scss")
         .pipe(
             sass({
                 includePaths: ["node_modules"]
             })
         )
-        .pipe(gulp.dest("dist"));
+        .pipe(gulp.dest("./tmp"));
 });
 
-// cssjson dist/utils.css -o dist/docs/utils.json
+gulp.task("json", function() {
+    gulp.src("./tmp/**/index.css").pipe(
+        gulpFn(function(file) {
+            var source = fs.readFileSync(file.path);
+            var json = cssjson.toJSON(source);
+            var directory = file.path.substring(0, file.path.lastIndexOf("/"));
+            var jsonFile = directory + "/index.json";
+            fs.writeFile(jsonFile, JSON.stringify(json), function(err) {
+                if (err) {
+                    return console.log(err);
+                }
+            });
+        })
+    );
+});
+
+gulp.task("copy", function() {
+    return gulp.src("./src/utils/**/readme.md").pipe(gulp.dest("./tmp/"));
+});
