@@ -63,6 +63,13 @@
         font-size: 13px;
     }
 
+    p code,
+    li code {
+        border: 1px solid #f2f2f2;
+        padding: 0 4px;
+        background: #f9f9f9;
+    }
+
     ul:not(.scope) {
         margin-top: tp-spacer(2.5);
         margin-bottom: tp-spacer(2.5);

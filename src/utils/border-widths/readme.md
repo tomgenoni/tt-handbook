@@ -1,3 +1,0 @@
-# Border widths
-
-description

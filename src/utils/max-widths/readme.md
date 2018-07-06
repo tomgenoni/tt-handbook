@@ -1,3 +1,0 @@
-# Max-widths
-
-description

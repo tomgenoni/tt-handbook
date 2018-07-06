@@ -14,7 +14,7 @@ gulp.task("clean", function() {
 
 gulp.task("css:each", function() {
     return gulp
-        .src("src/utils/**/*.scss")
+        .src("packages/**/*.scss")
         .pipe(sass())
         .pipe(gulp.dest("./tmp"));
 });
@@ -27,7 +27,7 @@ gulp.task("css:docs", function() {
 });
 
 gulp.task("copy:markdown", function() {
-    return gulp.src("./src/utils/**/readme.md").pipe(gulp.dest("./tmp"));
+    return gulp.src("./packages/**/readme.md").pipe(gulp.dest("./tmp"));
 });
 
 gulp.task("doc", function() {
@@ -87,7 +87,7 @@ gulp.task("json", function() {
 
             function buildHTML(json) {
                 html = "\n\n";
-                html += "<h2>Class list</h2>\n";
+                html += "<h2>Classes</h2>\n";
                 html += "<div class='bt b--gray-300'>\n";
                 json.forEach(function(i) {
                     html += "<div class='flex bb b--gray-300'>\n";

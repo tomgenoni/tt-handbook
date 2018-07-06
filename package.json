@@ -25,6 +25,7 @@
     "@thumbtack/tp-ui-core-mixin": "^3.0.0",
     "@thumbtack/tp-ui-core-reset": "^2.0.0",
     "@thumbtack/tp-ui-element-body": "^2.0.3",
+    "@thumbtack/tp-ui-element-link": "0.1.4",
     "@thumbtack/tp-ui-element-type": "^4.0.3",
     "@thumbtack/tp-ui-layout-wrap": "^1.2.1",
     "browser-sync": "^2.24.4",
