@@ -8,10 +8,12 @@ var gulp = require("gulp"),
     markdown = require("gulp-markdown"),
     cssjson = require("cssjson");
 
+// Remove tmp directory
 gulp.task("clean", function() {
     return gulp.src("./tmp", { read: false }).pipe(clean());
 });
 
+// Compile each package SCSS into individual CSS files
 gulp.task("css:each", function() {
     return gulp
         .src("packages/**/*.scss")
@@ -19,6 +21,7 @@ gulp.task("css:each", function() {
         .pipe(gulp.dest("./tmp"));
 });
 
+// Compile CSS for documentation
 gulp.task("css:docs", function() {
     return gulp
         .src("docs/docs.scss")
@@ -26,10 +29,13 @@ gulp.task("css:docs", function() {
         .pipe(gulp.dest("./dist"));
 });
 
+// Copy all markdown files from the packages
+// Combined with class list derived from CSS JSON
 gulp.task("copy:markdown", function() {
     return gulp.src("./packages/**/readme.md").pipe(gulp.dest("./tmp"));
 });
 
+// Combine all readmes into single file and combine with template
 gulp.task("doc", function() {
     return gulp
         .src("./tmp/**/readme.md")
@@ -39,6 +45,7 @@ gulp.task("doc", function() {
         .pipe(gulp.dest("./dist/"));
 });
 
+// Converts CSS into JSON, creates simplifed object, convert to HTML and append to readme
 gulp.task("json", function() {
     gulp.src("./tmp/**/index.css").pipe(
         gulpFn(function(file) {
