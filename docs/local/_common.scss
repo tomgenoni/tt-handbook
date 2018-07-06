@@ -2,6 +2,11 @@
 @import './node_modules/@thumbtack/tp-ui-core-function/_index';
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
+body,
+html {
+    height: 100%;
+    width: 100%;
+}
 
 body {
     color: $tp-color__black-300;

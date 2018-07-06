@@ -69,6 +69,7 @@ gulp.task("json", function() {
                         declarations: []
                     };
 
+                    // Checks if it's a class
                     if (i.startsWith(".")) {
                         obj["className"] = cleanClass(i);
                         for (var prop in data[i].attributes) {
@@ -79,6 +80,7 @@ gulp.task("json", function() {
                         }
                         simpleJSON.push(obj);
                     } else {
+                        // It's a @media block with nested rules
                         cleanJSON(data[i].children);
                     }
                 }
