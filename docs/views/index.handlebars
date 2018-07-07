@@ -8,18 +8,13 @@
     <link rel="stylesheet" href="docs.css">
 </head>
 <body>
-
     <main class="flex h-100">
         <nav class="flex-none w5 ph4 pv5 overflow-y-auto dn l:db">
             <h3 class="b">Utilities</h3>
             <ul>
-                <li>
-                    <a href="#" class="tp-link--secondary">Aspect ratios</a>
-                </li>
-                <li>
-                    <a href="#" class="tp-link--secondary">Background position</a>
-                </li>
-
+                {{#each this}}
+                    <li>{{{title}}}</li>
+                {{/each}}
             </ul>
         </nav>
         <div id="content" class="pt4 m:pt5 pb4 ph3 l:ph0 flex-auto overflow-y-auto">
@@ -27,12 +22,13 @@
                 <h1 class="tp-title-1 mb3">Thumbprint Utilities</h1>
                 <p class="tp-title-3 normal mb4">Atomic classes for composing layouts.</p>
                 <div class="longread">
-                    <%= contents %>
+                    {{#each this}}
+                        {{{content}}}
+                    {{/each}}
                 </div>
             </div>
         </div>
     </main>
-
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js"></script>
     <script src="clipboard.min.js"></script>
     <script>
