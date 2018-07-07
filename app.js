@@ -6,6 +6,7 @@ const fs = require("fs"),
 
 const packages = "./packages/";
 const obj = [];
+const dist = "./dist";
 
 hb.registerHelper("formatTitle", function(str) {
     return str.replace(/(-)/g, " ");
@@ -93,6 +94,10 @@ function getContent(file) {
 }
 
 function init() {
+    if (!fs.existsSync(dist)) {
+        fs.mkdirSync(dist);
+    }
+
     fs.readdir(packages, (err, files) => {
         files.forEach(file => {
             if (!file.startsWith(".")) {
