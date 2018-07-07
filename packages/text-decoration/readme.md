@@ -1,4 +1,4 @@
-# Text-decoration
+# Text Decoration
 
 ## Examples
 

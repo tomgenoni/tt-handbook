@@ -1,4 +1,4 @@
-# Text-transform
+# Text Transform
 
 <div class="pa3 ba b--gray-300">
     <div class="cols">

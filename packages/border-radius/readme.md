@@ -1,4 +1,4 @@
-# Border radius
+# Border Radius
 
 Add rounded corners.
 

@@ -1,4 +1,4 @@
-# White-space
+# White Space
 
 Control how text wraps.
 

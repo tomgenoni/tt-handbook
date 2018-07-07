@@ -1,4 +1,4 @@
-# Border style
+# Border Style
 
 Sets the style of the border.
 

@@ -1,4 +1,4 @@
-# Text-align
+# Text Align
 
 ## Examples
 

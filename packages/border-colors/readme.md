@@ -1,4 +1,4 @@
-# Border colors
+# Border Colors
 
 Applies border color to any active border.
 

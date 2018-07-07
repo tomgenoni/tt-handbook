@@ -1,4 +1,4 @@
-# Max-widths
+# Max Widths
 
 ## Examples
 
