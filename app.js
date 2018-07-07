@@ -7,7 +7,7 @@ const fs = require("fs"),
 // Variables
 
 const packages = "./packages/";
-const obj = [];
+const allContentObj = [];
 const dist = "./dist";
 
 // Helper functions
@@ -23,9 +23,9 @@ function noImportant(str) {
     return str.replace(/(\s!important)/g, "");
 }
 
-// Build the
+// Build the index.html
+
 function buildDist(data) {
-    // index.html
     let source = fs.readFileSync("./docs/views/index.handlebars", "utf8");
     let template = hb.compile(source);
     let result = template(data);
@@ -92,7 +92,7 @@ function getContent(file) {
 
     // Combine the data for each package
     var content = md(rawReadme) + cssDisplay(css);
-    obj.push({ title: file, content: content });
+    allContentObj.push({ title: file, content: content });
 }
 
 function init() {
@@ -108,8 +108,8 @@ function init() {
                 getContent(file);
             }
         });
-        // obj is created in getContent()
-        buildDist(obj);
+        // allContentObj is created in getContent()
+        buildDist(allContentObj);
     });
 }
 
