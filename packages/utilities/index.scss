@@ -1,0 +1,53 @@
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+
+.center {
+    margin-right: auto !important;
+    margin-left: auto !important;
+}
+
+.mr-auto {
+    margin-right: auto !important;
+}
+.ml-auto {
+    margin-left: auto !important;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:center {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .s\:mr-auto {
+        margin-right: auto !important;
+    }
+    .s\:ml-auto {
+        margin-left: auto !important;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:center {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .m\:mr-auto {
+        margin-right: auto !important;
+    }
+    .m\:ml-auto {
+        margin-left: auto !important;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:center {
+        margin-right: auto !important;
+        margin-left: auto !important;
+    }
+    .l\:mr-auto {
+        margin-right: auto !important;
+    }
+    .l\:ml-auto {
+        margin-left: auto !important;
+    }
+}

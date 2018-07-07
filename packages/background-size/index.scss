@@ -1,0 +1,36 @@
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+
+.cover {
+    background-size: cover !important;
+}
+.contain {
+    background-size: contain !important;
+}
+
+@include tp-respond-above($tp-breakpoint__small) {
+    .s\:cover {
+        background-size: cover !important;
+    }
+    .s\:contain {
+        background-size: contain !important;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium) {
+    .m\:cover {
+        background-size: cover !important;
+    }
+    .m\:contain {
+        background-size: contain !important;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large) {
+    .l\:cover {
+        background-size: cover !important;
+    }
+    .l\:contain {
+        background-size: contain !important;
+    }
+}

@@ -1,6 +1,7 @@
 const fs = require("fs"),
     cssjson = require("cssjson"),
     hb = require("handlebars"),
+    sass = require("node-sass"),
     md = require("marked");
 
 const packages = "./packages/";
@@ -57,17 +58,22 @@ function cssDisplay(str) {
 
 function getContent(file) {
     var rawReadme = fs.readFileSync(packages + file + "/readme.md").toString();
-    var rawCSS = fs.readFileSync("./tmp/" + file + "/index.css").toString();
+    var rawCSS = sass.renderSync({ file: packages + file + "/index.scss" });
+    var css = rawCSS.css.toString();
 
-    var content = md(rawReadme) + cssDisplay(rawCSS);
+    var content = md(rawReadme) + cssDisplay(css);
     obj.push({ title: file, content: content });
 }
 
-fs.readdir(packages, (err, files) => {
-    files.forEach(file => {
-        if (!file.startsWith(".")) {
-            getContent(file);
-        }
+function init() {
+    fs.readdir(packages, (err, files) => {
+        files.forEach(file => {
+            if (!file.startsWith(".")) {
+                getContent(file);
+            }
+        });
+        buildDoc(obj);
     });
-    buildDoc(obj);
-});
+}
+
+init();

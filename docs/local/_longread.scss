@@ -22,7 +22,7 @@
     h1 {
         @include tp-title-3;
         letter-spacing: 0;
-        margin-top: tp-spacer(10);
+        padding-top: tp-spacer(10);
     }
 
     * + h2 {
