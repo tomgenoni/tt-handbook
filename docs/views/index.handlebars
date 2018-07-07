@@ -14,7 +14,7 @@
             <ul>
                 {{#each this}}
                     <li class="ttc">
-                        <a class="tp-link--secondary" href="#{{title}}">{{title}}</a>
+                        <a class="tp-link--secondary" href="#{{title}}">{{formatTitle title}}</a>
                     </li>
                 {{/each}}
             </ul>
@@ -32,7 +32,7 @@
         </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/prismjs@1.15.0/prism.min.js"></script>
-    <script src="clipboard.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
     <script>
 
         var clipboard = new ClipboardJS('.clipboard', {

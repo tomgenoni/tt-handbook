@@ -7,6 +7,10 @@ const fs = require("fs"),
 const packages = "./packages/";
 const obj = [];
 
+hb.registerHelper("formatTitle", function(str) {
+    return str.replace(/(-)/g, " ");
+});
+
 function cleanClass(str) {
     return str.replace(/(\.|\\)/g, "");
 }
@@ -14,11 +18,34 @@ function noImportant(str) {
     return str.replace(/(\s!important)/g, "");
 }
 
-function buildDoc(data) {
+function buildDist(data) {
+    // index.html
     let source = fs.readFileSync("./docs/views/index.handlebars", "utf8");
     let template = hb.compile(source);
     let result = template(data);
     fs.writeFile("./dist/index.html", result, function() {});
+
+    // Copy assets
+    sass.renderSync({
+        file: "./docs/docs.scss",
+        outFile: "./dist/docs.css"
+    });
+
+    sass.render(
+        {
+            file: "./docs/docs.scss",
+            outFile: "./dist/docs.css"
+        },
+        function(error, result) {
+            if (!error) {
+                fs.writeFile("./dist/docs.css", result.css, function(err) {
+                    if (!err) {
+                        //file written on disk
+                    }
+                });
+            }
+        }
+    );
 }
 
 function cssDisplay(str) {
@@ -72,7 +99,7 @@ function init() {
                 getContent(file);
             }
         });
-        buildDoc(obj);
+        buildDist(obj);
     });
 }
 

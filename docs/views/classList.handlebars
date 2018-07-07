@@ -1,14 +1,13 @@
 <h2>Classes</h2>
 <div class="bt b--gray-300">
     {{#each this}}
-    <div class="flex bb b--gray-300">
-        <code class="w-2/5 pv2 s:ph3 clipboard">{{className}}</code>
-        {{#each declarations}}
-        <code class="w-3/5 pv2 s:ph3">
-            <span style="opacity:.7">{{property}}: </span>
-            <span style="opacity:.7">{{value}};</span>
-        </code>
-        {{/each}}
-    </div>
+        <div class="flex bb b--gray-300">
+            <code class="w-2/5 pv2 s:ph3 clipboard">{{className}}</code>
+            <code class="w-3/5 pv2 s:ph3">
+                {{#each declarations}}
+                    <div>{{property}}: {{value}};</div>
+                {{/each}}
+            </code>
+        </div>
     {{/each}}
 </div>
