@@ -40,21 +40,15 @@ function buildDist(data) {
     let result = template(data);
     fs.writeFile("./dist/index.html", result, function() {});
 
-    // Build docs css
-    sass.renderSync({
-        file: "./docs/docs.scss",
-        outFile: "./dist/docs.css"
+    // Convert docs.scss
+    sass.render({ file: "./docs/docs.scss" }, function(error, result) {
+        fs.writeFile("./dist/docs.css", result.css, function() {});
     });
 
-    sass.render(
-        {
-            file: "./docs/docs.scss",
-            outFile: "./dist/docs.css"
-        },
-        function(error, result) {
-            fs.writeFile("./dist/docs.css", result.css, function() {});
-        }
-    );
+    // Convert util.scss
+    sass.render({ file: "./docs/utils.scss" }, function(error, result) {
+        fs.writeFile("./dist/utils.css", result.css, function() {});
+    });
 }
 
 // Build the Classes list
