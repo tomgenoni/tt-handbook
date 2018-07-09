@@ -1,4 +1,4 @@
-# Spacing
+# Padding
 
-- For setting padding and margins.
+- For setting padding.
 - Spacing can be applied to individual sides, vertical, horizonal, or all sides.

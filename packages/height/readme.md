@@ -1,4 +1,4 @@
-# Heights
+# Height
 
 Options for setting fixed heights.
 

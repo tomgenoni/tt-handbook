@@ -1,4 +1,4 @@
-# Aspect Ratios
+# Aspect Ratio
 
 - Maintains an aspect ratio on a block-level element regardless of its container width.
 - Do not use directly on `img`.

@@ -1,4 +1,4 @@
-# Widths
+# Width
 
 - Fixed and percentage widths.
 - Use to set the column widths in [Columns](#columns).

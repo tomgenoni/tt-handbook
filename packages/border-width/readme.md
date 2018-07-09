@@ -1,4 +1,4 @@
-# Border Widths
+# Border Width
 
 Border widths are set to `1px` by default, these classes increase border width.
 
