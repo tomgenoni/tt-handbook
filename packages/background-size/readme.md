@@ -6,7 +6,7 @@
 ## Examples
 
 <div class="pa3 ba b--gray-300">
-    <div class="cols">
+    <div class="row">
         <div class="col s:w-1/2 mb3 s:mb0">
             <div class="h4 contain ba b--gray" style="background-image:url(https://placebear.com/420/320?image=2);background-repeat:no-repeat"></div>
             <code class="mt1 clipboard">contain</code>

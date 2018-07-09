@@ -1,14 +1,14 @@
-# Columns
+# Row
 
 - Create row of responsive columns with or without gutters.
 - Use width classes `w-1/3` for columns.
 - Columns should be divisable by 12.
-- Note a `cols` must wrap `col` as immediate children.
+- A `row` must wrap `col` as immediate children.
 
 ## Examples
 
 <div class="pa3 ba b--gray-300">
-    <div class="cols">
+    <div class="row">
         <div class="col s:w-1/4 mb3 s:mb0">
             <div class="bg-blue h3"></div>
         </div>
@@ -25,7 +25,7 @@
 - Note the margin-bottom classes that apply only below the small breakpoint when columns are stacked.
 
 ```html
-<div class="cols">
+<div class="row">
     <div class="col s:w-1/4 mb3 s:mb0">
         ...html...
     </div>

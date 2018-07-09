@@ -6,7 +6,7 @@
 ## Examples
 
 <div class="pa3 ba b--gray-300">
-    <div class="cols">
+    <div class="row">
         <div class="col w-1/2">
             <div>
                 <div class="normal">I am the default weight.</div>

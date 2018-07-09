@@ -2,7 +2,7 @@
 @import './node_modules/@thumbtack/tp-ui-core-function/_index';
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
-.cols {
+.row {
     display: flex !important;
     flex-wrap: wrap !important;
     margin-left: tp-spacer(-2) !important;
@@ -12,103 +12,103 @@
     width: 100%; // Default full width for mobile
 }
 
-.cols > .col {
+.row > .col {
     padding-left: tp-spacer(2) !important;
 }
 
-.cols--wide {
+.row--wide {
     margin-left: tp-spacer(-4) !important;
 }
 
-.cols--wide > .col {
+.row--wide > .col {
     padding-left: tp-spacer(4) !important;
 }
 
-.cols--flush {
+.row--flush {
     margin-left: 0 !important;
 }
 
-.cols--flush > .col {
+.row--flush > .col {
     padding-left: 0 !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:cols {
+    .s\:row {
         display: flex !important;
         flex-wrap: wrap !important;
         margin-left: tp-spacer(-2) !important;
     }
-    .s\:cols > .col {
+    .s\:row > .col {
         padding-left: tp-spacer(2) !important;
     }
 
-    .s\:cols--wide {
+    .s\:row--wide {
         margin-left: tp-spacer(-4) !important;
     }
 
-    .s\:cols--wide > .col {
+    .s\:row--wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
-    .s\:cols--flush {
+    .s\:row--flush {
         margin-left: 0 !important;
     }
 
-    .s\:cols--flush > .col {
+    .s\:row--flush > .col {
         padding-left: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:cols {
+    .m\:row {
         display: flex !important;
         flex-wrap: wrap !important;
         margin-left: tp-spacer(-2) !important;
     }
-    .m\:cols > .col {
+    .m\:row > .col {
         padding-left: tp-spacer(2) !important;
     }
 
-    .m\:cols--wide {
+    .m\:row--wide {
         margin-left: tp-spacer(-4) !important;
     }
 
-    .m\:cols--wide > .col {
+    .m\:row--wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
-    .m\:cols--flush {
+    .m\:row--flush {
         margin-left: 0 !important;
     }
 
-    .m\:cols--flush > .col {
+    .m\:row--flush > .col {
         padding-left: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:cols {
+    .l\:row {
         display: flex !important;
         flex-wrap: wrap !important;
         margin-left: tp-spacer(-2) !important;
     }
-    .l\:cols > .col {
+    .l\:row > .col {
         padding-left: tp-spacer(2) !important;
     }
 
-    .l\:cols--wide {
+    .l\:row--wide {
         margin-left: tp-spacer(-4) !important;
     }
 
-    .l\:cols--wide > .col {
+    .l\:row--wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
-    .l\:cols--flush {
+    .l\:row--flush {
         margin-left: 0 !important;
     }
 
-    .l\:cols--flush > .col {
+    .l\:row--flush > .col {
         padding-left: 0 !important;
     }
 }

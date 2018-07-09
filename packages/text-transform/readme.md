@@ -1,7 +1,7 @@
 # Text Transform
 
 <div class="pa3 ba b--gray-300">
-    <div class="cols">
+    <div class="row">
         <div class="col m:w-1/3 mb3 m:mb0">
             <div class="bg-gray-200 pa2 ttc">capitalize</div>
             <code class="mt1 clipboard">ttc</code>

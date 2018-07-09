@@ -6,7 +6,7 @@ Applies border color to any active border.
 ## Examples
 
 <div class="pa3 ba b--gray-300">
-    <div class="cols mb3">
+    <div class="row mb3">
         <div class="col w-1/3">
             <div>
                 <div class="pv3 ba b--gray"></div>
@@ -26,7 +26,7 @@ Applies border color to any active border.
             </div>
         </div>
     </div>
-    <div class="cols">
+    <div class="row">
         <div class="col s:w-1/3">
             <div class="mb3 s:mb0">
                 <div class="bg-gray-300 pv3 bb b--red"></div>
