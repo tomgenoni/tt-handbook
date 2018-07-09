@@ -1,5 +1,9 @@
 # Text Transform
 
+Manipulate case of text.
+
+## Examples
+
 <div class="pa3 ba b--gray-300">
     <div class="row">
         <div class="col m:w-1/3 mb3 m:mb0">

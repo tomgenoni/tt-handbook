@@ -2,68 +2,68 @@
 @import './node_modules/@thumbtack/tp-ui-core-function/_index';
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
-.top-0 {
+.top0 {
     top: 0 !important;
 }
-.right-0 {
+.right0 {
     right: 0 !important;
 }
-.bottom-0 {
+.bottom0 {
     bottom: 0 !important;
 }
-.left-0 {
+.left0 {
     left: 0 !important;
 }
 
-.top-1 {
+.top1 {
     top: tp-spacer(1) !important;
 }
-.right-1 {
+.right1 {
     right: tp-spacer(1) !important;
 }
-.bottom-1 {
+.bottom1 {
     bottom: tp-spacer(1) !important;
 }
-.left-1 {
+.left1 {
     left: tp-spacer(1) !important;
 }
 
-.top-2 {
+.top2 {
     top: tp-spacer(2) !important;
 }
-.right-2 {
+.right2 {
     right: tp-spacer(2) !important;
 }
-.bottom-2 {
+.bottom2 {
     bottom: tp-spacer(2) !important;
 }
-.left-2 {
+.left2 {
     left: tp-spacer(2) !important;
 }
 
-.top--1 {
+.-top1 {
     top: tp-spacer(-1) !important;
 }
-.right--1 {
+.-right1 {
     right: tp-spacer(-1) !important;
 }
-.bottom--1 {
+.-bottom1 {
     bottom: tp-spacer(-1) !important;
 }
-.left--1 {
+.-left1 {
     left: tp-spacer(-1) !important;
 }
 
-.top--2 {
+.-top2 {
     top: tp-spacer(-2) !important;
 }
-.right--2 {
+.-right2 {
     right: tp-spacer(-2) !important;
 }
-.bottom--2 {
+.-bottom2 {
     bottom: tp-spacer(-2) !important;
 }
-.left--2 {
+.-left2 {
     left: tp-spacer(-2) !important;
 }
 
@@ -75,64 +75,64 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:top-0 {
+    .s\:top0 {
         top: 0 !important;
     }
-    .s\:left-0 {
+    .s\:left0 {
         left: 0 !important;
     }
-    .s\:right-0 {
+    .s\:right0 {
         right: 0 !important;
     }
-    .s\:bottom-0 {
+    .s\:bottom0 {
         bottom: 0 !important;
     }
-    .s\:top-1 {
+    .s\:top1 {
         top: tp-spacer(1) !important;
     }
-    .s\:left-1 {
+    .s\:left1 {
         left: tp-spacer(1) !important;
     }
-    .s\:right-1 {
+    .s\:right1 {
         right: tp-spacer(1) !important;
     }
-    .s\:bottom-1 {
+    .s\:bottom1 {
         bottom: tp-spacer(1) !important;
     }
-    .s\:top-2 {
+    .s\:top2 {
         top: tp-spacer(2) !important;
     }
-    .s\:left-2 {
+    .s\:left2 {
         left: tp-spacer(2) !important;
     }
-    .s\:right-2 {
+    .s\:right2 {
         right: tp-spacer(2) !important;
     }
-    .s\:bottom-2 {
+    .s\:bottom2 {
         bottom: tp-spacer(2) !important;
     }
-    .s\:top--1 {
+    .s\:-top1 {
         top: tp-spacer(-1) !important;
     }
-    .s\:right--1 {
+    .s\:-right1 {
         right: tp-spacer(-1) !important;
     }
-    .s\:bottom--1 {
+    .s\:-bottom1 {
         bottom: tp-spacer(-1) !important;
     }
-    .s\:left--1 {
+    .s\:-left1 {
         left: tp-spacer(-1) !important;
     }
-    .s\:top--2 {
+    .s\:-top2 {
         top: tp-spacer(-2) !important;
     }
-    .s\:right--2 {
+    .s\:-right2 {
         right: tp-spacer(-2) !important;
     }
-    .s\:bottom--2 {
+    .s\:-bottom2 {
         bottom: tp-spacer(-2) !important;
     }
-    .s\:left--2 {
+    .s\:-left2 {
         left: tp-spacer(-2) !important;
     }
     .s\:absolute--fill {
@@ -144,64 +144,64 @@
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:top-0 {
+    .m\:top0 {
         top: 0 !important;
     }
-    .m\:left-0 {
+    .m\:left0 {
         left: 0 !important;
     }
-    .m\:right-0 {
+    .m\:right0 {
         right: 0 !important;
     }
-    .m\:bottom-0 {
+    .m\:bottom0 {
         bottom: 0 !important;
     }
-    .m\:top-1 {
+    .m\:top1 {
         top: tp-spacer(1) !important;
     }
-    .m\:left-1 {
+    .m\:left1 {
         left: tp-spacer(1) !important;
     }
-    .m\:right-1 {
+    .m\:right1 {
         right: tp-spacer(1) !important;
     }
-    .m\:bottom-1 {
+    .m\:bottom1 {
         bottom: tp-spacer(1) !important;
     }
-    .m\:top-2 {
+    .m\:top2 {
         top: tp-spacer(2) !important;
     }
-    .m\:left-2 {
+    .m\:left2 {
         left: tp-spacer(2) !important;
     }
-    .m\:right-2 {
+    .m\:right2 {
         right: tp-spacer(2) !important;
     }
-    .m\:bottom-2 {
+    .m\:bottom2 {
         bottom: tp-spacer(2) !important;
     }
-    .m\:top--1 {
+    .m\:-top1 {
         top: tp-spacer(-1) !important;
     }
-    .m\:right--1 {
+    .m\:-right1 {
         right: tp-spacer(-1) !important;
     }
-    .m\:bottom--1 {
+    .m\:-bottom1 {
         bottom: tp-spacer(-1) !important;
     }
-    .m\:left--1 {
+    .m\:-left1 {
         left: tp-spacer(-1) !important;
     }
-    .m\:top--2 {
+    .m\:-top2 {
         top: tp-spacer(-2) !important;
     }
-    .m\:right--2 {
+    .m\:-right2 {
         right: tp-spacer(-2) !important;
     }
-    .m\:bottom--2 {
+    .m\:-bottom2 {
         bottom: tp-spacer(-2) !important;
     }
-    .m\:left--2 {
+    .m\:-left2 {
         left: tp-spacer(-2) !important;
     }
     .m\:absolute--fill {
@@ -213,64 +213,64 @@
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:top-0 {
+    .l\:top0 {
         top: 0 !important;
     }
-    .l\:left-0 {
+    .l\:left0 {
         left: 0 !important;
     }
-    .l\:right-0 {
+    .l\:right0 {
         right: 0 !important;
     }
-    .l\:bottom-0 {
+    .l\:bottom0 {
         bottom: 0 !important;
     }
-    .l\:top-1 {
+    .l\:top1 {
         top: tp-spacer(1) !important;
     }
-    .l\:left-1 {
+    .l\:left1 {
         left: tp-spacer(1) !important;
     }
-    .l\:right-1 {
+    .l\:right1 {
         right: tp-spacer(1) !important;
     }
-    .l\:bottom-1 {
+    .l\:bottom1 {
         bottom: tp-spacer(1) !important;
     }
-    .l\:top-2 {
+    .l\:top2 {
         top: tp-spacer(2) !important;
     }
-    .l\:left-2 {
+    .l\:left2 {
         left: tp-spacer(2) !important;
     }
-    .l\:right-2 {
+    .l\:right2 {
         right: tp-spacer(2) !important;
     }
-    .l\:bottom-2 {
+    .l\:bottom2 {
         bottom: tp-spacer(2) !important;
     }
-    .l\:top--1 {
+    .l\:-top1 {
         top: tp-spacer(-1) !important;
     }
-    .l\:right--1 {
+    .l\:-right1 {
         right: tp-spacer(-1) !important;
     }
-    .l\:bottom--1 {
+    .l\:-bottom1 {
         bottom: tp-spacer(-1) !important;
     }
-    .l\:left--1 {
+    .l\:-left1 {
         left: tp-spacer(-1) !important;
     }
-    .l\:top--2 {
+    .l\:-top2 {
         top: tp-spacer(-2) !important;
     }
-    .l\:right--2 {
+    .l\:-right2 {
         right: tp-spacer(-2) !important;
     }
-    .l\:bottom--2 {
+    .l\:-bottom2 {
         bottom: tp-spacer(-2) !important;
     }
-    .l\:left--2 {
+    .l\:-left2 {
         left: tp-spacer(-2) !important;
     }
     .l\:absolute--fill {
