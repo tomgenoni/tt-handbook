@@ -2,7 +2,16 @@ const fs = require("fs"),
     cssjson = require("cssjson"),
     hb = require("handlebars"),
     sass = require("node-sass"),
-    md = require("marked");
+    Prism = require("prismjs"),
+    marked = require("marked");
+
+// Options
+
+marked.setOptions({
+    highlight: function(code, lang) {
+        return Prism.highlight(code, Prism.languages[lang], lang);
+    }
+});
 
 // Variables
 
@@ -86,12 +95,17 @@ function cssDisplay(str) {
 
 // Read in all the date from the "readme" and "index.scss"
 function getContent(file) {
+    // Convert readme
     var rawReadme = fs.readFileSync(packages + file + "/readme.md").toString();
+    var markdown = marked(rawReadme);
+
+    // Convert SCSS
     var rawCSS = sass.renderSync({ file: packages + file + "/index.scss" });
     var css = rawCSS.css.toString();
+    var cssFormatted = cssDisplay(css);
 
     // Combine the data for each package
-    var content = md(rawReadme) + cssDisplay(css);
+    var content = markdown + cssFormatted;
     allContentObj.push({ title: file, content: content });
 }
 

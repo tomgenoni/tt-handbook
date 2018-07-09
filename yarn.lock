@@ -224,6 +224,14 @@ chalk@^1.1.1:
     strip-ansi "^3.0.0"
     supports-color "^2.0.0"
 
+clipboard@^2.0.0:
+  version "2.0.1"
+  resolved "https://production-npm.thumbtack.com/clipboard/-/clipboard-2.0.1/a12481e1c13d8a50f5f036b0560fe5d16d74e46a.tgz#a12481e1c13d8a50f5f036b0560fe5d16d74e46a"
+  dependencies:
+    good-listener "^1.2.2"
+    select "^1.1.2"
+    tiny-emitter "^2.0.0"
+
 cliui@^2.1.0:
   version "2.1.0"
   resolved "https://production-npm.thumbtack.com/cliui/-/cliui-2.1.0/4b475760ff80264c762c3a1719032e91c7fea0d1.tgz#4b475760ff80264c762c3a1719032e91c7fea0d1"
@@ -302,6 +310,10 @@ decamelize@^1.0.0, decamelize@^1.1.1, decamelize@^1.1.2:
 delayed-stream@~1.0.0:
   version "1.0.0"
   resolved "https://production-npm.thumbtack.com/delayed-stream/-/delayed-stream-1.0.0/df3ae199acadfb7d440aaae0b29e2272b24ec619.tgz#df3ae199acadfb7d440aaae0b29e2272b24ec619"
+
+delegate@^3.1.2:
+  version "3.2.0"
+  resolved "https://production-npm.thumbtack.com/delegate/-/delegate-3.2.0/b66b71c3158522e8ab5744f720d8ca0c2af59166.tgz#b66b71c3158522e8ab5744f720d8ca0c2af59166"
 
 delegates@^1.0.0:
   version "1.0.0"
@@ -444,6 +456,12 @@ globule@^1.0.0:
     glob "~7.1.1"
     lodash "~4.17.10"
     minimatch "~3.0.2"
+
+good-listener@^1.2.2:
+  version "1.2.2"
+  resolved "https://production-npm.thumbtack.com/good-listener/-/good-listener-1.2.2/d53b30cdf9313dffb7dc9a0d477096aa6d145c50.tgz#d53b30cdf9313dffb7dc9a0d477096aa6d145c50"
+  dependencies:
+    delegate "^3.1.2"
 
 graceful-fs@^4.1.2:
   version "4.1.11"
@@ -916,6 +934,12 @@ pinkie@^2.0.0:
   version "2.0.4"
   resolved "https://production-npm.thumbtack.com/pinkie/-/pinkie-2.0.4/72556b80cfa0d48a974e80e77248e80ed4f7f870.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
 
+prismjs@^1.15.0:
+  version "1.15.0"
+  resolved "https://production-npm.thumbtack.com/prismjs/-/prismjs-1.15.0/8801d332e472091ba8def94976c8877ad60398d9.tgz#8801d332e472091ba8def94976c8877ad60398d9"
+  optionalDependencies:
+    clipboard "^2.0.0"
+
 process-nextick-args@~2.0.0:
   version "2.0.0"
   resolved "https://production-npm.thumbtack.com/process-nextick-args/-/process-nextick-args-2.0.0/a37d732f4271b4ab1ad070d35508e8290788ffaa.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
@@ -1076,6 +1100,10 @@ scss-tokenizer@^0.2.3:
     js-base64 "^2.1.8"
     source-map "^0.4.2"
 
+select@^1.1.2:
+  version "1.1.2"
+  resolved "https://production-npm.thumbtack.com/select/-/select-1.1.2/0e7350acdec80b1108528786ec1d4418d11b396d.tgz#0e7350acdec80b1108528786ec1d4418d11b396d"
+
 "semver@2 || 3 || 4 || 5":
   version "5.5.0"
   resolved "https://production-npm.thumbtack.com/semver/-/semver-5.5.0/dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab.tgz#dc4bbc7a6ca9d916dee5d43516f0092b58f7b8ab"
@@ -1211,6 +1239,10 @@ tar@^2.0.0:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
+
+tiny-emitter@^2.0.0:
+  version "2.0.2"
+  resolved "https://production-npm.thumbtack.com/tiny-emitter/-/tiny-emitter-2.0.2/82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c.tgz#82d27468aca5ade8e5fd1e6d22b57dd43ebdfb7c"
 
 tough-cookie@~2.3.0, tough-cookie@~2.3.3:
   version "2.3.4"
