@@ -15,11 +15,12 @@ Single-line truncation.
     </div>
 </div>
 
-In the second example the we use a flex container and a `nowrap` to prevent the date from wrapping.
-
 ```html
+<div class="truncate mb3 b">In the era of instant-everything, it’s crazy that you still have to waste an entire afternoon researching, calling and comparing local pros whenever you need one.</div>
 <div class="flex">
-    <div class="truncate">Hi, good to meet you. When do you think we could set up the meeting to decide the needs of the conference?</div>
+    <div class="truncate flex-auto">Hi, good to meet you. When do you think we could set up the meeting to decide the needs of the conference?</div>
     <div class="nowrap b ml2">Jun 21</div>
 </div>
 ```
+
+In the second example the we use a flex container and a `nowrap` to prevent the date from wrapping.
