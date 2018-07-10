@@ -35,9 +35,36 @@
     "@thumbtack/thumbprint-tokens" "^6.1.3"
     "@thumbtack/tp-ui-core-mixin" "^3.0.0"
 
+"@thumbtack/tp-ui-element-button@^2.0.6":
+  version "2.0.6"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-button/-/@thumbtack/tp-ui-element-button-2.0.6/9ae8777c00935a3ae76db58693b8f15b82b4cf61.tgz#9ae8777c00935a3ae76db58693b8f15b82b4cf61"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+    "@thumbtack/tp-ui-core-function" "^1.0.5"
+    "@thumbtack/tp-ui-core-mixin" "^3.0.0"
+
+"@thumbtack/tp-ui-element-checkbox@^3.0.2":
+  version "3.0.2"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-checkbox/-/@thumbtack/tp-ui-element-checkbox-3.0.2/22c50aa0f8eb975d38beb868eef0a2aa743791b4.tgz#22c50aa0f8eb975d38beb868eef0a2aa743791b4"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+
+"@thumbtack/tp-ui-element-input@^2.0.7":
+  version "2.0.7"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-input/-/@thumbtack/tp-ui-element-input-2.0.7/74ee2b95d5f0810a07b214da26f6cd75196fbed7.tgz#74ee2b95d5f0810a07b214da26f6cd75196fbed7"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+    "@thumbtack/tp-ui-core-function" "^1.0.5"
+
 "@thumbtack/tp-ui-element-link@0.1.4":
   version "0.1.4"
   resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-link/-/@thumbtack/tp-ui-element-link-0.1.4/8c8f451b7cdf6bdecc017ce53c0ceedeab985be2.tgz#8c8f451b7cdf6bdecc017ce53c0ceedeab985be2"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+
+"@thumbtack/tp-ui-element-select@^2.0.5":
+  version "2.0.5"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-select/-/@thumbtack/tp-ui-element-select-2.0.5/8838611598d73e49f087b016d1221355f35197af.tgz#8838611598d73e49f087b016d1221355f35197af"
   dependencies:
     "@thumbtack/thumbprint-tokens" "^6.1.3"
 
@@ -46,6 +73,14 @@
   resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-type/-/@thumbtack/tp-ui-element-type-4.0.3/91ee209185be944155f2c7465eac8938b1e11a13.tgz#91ee209185be944155f2c7465eac8938b1e11a13"
   dependencies:
     "@thumbtack/thumbprint-tokens" "^6.1.3"
+    "@thumbtack/tp-ui-core-mixin" "^3.0.0"
+
+"@thumbtack/tp-ui-layout-form@^3.0.4":
+  version "3.0.4"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-layout-form/-/@thumbtack/tp-ui-layout-form-3.0.4/627466029964031239b9f015a861e93f9574cf48.tgz#627466029964031239b9f015a861e93f9574cf48"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+    "@thumbtack/tp-ui-core-function" "^1.0.5"
     "@thumbtack/tp-ui-core-mixin" "^3.0.0"
 
 "@thumbtack/tp-ui-layout-wrap@^1.2.1":
