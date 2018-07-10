@@ -48,12 +48,12 @@ function buildDist(data) {
     fs.writeFile("./dist/index.html", result, function() {});
 
     // Convert docs.scss
-    sass.render({ file: "./docs/docs.scss" }, function(error, result) {
+    sass.render({ file: "./docs/scss/docs.scss" }, function(error, result) {
         fs.writeFile("./dist/docs.css", result.css, function() {});
     });
 
     // Convert util.scss
-    sass.render({ file: "./docs/utils.scss" }, function(error, result) {
+    sass.render({ file: "./docs/scss/utils.scss" }, function(error, result) {
         fs.writeFile("./dist/utils.css", result.css, function() {});
     });
 }
