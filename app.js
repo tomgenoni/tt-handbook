@@ -3,6 +3,7 @@ const fs = require("fs"),
     hb = require("handlebars"),
     sass = require("node-sass"),
     Prism = require("prismjs"),
+    ncp = require("ncp").ncp,
     marked = require("marked");
 
 // Options
@@ -17,7 +18,8 @@ marked.setOptions({
 
 const packages = "./packages/";
 const allContentObj = [];
-const dist = "./dist";
+const dirDist = "./dist";
+const dirCSS = "./dist/css";
 
 // Helper functions
 
@@ -39,23 +41,28 @@ function getHex(str) {
     return html;
 }
 
-// Build the index.html
+// Build the docs
 
 function buildDist(data) {
-    let source = fs.readFileSync("./docs/views/index.handlebars", "utf8");
+    let source = fs.readFileSync("./docs/views/doc.handlebars", "utf8");
     let template = hb.compile(source);
     let result = template(data);
-    fs.writeFile("./dist/index.html", result, function() {});
+    fs.writeFile("./dist/doc.html", result, function() {});
 
-    // Convert docs.scss
-    sass.render({ file: "./docs/scss/docs.scss" }, function(error, result) {
-        fs.writeFile("./dist/docs.css", result.css, function() {});
+    // Convert tui.scss
+    sass.render({ file: "./docs/scss/tui.scss" }, function(error, result) {
+        fs.writeFile("./dist/css/tui.css", result.css, function() {});
     });
 
     // Convert util.scss
     sass.render({ file: "./docs/scss/utils.scss" }, function(error, result) {
-        fs.writeFile("./dist/utils.css", result.css, function() {});
+        fs.writeFile("./dist/css/utils.css", result.css, function() {});
     });
+
+    // Move the examples
+    ncp("./docs/examples", "./dist");
+    // Move the index.html
+    ncp("./docs/index.html", "./dist/index.html");
 }
 
 // Build the Classes list
@@ -114,11 +121,12 @@ function getContent(file) {
 
 function init() {
     // Create dist directory
-    if (!fs.existsSync(dist)) {
-        fs.mkdirSync(dist);
+    if (!fs.existsSync(dirDist)) {
+        fs.mkdirSync(dirDist);
+        fs.mkdirSync(dirCSS);
     }
 
-    // Get all the packages
+    //Get all the packages
     fs.readdir(packages, (err, files) => {
         files.forEach(file => {
             if (!file.startsWith(".")) {

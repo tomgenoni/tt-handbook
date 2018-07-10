@@ -311,7 +311,9 @@
     margin-right: auto !important;
     margin-left: auto !important;
 }
-
+.ma-auto {
+    margin: auto !important;
+}
 .mr-auto {
     margin-right: auto !important;
 }
@@ -628,6 +630,9 @@
     .s\:center {
         margin-right: auto !important;
         margin-left: auto !important;
+    }
+    .s\:ma-auto {
+        margin: auto !important;
     }
     .s\:mr-auto {
         margin-right: auto !important;
@@ -947,6 +952,9 @@
         margin-right: auto !important;
         margin-left: auto !important;
     }
+    .m\:ma-auto {
+        margin: auto !important;
+    }
     .m\:mr-auto {
         margin-right: auto !important;
     }
@@ -1265,10 +1273,13 @@
         margin-right: auto !important;
         margin-left: auto !important;
     }
+    .l\:ma-auto {
+        margin: auto !important;
+    }
     .l\:mr-auto {
         margin-right: auto !important;
     }
-    .l\:ml-auto {
+   .l\:ml-auto {
         margin-left: auto !important;
     }
 }

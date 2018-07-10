@@ -10,6 +10,18 @@
   version "6.1.3"
   resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-tokens/-/@thumbtack/thumbprint-tokens-6.1.3/4fe786bb1e7d51a5ca7117e926d01ec0c3a11d17.tgz#4fe786bb1e7d51a5ca7117e926d01ec0c3a11d17"
 
+"@thumbtack/tp-ui-component-avatar@^1.3.4":
+  version "1.3.4"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-component-avatar/-/@thumbtack/tp-ui-component-avatar-1.3.4/9184b24c4b479962f786f02a505d566e3b6a296b.tgz#9184b24c4b479962f786f02a505d566e3b6a296b"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+
+"@thumbtack/tp-ui-component-loader@^1.3.3":
+  version "1.3.3"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-component-loader/-/@thumbtack/tp-ui-component-loader-1.3.3/fd145bb5777c9b9a6851065fefe65c44bbff76d4.tgz#fd145bb5777c9b9a6851065fefe65c44bbff76d4"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+
 "@thumbtack/tp-ui-core-font-face@^2.0.3":
   version "2.0.3"
   resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-core-font-face/-/@thumbtack/tp-ui-core-font-face-2.0.3/90724df1587e4242875275043443f6d62fb3496b.tgz#90724df1587e4242875275043443f6d62fb3496b"
@@ -49,11 +61,24 @@
   dependencies:
     "@thumbtack/thumbprint-tokens" "^6.1.3"
 
+"@thumbtack/tp-ui-element-fieldset@^1.0.3":
+  version "1.0.3"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-fieldset/-/@thumbtack/tp-ui-element-fieldset-1.0.3/9744ccdad9138ec1528d6371b5b8928c4be76b6a.tgz#9744ccdad9138ec1528d6371b5b8928c4be76b6a"
+  dependencies:
+    "@thumbtack/tp-ui-core-function" "^1.0.5"
+
 "@thumbtack/tp-ui-element-input@^2.0.7":
   version "2.0.7"
   resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-input/-/@thumbtack/tp-ui-element-input-2.0.7/74ee2b95d5f0810a07b214da26f6cd75196fbed7.tgz#74ee2b95d5f0810a07b214da26f6cd75196fbed7"
   dependencies:
     "@thumbtack/thumbprint-tokens" "^6.1.3"
+    "@thumbtack/tp-ui-core-function" "^1.0.5"
+
+"@thumbtack/tp-ui-element-label@^1.3.0":
+  version "1.3.0"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-label/-/@thumbtack/tp-ui-element-label-1.3.0/a4faded2f9afb45c72c03be4c205891919cf6166.tgz#a4faded2f9afb45c72c03be4c205891919cf6166"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^4.1.1"
     "@thumbtack/tp-ui-core-function" "^1.0.5"
 
 "@thumbtack/tp-ui-element-link@0.1.4":
@@ -62,9 +87,21 @@
   dependencies:
     "@thumbtack/thumbprint-tokens" "^6.1.3"
 
+"@thumbtack/tp-ui-element-radio@^3.0.2":
+  version "3.0.2"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-radio/-/@thumbtack/tp-ui-element-radio-3.0.2/90f01b3037daef1cb9f46fa8156aaef8110f553c.tgz#90f01b3037daef1cb9f46fa8156aaef8110f553c"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+
 "@thumbtack/tp-ui-element-select@^2.0.5":
   version "2.0.5"
   resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-select/-/@thumbtack/tp-ui-element-select-2.0.5/8838611598d73e49f087b016d1221355f35197af.tgz#8838611598d73e49f087b016d1221355f35197af"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^6.1.3"
+
+"@thumbtack/tp-ui-element-textarea@^2.0.2":
+  version "2.0.2"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-textarea/-/@thumbtack/tp-ui-element-textarea-2.0.2/2a943c52085572ed7061862bd5bb43eb0f77b158.tgz#2a943c52085572ed7061862bd5bb43eb0f77b158"
   dependencies:
     "@thumbtack/thumbprint-tokens" "^6.1.3"
 
@@ -811,6 +848,10 @@ minimist@~0.0.1:
 nan@^2.10.0:
   version "2.10.0"
   resolved "https://production-npm.thumbtack.com/nan/-/nan-2.10.0/96d0cd610ebd58d4b4de9cc0c6828cda99c7548f.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
+
+ncp@^2.0.0:
+  version "2.0.0"
+  resolved "https://production-npm.thumbtack.com/ncp/-/ncp-2.0.0/195a21d6c46e361d2fb1281ba38b91e9df7bdbb3.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
 
 node-gyp@^3.3.1:
   version "3.7.0"
