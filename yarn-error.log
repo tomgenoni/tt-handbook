@@ -41,15 +41,19 @@ npm manifest:
       "@thumbtack/tp-ui-core-mixin": "^3.0.0",
       "@thumbtack/tp-ui-core-reset": "^2.0.0",
       "@thumbtack/tp-ui-element-body": "^2.0.3",
+      "@thumbtack/tp-ui-element-button": "^2.0.6",
+      "@thumbtack/tp-ui-element-checkbox": "^3.0.2",
+      "@thumbtack/tp-ui-element-input": "^2.0.7",
       "@thumbtack/tp-ui-element-link": "0.1.4",
+      "@thumbtack/tp-ui-element-select": "^2.0.5",
       "@thumbtack/tp-ui-element-type": "^4.0.3",
+      "@thumbtack/tp-ui-layout-form": "^3.0.4",
       "@thumbtack/tp-ui-layout-wrap": "^1.2.1",
       "cssjson": "^2.1.3",
       "handlebars": "^4.0.11",
       "marked": "^0.4.0",
-      "node-prismjs": "^0.1.2",
       "node-sass": "^4.9.1",
-      "prism": "^4.1.2"
+      "prismjs": "^1.15.0"
     }
   }
 
@@ -94,9 +98,36 @@ Lockfile:
       "@thumbtack/thumbprint-tokens" "^6.1.3"
       "@thumbtack/tp-ui-core-mixin" "^3.0.0"
   
+  "@thumbtack/tp-ui-element-button@^2.0.6":
+    version "2.0.6"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-button/-/@thumbtack/tp-ui-element-button-2.0.6/9ae8777c00935a3ae76db58693b8f15b82b4cf61.tgz#9ae8777c00935a3ae76db58693b8f15b82b4cf61"
+    dependencies:
+      "@thumbtack/thumbprint-tokens" "^6.1.3"
+      "@thumbtack/tp-ui-core-function" "^1.0.5"
+      "@thumbtack/tp-ui-core-mixin" "^3.0.0"
+  
+  "@thumbtack/tp-ui-element-checkbox@^3.0.2":
+    version "3.0.2"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-checkbox/-/@thumbtack/tp-ui-element-checkbox-3.0.2/22c50aa0f8eb975d38beb868eef0a2aa743791b4.tgz#22c50aa0f8eb975d38beb868eef0a2aa743791b4"
+    dependencies:
+      "@thumbtack/thumbprint-tokens" "^6.1.3"
+  
+  "@thumbtack/tp-ui-element-input@^2.0.7":
+    version "2.0.7"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-input/-/@thumbtack/tp-ui-element-input-2.0.7/74ee2b95d5f0810a07b214da26f6cd75196fbed7.tgz#74ee2b95d5f0810a07b214da26f6cd75196fbed7"
+    dependencies:
+      "@thumbtack/thumbprint-tokens" "^6.1.3"
+      "@thumbtack/tp-ui-core-function" "^1.0.5"
+  
   "@thumbtack/tp-ui-element-link@0.1.4":
     version "0.1.4"
     resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-link/-/@thumbtack/tp-ui-element-link-0.1.4/8c8f451b7cdf6bdecc017ce53c0ceedeab985be2.tgz#8c8f451b7cdf6bdecc017ce53c0ceedeab985be2"
+    dependencies:
+      "@thumbtack/thumbprint-tokens" "^6.1.3"
+  
+  "@thumbtack/tp-ui-element-select@^2.0.5":
+    version "2.0.5"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-select/-/@thumbtack/tp-ui-element-select-2.0.5/8838611598d73e49f087b016d1221355f35197af.tgz#8838611598d73e49f087b016d1221355f35197af"
     dependencies:
       "@thumbtack/thumbprint-tokens" "^6.1.3"
   
@@ -105,6 +136,14 @@ Lockfile:
     resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-element-type/-/@thumbtack/tp-ui-element-type-4.0.3/91ee209185be944155f2c7465eac8938b1e11a13.tgz#91ee209185be944155f2c7465eac8938b1e11a13"
     dependencies:
       "@thumbtack/thumbprint-tokens" "^6.1.3"
+      "@thumbtack/tp-ui-core-mixin" "^3.0.0"
+  
+  "@thumbtack/tp-ui-layout-form@^3.0.4":
+    version "3.0.4"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-layout-form/-/@thumbtack/tp-ui-layout-form-3.0.4/627466029964031239b9f015a861e93f9574cf48.tgz#627466029964031239b9f015a861e93f9574cf48"
+    dependencies:
+      "@thumbtack/thumbprint-tokens" "^6.1.3"
+      "@thumbtack/tp-ui-core-function" "^1.0.5"
       "@thumbtack/tp-ui-core-mixin" "^3.0.0"
   
   "@thumbtack/tp-ui-layout-wrap@^1.2.1":
@@ -173,10 +212,6 @@ Lockfile:
   array-find-index@^1.0.1:
     version "1.0.2"
     resolved "https://production-npm.thumbtack.com/array-find-index/-/array-find-index-1.0.2/df010aa1287e164bbda6f9723b0a96a1ec4187a1.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
-  
-  asap@~2.0.3:
-    version "2.0.6"
-    resolved "https://production-npm.thumbtack.com/asap/-/asap-2.0.6/e50347611d7e690943208bbdafebcbc2fb866d46.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   
   asn1@~0.2.3:
     version "0.2.3"
@@ -287,13 +322,9 @@ Lockfile:
       strip-ansi "^3.0.0"
       supports-color "^2.0.0"
   
-  change-emitter@^0.1.2:
-    version "0.1.6"
-    resolved "https://production-npm.thumbtack.com/change-emitter/-/change-emitter-0.1.6/e8b2fe3d7f1ab7d69a32199aff91ea6931409515.tgz#e8b2fe3d7f1ab7d69a32199aff91ea6931409515"
-  
-  clipboard@^1.5.5:
-    version "1.7.1"
-    resolved "https://production-npm.thumbtack.com/clipboard/-/clipboard-1.7.1/360d6d6946e99a7a1fef395e42ba92b5e9b5a16b.tgz#360d6d6946e99a7a1fef395e42ba92b5e9b5a16b"
+  clipboard@^2.0.0:
+    version "2.0.1"
+    resolved "https://production-npm.thumbtack.com/clipboard/-/clipboard-2.0.1/a12481e1c13d8a50f5f036b0560fe5d16d74e46a.tgz#a12481e1c13d8a50f5f036b0560fe5d16d74e46a"
     dependencies:
       good-listener "^1.2.2"
       select "^1.1.2"
@@ -336,10 +367,6 @@ Lockfile:
   console-control-strings@^1.0.0, console-control-strings@~1.1.0:
     version "1.1.0"
     resolved "https://production-npm.thumbtack.com/console-control-strings/-/console-control-strings-1.1.0/3d7cf4464db6446ea644bf4b39507f9851008e8e.tgz#3d7cf4464db6446ea644bf4b39507f9851008e8e"
-  
-  core-js@^1.0.0:
-    version "1.2.7"
-    resolved "https://production-npm.thumbtack.com/core-js/-/core-js-1.2.7/652294c14651db28fa93bd2d5ff2983a4f08c636.tgz#652294c14651db28fa93bd2d5ff2983a4f08c636"
   
   core-util-is@1.0.2, core-util-is@~1.0.0:
     version "1.0.2"
@@ -396,12 +423,6 @@ Lockfile:
     dependencies:
       jsbn "~0.1.0"
   
-  encoding@^0.1.11:
-    version "0.1.12"
-    resolved "https://production-npm.thumbtack.com/encoding/-/encoding-0.1.12/538b66f3ee62cd1ab51ec323829d1f9480c74beb.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
-    dependencies:
-      iconv-lite "~0.4.13"
-  
   error-ex@^1.2.0:
     version "1.3.2"
     resolved "https://production-npm.thumbtack.com/error-ex/-/error-ex-1.3.2/b4ac40648107fdcdcfae242f428bea8a14d4f1bf.tgz#b4ac40648107fdcdcfae242f428bea8a14d4f1bf"
@@ -431,18 +452,6 @@ Lockfile:
   fast-json-stable-stringify@^2.0.0:
     version "2.0.0"
     resolved "https://production-npm.thumbtack.com/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0/d5142c0caee6b1189f87d3a76111064f86c8bbf2.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
-  
-  fbjs@^0.8.1:
-    version "0.8.17"
-    resolved "https://production-npm.thumbtack.com/fbjs/-/fbjs-0.8.17/c4d598ead6949112653d6588b01a5cdcd9f90fdd.tgz#c4d598ead6949112653d6588b01a5cdcd9f90fdd"
-    dependencies:
-      core-js "^1.0.0"
-      isomorphic-fetch "^2.1.1"
-      loose-envify "^1.0.0"
-      object-assign "^4.1.0"
-      promise "^7.1.1"
-      setimmediate "^1.0.5"
-      ua-parser-js "^0.7.18"
   
   find-up@^1.0.0:
     version "1.1.2"
@@ -611,10 +620,6 @@ Lockfile:
     version "2.16.3"
     resolved "https://production-npm.thumbtack.com/hoek/-/hoek-2.16.3/20bb7403d3cea398e91dc4710a8ff1b8274a25ed.tgz#20bb7403d3cea398e91dc4710a8ff1b8274a25ed"
   
-  hoist-non-react-statics@^1.0.0:
-    version "1.2.0"
-    resolved "https://production-npm.thumbtack.com/hoist-non-react-statics/-/hoist-non-react-statics-1.2.0/aa448cf0986d55cc40773b17174b7dd066cb7cfb.tgz#aa448cf0986d55cc40773b17174b7dd066cb7cfb"
-  
   hosted-git-info@^2.1.4:
     version "2.7.1"
     resolved "https://production-npm.thumbtack.com/hosted-git-info/-/hosted-git-info-2.7.1/97f236977bd6e125408930ff6de3eec6281ec047.tgz#97f236977bd6e125408930ff6de3eec6281ec047"
@@ -634,12 +639,6 @@ Lockfile:
       assert-plus "^1.0.0"
       jsprim "^1.2.2"
       sshpk "^1.7.0"
-  
-  iconv-lite@~0.4.13:
-    version "0.4.23"
-    resolved "https://production-npm.thumbtack.com/iconv-lite/-/iconv-lite-0.4.23/297871f63be507adcfbfca715d0cd0eed84e9a63.tgz#297871f63be507adcfbfca715d0cd0eed84e9a63"
-    dependencies:
-      safer-buffer ">= 2.1.2 < 3"
   
   in-publish@^2.0.0:
     version "2.0.0"
@@ -696,10 +695,6 @@ Lockfile:
     version "2.0.0"
     resolved "https://production-npm.thumbtack.com/is-fullwidth-code-point/-/is-fullwidth-code-point-2.0.0/a3b30a5c4f199183167aaab93beefae3ddfb654f.tgz#a3b30a5c4f199183167aaab93beefae3ddfb654f"
   
-  is-stream@^1.0.1:
-    version "1.1.0"
-    resolved "https://production-npm.thumbtack.com/is-stream/-/is-stream-1.1.0/12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
-  
   is-typedarray@~1.0.0:
     version "1.0.0"
     resolved "https://production-npm.thumbtack.com/is-typedarray/-/is-typedarray-1.0.0/e479c80858df0c1b11ddda6940f96011fcda4a9a.tgz#e479c80858df0c1b11ddda6940f96011fcda4a9a"
@@ -716,13 +711,6 @@ Lockfile:
     version "2.0.0"
     resolved "https://production-npm.thumbtack.com/isexe/-/isexe-2.0.0/e8fbf374dc556ff8947a10dcb0572d633f2cfa10.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   
-  isomorphic-fetch@^2.1.1:
-    version "2.2.1"
-    resolved "https://production-npm.thumbtack.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1/611ae1acf14f5e81f729507472819fe9733558a9.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
-    dependencies:
-      node-fetch "^1.0.1"
-      whatwg-fetch ">=0.10.0"
-  
   isstream@~0.1.2:
     version "0.1.2"
     resolved "https://production-npm.thumbtack.com/isstream/-/isstream-0.1.2/47e63f7af55afa6f92e1500e690eb8b8529c099a.tgz#47e63f7af55afa6f92e1500e690eb8b8529c099a"
@@ -730,10 +718,6 @@ Lockfile:
   js-base64@^2.1.8:
     version "2.4.5"
     resolved "https://production-npm.thumbtack.com/js-base64/-/js-base64-2.4.5/e293cd3c7c82f070d700fc7a1ca0a2e69f101f92.tgz#e293cd3c7c82f070d700fc7a1ca0a2e69f101f92"
-  
-  js-tokens@^3.0.0:
-    version "3.0.2"
-    resolved "https://production-npm.thumbtack.com/js-tokens/-/js-tokens-3.0.2/9866df395102130e38f7f996bceb65443209c25b.tgz#9866df395102130e38f7f996bceb65443209c25b"
   
   jsbn@~0.1.0:
     version "0.1.1"
@@ -816,12 +800,6 @@ Lockfile:
     version "1.0.1"
     resolved "https://production-npm.thumbtack.com/longest/-/longest-1.0.1/30a0b2da38f73770e8294a0d22e6625ed77d0097.tgz#30a0b2da38f73770e8294a0d22e6625ed77d0097"
   
-  loose-envify@^1.0.0:
-    version "1.3.1"
-    resolved "https://production-npm.thumbtack.com/loose-envify/-/loose-envify-1.3.1/d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848.tgz#d1a8ad33fa9ce0e713d65fdd0ac8b748d478c848"
-    dependencies:
-      js-tokens "^3.0.0"
-  
   loud-rejection@^1.0.0:
     version "1.6.0"
     resolved "https://production-npm.thumbtack.com/loud-rejection/-/loud-rejection-1.6.0/5b46f80147edee578870f086d04821cf998e551f.tgz#5b46f80147edee578870f086d04821cf998e551f"
@@ -897,13 +875,6 @@ Lockfile:
     version "2.10.0"
     resolved "https://production-npm.thumbtack.com/nan/-/nan-2.10.0/96d0cd610ebd58d4b4de9cc0c6828cda99c7548f.tgz#96d0cd610ebd58d4b4de9cc0c6828cda99c7548f"
   
-  node-fetch@^1.0.1:
-    version "1.7.3"
-    resolved "https://production-npm.thumbtack.com/node-fetch/-/node-fetch-1.7.3/980f6f72d85211a5347c6b2bc18c5b84c3eb47ef.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
-    dependencies:
-      encoding "^0.1.11"
-      is-stream "^1.0.1"
-  
   node-gyp@^3.3.1:
     version "3.7.0"
     resolved "https://production-npm.thumbtack.com/node-gyp/-/node-gyp-3.7.0/789478e8f6c45e277aa014f3e28f958f286f9203.tgz#789478e8f6c45e277aa014f3e28f958f286f9203"
@@ -920,12 +891,6 @@ Lockfile:
       semver "~5.3.0"
       tar "^2.0.0"
       which "1"
-  
-  node-prismjs@^0.1.2:
-    version "0.1.2"
-    resolved "https://production-npm.thumbtack.com/node-prismjs/-/node-prismjs-0.1.2/dbfbc62d2210e1649d9dd8a6c6a2d7d6ca99a0f9.tgz#dbfbc62d2210e1649d9dd8a6c6a2d7d6ca99a0f9"
-    dependencies:
-      prismjs "~1.6.0"
   
   node-sass@^4.9.1:
     version "4.9.1"
@@ -1067,38 +1032,15 @@ Lockfile:
     version "2.0.4"
     resolved "https://production-npm.thumbtack.com/pinkie/-/pinkie-2.0.4/72556b80cfa0d48a974e80e77248e80ed4f7f870.tgz#72556b80cfa0d48a974e80e77248e80ed4f7f870"
   
-  prism-react@^1.0.2:
-    version "1.0.2"
-    resolved "https://production-npm.thumbtack.com/prism-react/-/prism-react-1.0.2/c568c534760f738330295c633f647395afa972f4.tgz#c568c534760f738330295c633f647395afa972f4"
-    dependencies:
-      recompose "^0.22.0"
-  
-  prism-redux@^1.0.2:
-    version "1.0.2"
-    resolved "https://production-npm.thumbtack.com/prism-redux/-/prism-redux-1.0.2/3dbb5463c9527812cf890d1b1ba29c8d902f82ed.tgz#3dbb5463c9527812cf890d1b1ba29c8d902f82ed"
-  
-  prism@^4.1.2:
-    version "4.1.2"
-    resolved "https://production-npm.thumbtack.com/prism/-/prism-4.1.2/783dbc08c4dd20ea3ba7679135ca41d57deb2496.tgz#783dbc08c4dd20ea3ba7679135ca41d57deb2496"
-    dependencies:
-      prism-react "^1.0.2"
-      prism-redux "^1.0.2"
-  
-  prismjs@~1.6.0:
-    version "1.6.0"
-    resolved "https://production-npm.thumbtack.com/prismjs/-/prismjs-1.6.0/118d95fb7a66dba2272e343b345f5236659db365.tgz#118d95fb7a66dba2272e343b345f5236659db365"
+  prismjs@^1.15.0:
+    version "1.15.0"
+    resolved "https://production-npm.thumbtack.com/prismjs/-/prismjs-1.15.0/8801d332e472091ba8def94976c8877ad60398d9.tgz#8801d332e472091ba8def94976c8877ad60398d9"
     optionalDependencies:
-      clipboard "^1.5.5"
+      clipboard "^2.0.0"
   
   process-nextick-args@~2.0.0:
     version "2.0.0"
     resolved "https://production-npm.thumbtack.com/process-nextick-args/-/process-nextick-args-2.0.0/a37d732f4271b4ab1ad070d35508e8290788ffaa.tgz#a37d732f4271b4ab1ad070d35508e8290788ffaa"
-  
-  promise@^7.1.1:
-    version "7.3.1"
-    resolved "https://production-npm.thumbtack.com/promise/-/promise-7.3.1/064b72602b18f90f29192b8b1bc418ffd1ebd3bf.tgz#064b72602b18f90f29192b8b1bc418ffd1ebd3bf"
-    dependencies:
-      asap "~2.0.3"
   
   pseudomap@^1.0.2:
     version "1.0.2"
@@ -1142,15 +1084,6 @@ Lockfile:
       safe-buffer "~5.1.1"
       string_decoder "~1.1.1"
       util-deprecate "~1.0.1"
-  
-  recompose@^0.22.0:
-    version "0.22.0"
-    resolved "https://production-npm.thumbtack.com/recompose/-/recompose-0.22.0/f099d18385882ca41d9eec891718dadddc3204ef.tgz#f099d18385882ca41d9eec891718dadddc3204ef"
-    dependencies:
-      change-emitter "^0.1.2"
-      fbjs "^0.8.1"
-      hoist-non-react-statics "^1.0.0"
-      symbol-observable "^1.0.4"
   
   redent@^1.0.0:
     version "1.0.0"
@@ -1245,7 +1178,7 @@ Lockfile:
     version "5.1.2"
     resolved "https://production-npm.thumbtack.com/safe-buffer/-/safe-buffer-5.1.2/991ec69d296e0313747d59bdfd2b745c35f8828d.tgz#991ec69d296e0313747d59bdfd2b745c35f8828d"
   
-  "safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2:
+  safer-buffer@^2.0.2:
     version "2.1.2"
     resolved "https://production-npm.thumbtack.com/safer-buffer/-/safer-buffer-2.1.2/44fa161b0187b9549dd84bb91802f9bd8385cd6a.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   
@@ -1280,10 +1213,6 @@ Lockfile:
   set-blocking@^2.0.0, set-blocking@~2.0.0:
     version "2.0.0"
     resolved "https://production-npm.thumbtack.com/set-blocking/-/set-blocking-2.0.0/045f9782d011ae9a6803ddd382b24392b3d890f7.tgz#045f9782d011ae9a6803ddd382b24392b3d890f7"
-  
-  setimmediate@^1.0.5:
-    version "1.0.5"
-    resolved "https://production-npm.thumbtack.com/setimmediate/-/setimmediate-1.0.5/290cbb232e306942d7d7ea9b83732ab7856f8285.tgz#290cbb232e306942d7d7ea9b83732ab7856f8285"
   
   signal-exit@^3.0.0:
     version "3.0.2"
@@ -1401,10 +1330,6 @@ Lockfile:
     version "2.0.0"
     resolved "https://production-npm.thumbtack.com/supports-color/-/supports-color-2.0.0/535d045ce6b6363fa40117084629995e9df324c7.tgz#535d045ce6b6363fa40117084629995e9df324c7"
   
-  symbol-observable@^1.0.4:
-    version "1.2.0"
-    resolved "https://production-npm.thumbtack.com/symbol-observable/-/symbol-observable-1.2.0/c22688aed4eab3cdc2dfeacbb561660560a00804.tgz#c22688aed4eab3cdc2dfeacbb561660560a00804"
-  
   tar@^2.0.0:
     version "2.2.1"
     resolved "https://production-npm.thumbtack.com/tar/-/tar-2.2.1/8e4d2a256c0e2185c6b18ad694aec968b83cb1d1.tgz#8e4d2a256c0e2185c6b18ad694aec968b83cb1d1"
@@ -1443,10 +1368,6 @@ Lockfile:
     version "0.14.5"
     resolved "https://production-npm.thumbtack.com/tweetnacl/-/tweetnacl-0.14.5/5ae68177f192d4456269d108afa93ff8743f4f64.tgz#5ae68177f192d4456269d108afa93ff8743f4f64"
   
-  ua-parser-js@^0.7.18:
-    version "0.7.18"
-    resolved "https://production-npm.thumbtack.com/ua-parser-js/-/ua-parser-js-0.7.18/a7bfd92f56edfb117083b69e31d2aa8882d4b1ed.tgz#a7bfd92f56edfb117083b69e31d2aa8882d4b1ed"
-  
   uglify-js@^2.6:
     version "2.8.29"
     resolved "https://production-npm.thumbtack.com/uglify-js/-/uglify-js-2.8.29/29c5733148057bb4e1f75df35b7a9cb72e6a59dd.tgz#29c5733148057bb4e1f75df35b7a9cb72e6a59dd"
@@ -1482,10 +1403,6 @@ Lockfile:
       assert-plus "^1.0.0"
       core-util-is "1.0.2"
       extsprintf "^1.2.0"
-  
-  whatwg-fetch@>=0.10.0:
-    version "2.0.4"
-    resolved "https://production-npm.thumbtack.com/whatwg-fetch/-/whatwg-fetch-2.0.4/dde6a5df315f9d39991aa17621853d720b85566f.tgz#dde6a5df315f9d39991aa17621853d720b85566f"
   
   which-module@^1.0.0:
     version "1.0.0"

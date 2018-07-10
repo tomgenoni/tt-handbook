@@ -31,6 +31,13 @@ function cleanClass(str) {
 function noImportant(str) {
     return str.replace(/(\s!important)/g, "");
 }
+function getHex(str) {
+    let html = "";
+    if (str.startsWith("#")) {
+        html = `<span class="w1 h1 ml1 dib v-mid" style="background: ${str}"></span>`;
+    }
+    return html;
+}
 
 // Build the index.html
 
@@ -68,9 +75,11 @@ function cssDisplay(str) {
             if (i.startsWith(".")) {
                 cssObj["className"] = cleanClass(i);
                 for (var prop in data[i].attributes) {
+                    let value = noImportant(data[i].attributes[prop]);
                     cssObj.declarations.push({
                         property: prop,
-                        value: noImportant(data[i].attributes[prop])
+                        value: value,
+                        hex: getHex(value)
                     });
                 }
                 simpleJSON.push(cssObj);
