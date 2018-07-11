@@ -1,9 +1,9 @@
-const fs = require("fs"),
+const fs = require("fs-extra"),
     Prism = require("prismjs"),
-    hb = require("handlebars"),
-    ncp = require("ncp").ncp;
+    hb = require("handlebars");
 
 const examplesPath = "./docs/examples/";
+const exampleTemplate = "./docs/views/example.handlebars";
 const dirExamples = "./dist/examples/";
 
 function highlight(lang, sourceCode) {
@@ -20,7 +20,7 @@ function getCode(file) {
         code: highlight("html", html)
     };
 
-    let source = fs.readFileSync("./docs/views/example.handlebars", "utf8");
+    let source = fs.readFileSync(exampleTemplate, "utf8");
     let template = hb.compile(source);
     let result = template(data);
 
@@ -31,20 +31,15 @@ function getCode(file) {
     );
 }
 
-if (!fs.existsSync(dirExamples)) {
-    fs.mkdirSync(dirExamples);
-}
-
 // Move the index.html
-ncp("./docs/examples.html", "./dist/examples.html");
+fs.copy("./docs/examples.html", "./dist/examples.html");
 
 fs.readdir(examplesPath, (err, files) => {
     files.forEach(file => {
         if (!file.startsWith(".")) {
-            if (!fs.existsSync(dirExamples + file)) {
-                fs.mkdirSync(dirExamples + file);
-            }
-            getCode(file);
+            fs.ensureDir(dirExamples + file, err => {
+                getCode(file);
+            });
         }
     });
 });

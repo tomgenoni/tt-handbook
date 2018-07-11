@@ -1,9 +1,8 @@
-const fs = require("fs"),
+const fs = require("fs-extra"),
     cssjson = require("cssjson"),
     hb = require("handlebars"),
     sass = require("node-sass"),
     Prism = require("prismjs"),
-    ncp = require("ncp").ncp,
     marked = require("marked");
 
 // Options
@@ -60,7 +59,9 @@ function buildDist(data) {
     });
 
     // Move the index.html
-    ncp("./docs/index.html", "./dist/index.html");
+    fs.copy("./docs/index.html", "./dist/index.html", err => {
+        if (err) return console.error(err);
+    });
 }
 
 // Build the Classes list
@@ -118,11 +119,15 @@ function getContent(file) {
 }
 
 function init() {
-    // Create dist directory
-    if (!fs.existsSync(dirDist)) {
-        fs.mkdirSync(dirDist);
-        fs.mkdirSync(dirCSS);
-    }
+    fs.removeSync(dirDist);
+
+    fs.ensureDir(dirDist, err => {
+        if (err) return console.error(err);
+    });
+
+    fs.ensureDir(dirCSS, err => {
+        if (err) return console.error(err);
+    });
 
     //Get all the packages
     fs.readdir(packages, (err, files) => {
