@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node app.js && node code-examples.js",
     "browsersync": "browser-sync start --server 'dist' --files 'docs/*' 'packages/*'",
-    "start": "npm run build && npm run browsersync"
+    "start": "npm run build"
   },
   "repository": {
     "type": "git",
