@@ -1,10 +1,10 @@
 const fs = require("fs"),
     Prism = require("prismjs"),
-    jsdom = require("jsdom"),
-    cheerio = require("cheerio"),
-    { JSDOM } = jsdom;
+    hb = require("handlebars"),
+    ncp = require("ncp").ncp;
 
-const examplesPath = "./dist/examples/";
+const examplesPath = "./docs/examples/";
+const dirExamples = "./dist/examples/";
 
 function highlight(lang, sourceCode) {
     const language = Prism.languages[lang] || Prism.languages.autoit;
@@ -15,20 +15,35 @@ function getCode(file) {
     const filepath = examplesPath + file + "/index.html";
     const html = fs.readFileSync(filepath).toString();
 
-    const dom = new JSDOM(html);
-    const example = dom.window.document.querySelector("#example").innerHTML;
-    const code = highlight("html", example);
-    const pre = `<div class="tp-wrap mv5"><pre><code>${code}</code></pre></div>`;
+    const data = {
+        html: html,
+        code: highlight("html", html)
+    };
 
-    const $ = cheerio.load(html);
-    $("body").append(pre);
+    let source = fs.readFileSync("./docs/views/example.handlebars", "utf8");
+    let template = hb.compile(source);
+    let result = template(data);
 
-    fs.writeFile(filepath, $.html(), function() {});
+    fs.writeFile(
+        "./dist/examples/" + file + "/index.html",
+        result,
+        function() {}
+    );
 }
+
+if (!fs.existsSync(dirExamples)) {
+    fs.mkdirSync(dirExamples);
+}
+
+// Move the index.html
+ncp("./docs/examples.html", "./dist/examples.html");
 
 fs.readdir(examplesPath, (err, files) => {
     files.forEach(file => {
         if (!file.startsWith(".")) {
+            if (!fs.existsSync(dirExamples + file)) {
+                fs.mkdirSync(dirExamples + file);
+            }
             getCode(file);
         }
     });

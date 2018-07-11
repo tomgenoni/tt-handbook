@@ -59,8 +59,6 @@ function buildDist(data) {
         fs.writeFile("./dist/css/utils.css", result.css, function() {});
     });
 
-    // Move the examples
-    ncp("./docs/examples", "./dist");
     // Move the index.html
     ncp("./docs/index.html", "./dist/index.html");
 }
