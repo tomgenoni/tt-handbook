@@ -21,7 +21,9 @@ npm manifest:
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "start": "node app.js && node code-examples.js"
+      "build": "node app.js && node code-examples.js",
+      "browsersync": "browser-sync start --server --files 'docs/*' 'packages/*",
+      "start": "npm run build && npm run browsersync"
     },
     "repository": {
       "type": "git",
@@ -55,6 +57,7 @@ npm manifest:
       "@thumbtack/tp-ui-element-type": "^4.0.3",
       "@thumbtack/tp-ui-layout-form": "^3.0.4",
       "@thumbtack/tp-ui-layout-wrap": "^1.2.1",
+      "browsersync": "^0.0.1-security",
       "cssjson": "^2.1.3",
       "fs-extra": "^6.0.1",
       "handlebars": "^4.0.11",
@@ -321,6 +324,10 @@ Lockfile:
     dependencies:
       balanced-match "^1.0.0"
       concat-map "0.0.1"
+  
+  browsersync@^0.0.1-security:
+    version "0.0.1-security"
+    resolved "https://production-npm.thumbtack.com/browsersync/-/browsersync-0.0.1-security/e885fe4354d2ec5a565c38c4c2bf0a012ad64860.tgz#e885fe4354d2ec5a565c38c4c2bf0a012ad64860"
   
   builtin-modules@^1.0.0:
     version "1.1.1"
@@ -1548,9 +1555,9 @@ Lockfile:
 
 Trace: 
   Error: Command failed.
-  Exit code: 1
+  Exit code: 2
   Command: sh
-  Arguments: -c node app.js && node code-examples.js
+  Arguments: -c npm run build && npm run browsersync
   Directory: /Users/tom/Sites/tt-utils
   Output:
   
