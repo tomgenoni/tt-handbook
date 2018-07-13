@@ -1,5 +1,7 @@
 # Row
 
+These classes should be used in place of `tp-grid`. That will be deprecated.
+
 - Create row of responsive columns with or without gutters.
 - Use width classes `w-1/3` for columns.
 - Columns should be divisable by 12.
