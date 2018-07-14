@@ -14,9 +14,17 @@
         }
 
         .filter-active .match-class,
-        .filter-active .match-declaration {
+        .filter-active .match-property,
+        .filter-active .match-value {
             display: flex !important;
         }
+
+        .match-class .filter-class,
+        .match-property .filter-property,
+        .match-value .filter-value {
+            color: #2db783;
+        }
+
     </style>
 </head>
 
@@ -26,7 +34,8 @@
             <input type="text"  placeholder="starts with..." class="tp-text-input tp-text-input--small mr3" id="filter" />
             <select id="filter-type" class="tp-select tp-select--small">
                 <option value="class">Class</option>
-                <option selected value="declaration">Declaration</option>
+                <option selected value="property">Property</option>
+                <option value="value">Value</option>
             </select>
         </div>
         <div class="longread center mw7 mv3">
@@ -36,7 +45,9 @@
 
     <script>
         const dataClass = document.querySelectorAll(".filter-class");
-        const dataDeclaration = document.querySelectorAll(".filter-declaration");
+        const dataProperty = document.querySelectorAll(".filter-property");
+        const dataValue = document.querySelectorAll(".filter-value");
+
         const body = document.querySelector("body");
 
         const filterInput = document.querySelector("#filter");
@@ -46,7 +57,8 @@
         function purgeMatches() {
             enties.forEach(function (i) {
                 i.classList.remove("match-class");
-                i.classList.remove("match-declaration");
+                i.classList.remove("match-property");
+                i.classList.remove("match-value");
             });
             body.classList.remove("filter-active");
         }
@@ -63,16 +75,17 @@
         }
 
         function filterClasses(term, type) {
+            console.log(term,type);
             purgeMatches();
-
-            console.log(term, type);
-
             if (term != "") {
                 body.classList.add("filter-active");
+
                 if (type == "class") {
                     addFilterClass(dataClass, term, "match-class");
+                } else if (type == "property") {
+                    addFilterClass(dataProperty, term, "match-property");
                 } else {
-                    addFilterClass(dataDeclaration, term, "match-declaration");
+                    addFilterClass(dataValue, term, "match-value");
                 }
             }
         }
