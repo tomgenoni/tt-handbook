@@ -1,0 +1,119 @@
+@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+
+.ar {
+  height: 0 !important;
+  position: relative !important;
+}
+
+.ar--16x9 { padding-bottom: 56.25% !important; }
+.ar--9x16 { padding-bottom: 177.77% !important; }
+
+.ar--4x3 {  padding-bottom: 75% !important; }
+.ar--3x4 {  padding-bottom: 133.33% !important; }
+
+.ar--6x4 {  padding-bottom: 66.6% !important; }
+.ar--4x6 {  padding-bottom: 150% !important; }
+
+.ar--8x5 {  padding-bottom: 62.5% !important; }
+.ar--5x8 {  padding-bottom: 160% !important; }
+
+.ar--7x5 {  padding-bottom: 71.42% !important; }
+.ar--5x7 {  padding-bottom: 140% !important; }
+
+.ar--1x1 {  padding-bottom: 100% !important; }
+
+.ar--object {
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    z-index: 100 !important;
+}
+
+@include tp-respond-above($tp-breakpoint__small){
+    .s\:ar {
+      height: 0 !important;
+      position: relative !important;
+    }
+    .s\:ar--16x9 { padding-bottom: 56.25% !important; }
+    .s\:ar--9x16 { padding-bottom: 177.77% !important; }
+    .s\:ar--4x3 {  padding-bottom: 75% !important; }
+    .s\:ar--3x4 {  padding-bottom: 133.33% !important; }
+    .s\:ar--6x4 {  padding-bottom: 66.6% !important; }
+    .s\:ar--4x6 {  padding-bottom: 150% !important; }
+    .s\:ar--8x5 {  padding-bottom: 62.5% !important; }
+    .s\:ar--5x8 {  padding-bottom: 160% !important; }
+    .s\:ar--7x5 {  padding-bottom: 71.42% !important; }
+    .s\:ar--5x7 {  padding-bottom: 140% !important; }
+    .s\:ar--1x1 {  padding-bottom: 100% !important; }
+    .s\:ar--object {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 100 !important;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__medium){
+    .m\:ar {
+      height: 0 !important;
+      position: relative !important;
+    }
+    .m\:ar--16x9 { padding-bottom: 56.25% !important; }
+    .m\:ar--9x16 { padding-bottom: 177.77% !important; }
+    .m\:ar--4x3 {  padding-bottom: 75% !important; }
+    .m\:ar--3x4 {  padding-bottom: 133.33% !important; }
+    .m\:ar--6x4 {  padding-bottom: 66.6% !important; }
+    .m\:ar--4x6 {  padding-bottom: 150% !important; }
+    .m\:ar--8x5 {  padding-bottom: 62.5% !important; }
+    .m\:ar--5x8 {  padding-bottom: 160% !important; }
+    .m\:ar--7x5 {  padding-bottom: 71.42% !important; }
+    .m\:ar--5x7 {  padding-bottom: 140% !important; }
+    .m\:ar--1x1 {  padding-bottom: 100% !important; }
+    .m\:ar--object {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 100 !important;
+    }
+}
+
+@include tp-respond-above($tp-breakpoint__large){
+    .l\:ar {
+      height: 0 !important;
+      position: relative !important;
+    }
+    .l\:ar--16x9 { padding-bottom: 56.25% !important; }
+    .l\:ar--9x16 { padding-bottom: 177.77% !important; }
+    .l\:ar--4x3 {  padding-bottom: 75% !important; }
+    .l\:ar--3x4 {  padding-bottom: 133.33% !important; }
+    .l\:ar--6x4 {  padding-bottom: 66.6% !important; }
+    .l\:ar--4x6 {  padding-bottom: 150% !important; }
+    .l\:ar--8x5 {  padding-bottom: 62.5% !important; }
+    .l\:ar--5x8 {  padding-bottom: 160% !important; }
+    .l\:ar--7x5 {  padding-bottom: 71.42% !important; }
+    .l\:ar--5x7 {  padding-bottom: 140% !important; }
+    .l\:ar--1x1 {  padding-bottom: 100% !important; }
+    .l\:ar--object {
+        position: absolute !important;
+        top: 0 !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 100 !important;
+    }
+}
