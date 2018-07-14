@@ -30,6 +30,11 @@ function purgeMatches() {
     });
 }
 
+function highlightType(type) {
+    body.classList.remove("type-class", "type-property", "type-value");
+    body.classList.add("type-" + type);
+}
+
 function addFilterClass(arr, term, seek, className) {
     arr.forEach(function (i) {
         let classStr = i.textContent;
@@ -55,6 +60,7 @@ function filterClasses() {
     let seek = filter.seek.value;
 
     purgeMatches();
+    highlightType(type);
 
     if (term !== "") {
         body.classList.add("filter-active");
@@ -83,3 +89,7 @@ filter.type.addEventListener("change", function () {
 filter.seek.addEventListener("change", function () {
     filterClasses();
 })
+
+window.onload = function () {
+    filterClasses();
+};

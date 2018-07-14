@@ -8,19 +8,19 @@ const fs = require("fs-extra"),
 // Options
 
 marked.setOptions({
-    highlight: function(code, lang) {
+    highlight: function (code, lang) {
         return Prism.highlight(code, Prism.languages[lang], lang);
     }
 });
 
-
 // Variables
 
 const packages = "./packages/";
+const allContentObj = [];
 
 // Helper functions
 
-hb.registerHelper("formatTitle", function(str) {
+hb.registerHelper("formatTitle", function (str) {
     return str.replace(/(-)/g, " ");
 });
 
@@ -38,18 +38,22 @@ function getHex(str) {
     return html;
 }
 
-// Filter index
-function filterIndex(data) {
-    const source = fs.readFileSync("./docs/views/cssList.handlebars", "utf8");
-    const template = hb.compile(source);
-    const result = template(data);
-    fs.writeFile("./dist/list.html", result, function () { });
+// Build the docs
+
+function buildDist(data) {
+    let source = fs.readFileSync("./docs/views/page/doc.handlebars", "utf8");
+    let template = hb.compile(source);
+    let result = template(data);
+    fs.writeFile("./dist/doc.html", result, function () { });
 }
 
 // Build the Classes list
-function cssDisplay(css) {
-    let json = cssjson.toJSON(css.toString());
-    let jsonCSS = [];
+function cssDisplay(cssStr) {
+    let json = cssjson.toJSON(cssStr.toString());
+    let simpleJSON = [];
+
+    let source = fs.readFileSync("./docs/views/component/class-entry-doc.handlebars", "utf8");
+    let template = hb.compile(source);
 
     function cleanJSON(data) {
         for (var i in data) {
@@ -67,7 +71,7 @@ function cssDisplay(css) {
                         hex: getHex(value)
                     });
                 }
-                jsonCSS.push(cssObj);
+                simpleJSON.push(cssObj);
             } else {
                 // It's a @media block with nested rules
                 cleanJSON(data[i].children);
@@ -77,26 +81,38 @@ function cssDisplay(css) {
 
     cleanJSON(json.children);
 
-    let source = fs.readFileSync("./docs/views/class-entry-filter.handlebars", "utf8");
-    let template = hb.compile(source);
-    let result = template(jsonCSS);
-
+    let result = template(simpleJSON);
     return result;
 }
 
-function getCSS(file) {
-    // Compile SCSS
-    // let compiled = sass.renderSync({ file: packages + file + "/index.scss" });
-    // let css      = compiled.css.toString();
-    // let cssObj   = cssDisplay(css);
-    console.log(file);
+// Read in all the date from the "readme" and "index.scss"
+function getContent(file) {
+    // Convert readme
+    var rawReadme = fs.readFileSync(packages + file + "/readme.md").toString();
+    var markdown = marked(rawReadme);
+
+    // Convert SCSS
+    var rawCSS = sass.renderSync({ file: packages + file + "/index.scss" });
+    var css = rawCSS.css.toString();
+    var cssFormatted = cssDisplay(css);
+
+    allContentObj.push({
+        title: file,
+        content: markdown,
+        cssList: cssFormatted
+    });
 }
+
 
 //Get all the packages
 fs.readdir(packages, (err, files) => {
     files.forEach(file => {
         if (!file.startsWith(".")) {
-            getCSS(file);
+            getContent(file);
         }
     });
+    // allContentObj is created in getContent()
+    buildDist(allContentObj);
 });
+
+

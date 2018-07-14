@@ -6,12 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Utilities</title>
-    <link rel="stylesheet" href="/css/tui.css">
-    <link rel="stylesheet" href="/css/utils.css">
     <style>
 
         .entry:hover {
             background: #fafafa;
+        }
+
+        .filter-class,
+        .filter-property,
+        .filter-value   {
+            opacity: .7;
+        }
+
+        .type-class .filter-class,
+        .type-property .filter-property,
+        .type-value .filter-value   {
+            font-weight: 700;
+            opacity: 1;
         }
 
         .filter-active .entry {
@@ -25,9 +36,12 @@
         }
 
         .filter-active .hit {
-            color: #2db783;
+            color: #cc3553;
         }
+
     </style>
+    <link rel="stylesheet" href="/css/tui.css">
+    <link rel="stylesheet" href="/css/utils.css">
 </head>
 
 <body>
@@ -57,7 +71,7 @@
             <div class="entry bb b--gray-300">
                 <div class="center mw7 flex">
                     <code class="w-2/5 pv2 clipboard filter-class">{{className}}</code>
-                    <code class="w-3/5 pv2" style="opacity: .7">
+                    <code class="w-3/5 pv2">
                             {{#each declarations}}
                                 <div>
                                     <span class="filter-property">{{property}}</span>:
