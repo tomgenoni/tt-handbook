@@ -5,7 +5,7 @@
 
 ## Examples
 
-<div class="pa3 ba b--gray-300">
+<div class="pa3 ba b--gray-300 mb4">
     <div class="row mb3">
         <div class="col w-1/2">
             <div class="pa2 ba b--gray black">This is copy.</div>

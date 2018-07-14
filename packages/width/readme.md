@@ -5,7 +5,7 @@
 
 ## Examples
 
-<div class="pa3 ba b--gray-300">
+<div class="pa3 ba b--gray-300 mb4">
     <div class="mb3">
         <div class="h1 bg-gray w1 br b--blue"></div>
         <code class="mt1 clipboard">w1</code>

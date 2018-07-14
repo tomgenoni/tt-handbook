@@ -2,7 +2,7 @@
 
 ## Examples
 
-<div class="pa3 ba b--gray-300">
+<div class="pa3 ba b--gray-300 mb4">
     <div class="mb3">
         <div class="h1 bg-gray br b--blue mw1"></div>
         <code class="mt1 clipboard">mw1</code>

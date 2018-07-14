@@ -5,7 +5,7 @@ Applies border color to any active border.
 
 ## Examples
 
-<div class="pa3 ba b--gray-300">
+<div class="pa3 ba b--gray-300 mb4">
     <div class="row mb3">
         <div class="col w-1/3">
             <div>

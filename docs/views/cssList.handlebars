@@ -19,26 +19,41 @@
             display: flex !important;
         }
 
-        .match-class .filter-class,
-        .match-property .filter-property,
-        .match-value .filter-value {
+        .match-class .hit,
+        .match-property .hit,
+        .match-value .hit {
             color: #2db783;
         }
-
     </style>
 </head>
 
 <body>
-    <div class="ph3 s:ph0">
-        <div class="mt5 center mw7 flex items-center ">
-            <input type="text"  placeholder="starts with..." class="tp-text-input tp-text-input--small mr3" id="filter" />
-            <select id="filter-type" class="tp-select tp-select--small">
-                <option value="class">Class</option>
-                <option selected value="property">Property</option>
-                <option value="value">Value</option>
-            </select>
+    <div class="ph3 pv4 s:ph0">
+        <h1 class="tp-title-2 mb4 center mw7">Class List</h1>
+        <div class="center mw7 flex items-center">
+            <div class="flex-auto mr3">
+                <label class="tp-label" for="filter">Starts with</label>
+                <input type="text" class="tp-text-input tp-text-input--small" id="filter" name="filter" />
+            </div>
+            <div class="flex-none">
+                <label class="tp-label">Filter by</label>
+                <select id="filter-type" class="tp-select tp-select--small">
+                    <option value="class">class</option>
+                    <option selected value="property">property</option>
+                    <option value="value">value</option>
+                </select>
+            </div>
         </div>
         <div class="longread center mw7 mv3">
+            <div class="flex mb3 bb bw-2 b--gray-300">
+                <code class="w-2/5 pv2 s:ph3 black-300">class</code>
+                <code class="w-3/5 pv2 s:ph3">
+                <div>
+                    <span class="black-300">property</span>:
+                    <span class="black-300">value</span>;
+                </div>
+                </code>
+            </div>
             {{#each this}} {{{cssList}}} {{/each}}
         </div>
     </div>
@@ -55,10 +70,14 @@
         const enties = document.querySelectorAll(".entry");
 
         function purgeMatches() {
+            const hits = document.querySelectorAll(".hit");
             enties.forEach(function (i) {
                 i.classList.remove("match-class");
                 i.classList.remove("match-property");
                 i.classList.remove("match-value");
+            });
+            hits.forEach(function (i) {
+                i.classList.remove("hit");
             });
             body.classList.remove("filter-active");
         }
@@ -70,13 +89,14 @@
 
                 if (classStr.startsWith(term)) {
                     entry.classList.add(className);
+                    i.classList.add("hit");
                 }
             });
         }
 
         function filterClasses(term, type) {
-            console.log(term,type);
             purgeMatches();
+
             if (term != "") {
                 body.classList.add("filter-active");
 
@@ -109,14 +129,14 @@
     <script>
 
         var clipboard = new ClipboardJS('.clipboard', {
-            target: function(trigger) {
+            target: function (trigger) {
                 return trigger;
             }
         });
 
-        clipboard.on('success', function(e) {
+        clipboard.on('success', function (e) {
             e.trigger.classList.add("success")
-            setTimeout(function(){
+            setTimeout(function () {
                 e.trigger.classList.remove("success")
             }, 2000)
             e.clearSelection();

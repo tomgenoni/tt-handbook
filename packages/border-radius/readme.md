@@ -4,7 +4,7 @@ Add rounded corners.
 
 ## Examples
 
-<div class="pa3 ba b--gray-300">
+<div class="pa3 ba b--gray-300 mb4">
     <div class="row">
         <div class="col s:w-1/3">
             <div class="mb3 s:mb0">
