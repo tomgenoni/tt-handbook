@@ -15,6 +15,12 @@ const filter = {
 const body   = document.querySelector("body");
 const enties = document.querySelectorAll(".entry");
 
+const noHit = {
+    type: document.querySelector("#no-hit-type"),
+    term: document.querySelector("#no-hit-term")
+}; 
+
+
 // Functions
 // --------------------------------
 
@@ -35,7 +41,18 @@ function highlightType(type) {
     body.classList.add("type-" + type);
 }
 
-function addFilterClass(arr, term, seek, className) {
+function hitTest(type, term) {
+    var hits = document.querySelectorAll(".hit");
+    if (hits.length < 1) {
+        body.classList.add("no-hit");
+        noHit.type.textContent = type;
+        noHit.term.textContent = term;
+    } else {
+        body.classList.remove("no-hit");
+    }
+}
+
+function addFilterClass(arr, type, term, seek, className) {
     arr.forEach(function (i) {
         let classStr = i.textContent;
         let entry    = i.closest(".entry");
@@ -52,6 +69,7 @@ function addFilterClass(arr, term, seek, className) {
             }
         }
     });
+    hitTest(type, term);
 }
 
 function filterClasses() {
@@ -66,11 +84,11 @@ function filterClasses() {
         body.classList.add("filter-active");
 
         if (type == "class") {
-            addFilterClass(data.class, term, seek, "match-class");
+            addFilterClass(data.class, type, term, seek, "match-class");
         } else if (type == "property") {
-            addFilterClass(data.property, term, seek, "match-property");
+            addFilterClass(data.property, type, term, seek, "match-property");
         } else {
-            addFilterClass(data.value, term, seek, "match-value");
+            addFilterClass(data.value, type, term, seek, "match-value");
         }
     }
 }

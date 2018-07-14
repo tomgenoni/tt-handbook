@@ -39,6 +39,10 @@
             color: #cc3553;
         }
 
+        .no-hit #no-hit-message {
+            display: flex !important;
+        }
+
     </style>
     <link rel="stylesheet" href="/css/tui.css">
     <link rel="stylesheet" href="/css/utils.css">
@@ -84,6 +88,12 @@
             </div>
             {{/each}}
         </div>
+    </div>
+
+    <div id="no-hit-message" class="fixed absolute--fill pl7" style="display:none">
+        <div class="ma-auto">
+            No <span id="no-hit-type" class="b"></span> matches for <span id="no-hit-term" class="b"></span>
+            </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
