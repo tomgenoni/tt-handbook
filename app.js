@@ -64,9 +64,16 @@ function buildDist(data) {
     });
 }
 
+function buildCSSList(data) {
+    let source = fs.readFileSync("./docs/views/cssList.handlebars", "utf8");
+    let template = hb.compile(source);
+    let result = template(data);
+    fs.writeFile("./dist/list.html", result, function() {});
+}
+
 // Build the Classes list
-function cssDisplay(str) {
-    let json = cssjson.toJSON(str.toString());
+function cssDisplay(cssStr) {
+    let json = cssjson.toJSON(cssStr.toString());
     let simpleJSON = [];
 
     let source = fs.readFileSync("./docs/views/classList.handlebars", "utf8");
@@ -115,7 +122,11 @@ function getContent(file) {
 
     // Combine the data for each package
     var content = markdown + cssFormatted;
-    allContentObj.push({ title: file, content: content });
+    allContentObj.push({
+        title: file,
+        content: content,
+        cssList: cssFormatted
+    });
 }
 
 function init() {
@@ -138,6 +149,7 @@ function init() {
         });
         // allContentObj is created in getContent()
         buildDist(allContentObj);
+        buildCSSList(allContentObj);
     });
 }
 

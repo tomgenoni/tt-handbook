@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Utilities</title>
+    <link rel="stylesheet" href="/css/tui.css">
+    <link rel="stylesheet" href="/css/utils.css">
+    <style>
+        body {
+            font-size: 13px;
+        }
+
+        .filter-active .entry {
+            display: none !important;
+        }
+        .filter-active .match {
+            display: flex !important;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="mv5 center mw7">
+        <input type="text" class="tp-text-input" id="filter" />
+    </div>
+
+    <div class="bt b--gray-300 center mw7">
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">height: 0; </div>
+                <div class="filter">position: relative; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--16x9</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 56.25%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--9x16</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 177.77%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--4x3</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 75%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--3x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 133.33%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--6x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 66.6%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--4x6</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 150%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--8x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 62.5%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--5x8</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 160%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--7x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 71.42%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--5x7</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 140%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--1x1</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 100%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">ar--object</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">position: absolute; </div>
+                <div class="filter">top: 0; </div>
+                <div class="filter">right: 0; </div>
+                <div class="filter">bottom: 0; </div>
+                <div class="filter">left: 0; </div>
+                <div class="filter">width: 100%; </div>
+                <div class="filter">height: 100%; </div>
+                <div class="filter">z-index: 100; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">height: 0; </div>
+                <div class="filter">position: relative; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--16x9</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 56.25%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--9x16</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 177.77%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--4x3</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 75%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--3x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 133.33%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--6x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 66.6%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--4x6</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 150%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--8x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 62.5%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--5x8</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 160%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--7x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 71.42%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--5x7</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 140%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--1x1</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 100%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">s:ar--object</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">position: absolute; </div>
+                <div class="filter">top: 0; </div>
+                <div class="filter">right: 0; </div>
+                <div class="filter">bottom: 0; </div>
+                <div class="filter">left: 0; </div>
+                <div class="filter">width: 100%; </div>
+                <div class="filter">height: 100%; </div>
+                <div class="filter">z-index: 100; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">height: 0; </div>
+                <div class="filter">position: relative; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--16x9</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 56.25%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--9x16</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 177.77%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--4x3</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 75%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--3x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 133.33%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--6x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 66.6%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--4x6</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 150%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--8x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 62.5%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--5x8</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 160%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--7x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 71.42%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--5x7</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 140%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--1x1</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 100%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">m:ar--object</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">position: absolute; </div>
+                <div class="filter">top: 0; </div>
+                <div class="filter">right: 0; </div>
+                <div class="filter">bottom: 0; </div>
+                <div class="filter">left: 0; </div>
+                <div class="filter">width: 100%; </div>
+                <div class="filter">height: 100%; </div>
+                <div class="filter">z-index: 100; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">height: 0; </div>
+                <div class="filter">position: relative; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--16x9</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 56.25%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--9x16</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 177.77%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--4x3</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 75%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--3x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 133.33%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--6x4</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 66.6%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--4x6</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 150%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--8x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 62.5%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--5x8</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 160%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--7x5</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 71.42%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--5x7</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 140%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--1x1</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">padding-bottom: 100%; </div>
+            </code>
+        </div>
+        <div class="entry flex bb b--gray-300">
+            <code class="w-2/5 pv2 clipboard filter">l:ar--object</code>
+            <code class="w-3/5 pv2" style="opacity: .7">
+                <div class="filter">position: absolute; </div>
+                <div class="filter">top: 0; </div>
+                <div class="filter">right: 0; </div>
+                <div class="filter">bottom: 0; </div>
+                <div class="filter">left: 0; </div>
+                <div class="filter">width: 100%; </div>
+                <div class="filter">height: 100%; </div>
+                <div class="filter">z-index: 100; </div>
+            </code>
+        </div>
+    </div>
+
+    <script>
+        const data = document.querySelectorAll(".filter");
+        const body = document.querySelector("body");
+
+        const filter = document.querySelector("#filter");
+        const enties = document.querySelectorAll(".entry");
+
+        function purgeMatches() {
+            enties.forEach(function (i) {
+                i.classList.remove("match")
+            });
+        }
+
+        function filterClasses(term) {
+            purgeMatches();
+            body.classList.remove("filter-active");
+
+            if (term != "") {
+                body.classList.add("filter-active");
+                data.forEach(function (i) {
+                    let classStr = i.innerHTML;
+                    let entry = i.closest(".entry");
+
+                    if (classStr.includes(term)) {
+                        entry.classList.add("match");
+                    }
+                });
+            }
+        }
+
+        filter.addEventListener("keyup", function () {
+            let term = this.value;
+            filterClasses(term);
+        })
+
+    </script>
+</body>
+
+</html>
