@@ -57,7 +57,5 @@ fs.readdir(example.path, (err, files) => {
     let template = hb.compile(source);
     let result   = template(example.array);
 
-    console.log(example.array);
-
     fs.writeFile("./dist/examples.html", result, function() {});
 });
