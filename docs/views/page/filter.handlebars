@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="/css/tui.css">
     <link rel="stylesheet" href="/css/utils.css">
     <style>
+
+        .entry:hover {
+            background: #fafafa;
+        }
+
         .filter-active .entry {
             display: none !important;
         }
@@ -16,7 +21,7 @@
         .filter-active .match-class,
         .filter-active .match-property,
         .filter-active .match-value {
-            display: flex !important;
+            display: block !important;
         }
 
         .filter-active .hit {
@@ -27,37 +32,41 @@
 
 <body>
 
-    <div class="fixed w5 h-100 pa3 z-1 bg-gray-200">
-        <div class="mb3 pt4">
-            <select id="filter-type" class="tp-select tp-select--small w-100">
-                <option value="class">class</option>
-                <option selected value="property">property</option>
-                <option value="value">value</option>
-            </select>
+    <div class="fixed w5 h-100 z-1 br b--gray-300">
+        <div class="pa4">
+            <div class="mb3 mt4">
+                <select id="filter-type" class="tp-select tp-select--small w-100">
+                    <option value="class">class</option>
+                    <option selected value="property">property</option>
+                    <option value="value">value</option>
+                </select>
+            </div>
+            <div class="mb3">
+                <select id="filter-seek" class="tp-select tp-select--small w-100">
+                    <option selected value="starts">starts with</option>
+                    <option value="includes">includes</option>
+                </select>
+            </div>
+            <input type="text" class="tp-text-input tp-text-input--small" id="filter" name="filter" />
         </div>
-        <div class="mb3">
-            <select id="filter-seek" class="tp-select tp-select--small w-100">
-                <option selected value="starts">starts with</option>
-                <option value="includes">includes</option>
-            </select>
-        </div>
-        <input type="text" class="tp-text-input tp-text-input--small" id="filter" name="filter" />
     </div>
 
-    <div class="pv4 pl7">
-        <div class="longread center mw7 mv3">
+    <div class="pl7">
+        <div class="longread">
             {{#each this}}
-            <div class="entry flex bb b--gray-300">
-                <code class="w-2/5 pv2 clipboard filter-class">{{className}}</code>
-                <code class="w-3/5 pv2" style="opacity: .7">
-                        {{#each declarations}}
-                            <div>
-                                <span class="filter-property">{{property}}</span>:
-                                <span class="filter-value">{{value}}</span>;
-                                {{{hex}}}
-                            </div>
-                        {{/each}}
+            <div class="entry bb b--gray-300">
+                <div class="center mw7 flex">
+                    <code class="w-2/5 pv2 clipboard filter-class">{{className}}</code>
+                    <code class="w-3/5 pv2" style="opacity: .7">
+                            {{#each declarations}}
+                                <div>
+                                    <span class="filter-property">{{property}}</span>:
+                                    <span class="filter-value">{{value}}</span>;
+                                    {{{hex}}}
+                                </div>
+                            {{/each}}
                     </code>
+                </div>
             </div>
             {{/each}}
         </div>
