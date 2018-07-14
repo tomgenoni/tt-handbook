@@ -17,7 +17,8 @@ const enties = document.querySelectorAll(".entry");
 
 const noHit = {
     type: document.querySelector("#no-hit-type"),
-    term: document.querySelector("#no-hit-term")
+    term: document.querySelector("#no-hit-term"),
+    seek: document.querySelector("#no-hit-seek")
 }; 
 
 
@@ -41,12 +42,13 @@ function highlightType(type) {
     body.classList.add("type-" + type);
 }
 
-function hitTest(type, term) {
+function hitTest(type, term, seek) {
     var hits = document.querySelectorAll(".hit");
     if (hits.length < 1) {
         body.classList.add("no-hit");
         noHit.type.textContent = type;
         noHit.term.textContent = term;
+        noHit.seek.textContent = seek;
     } else {
         body.classList.remove("no-hit");
     }
@@ -69,7 +71,7 @@ function addFilterClass(arr, type, term, seek, className) {
             }
         }
     });
-    hitTest(type, term);
+    hitTest(type, term, seek);
 }
 
 function filterClasses() {

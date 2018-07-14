@@ -39,7 +39,7 @@
             color: #cc3553;
         }
 
-        .no-hit #no-hit-message {
+        .filter-active.no-hit #no-hit-message {
             display: flex !important;
         }
 
@@ -61,7 +61,7 @@
             </div>
             <div class="mb3">
                 <select id="filter-seek" class="tp-select tp-select--small w-100">
-                    <option selected value="starts">starts with</option>
+                    <option selected value="starts with">starts with</option>
                     <option value="includes">includes</option>
                 </select>
             </div>
@@ -92,8 +92,11 @@
 
     <div id="no-hit-message" class="fixed absolute--fill pl7" style="display:none">
         <div class="ma-auto">
-            No <span id="no-hit-type" class="b"></span> matches for <span id="no-hit-term" class="b"></span>
-            </div>
+            No 
+            <span id="no-hit-type" class="b"></span> 
+            <span id="no-hit-seek"></span> 
+            <span id="no-hit-term" class="b"></span>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
