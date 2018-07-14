@@ -27,33 +27,29 @@
 
 <body>
 
-    <div class="fixed bb b--gray w-100 pa3 z-1 bg-gray-200">
-        <div class="center mw7 flex items-center">
-            <div class="flex-none mr3">
-                <select id="filter-type" class="tp-select tp-select--small">
-                    <option value="class">class</option>
-                    <option selected value="property">property</option>
-                    <option value="value">value</option>
-                </select>
-            </div>
-            <div class="flex-none mr3">
-                <select id="filter-seek" class="tp-select tp-select--small">
-                    <option selected value="starts">starts with</option>
-                    <option value="includes">includes</option>
-                </select>
-            </div>
-            <div class="flex-auto">
-                <input type="text" class="tp-text-input tp-text-input--small" id="filter" name="filter" />
-            </div>
+    <div class="fixed w5 h-100 pa3 z-1 bg-gray-200">
+        <div class="mb3 pt4">
+            <select id="filter-type" class="tp-select tp-select--small w-100">
+                <option value="class">class</option>
+                <option selected value="property">property</option>
+                <option value="value">value</option>
+            </select>
         </div>
+        <div class="mb3">
+            <select id="filter-seek" class="tp-select tp-select--small w-100">
+                <option selected value="starts">starts with</option>
+                <option value="includes">includes</option>
+            </select>
+        </div>
+        <input type="text" class="tp-text-input tp-text-input--small" id="filter" name="filter" />
     </div>
 
-    <div class="ph3 pb4 pt6">
+    <div class="pv4 pl7">
         <div class="longread center mw7 mv3">
             {{#each this}}
             <div class="entry flex bb b--gray-300">
-                <code class="w-2/5 pv2 s:ph3 clipboard filter-class">{{className}}</code>
-                <code class="w-3/5 pv2 s:ph3" style="opacity: .7">
+                <code class="w-2/5 pv2 clipboard filter-class">{{className}}</code>
+                <code class="w-3/5 pv2" style="opacity: .7">
                         {{#each declarations}}
                             <div>
                                 <span class="filter-property">{{property}}</span>:
