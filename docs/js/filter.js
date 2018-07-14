@@ -20,13 +20,14 @@ const enties = document.querySelectorAll(".entry");
 
 function purgeMatches() {
     const hits = document.querySelectorAll(".hit");
-    enties.forEach(function (i) {
-        i.classList.remove("match-class", "match-property", "match-value");
-    });
+    body.classList.remove("filter-active");
+
     hits.forEach(function (i) {
         i.classList.remove("hit");
     });
-    body.classList.remove("filter-active");
+    enties.forEach(function (i) {
+        i.classList.remove("match-class", "match-property", "match-value");
+    });
 }
 
 function addFilterClass(arr, term, seek, className) {
@@ -48,7 +49,11 @@ function addFilterClass(arr, term, seek, className) {
     });
 }
 
-function filterClasses(term, type, seek) {
+function filterClasses() {
+    let term = filter.input.value;
+    let type = filter.type.value;
+    let seek = filter.seek.value;
+
     purgeMatches();
 
     if (term !== "") {
@@ -68,22 +73,13 @@ function filterClasses(term, type, seek) {
 // --------------------------------
 
 filter.input.addEventListener("keyup", function () {
-    let term = this.value;
-    let type = filter.type.value;
-    let seek = filter.seek.value;
-    filterClasses(term, type, seek);
+    filterClasses();
 })
 
 filter.type.addEventListener("change", function () {
-    let term = filter.input.value;
-    let type = this.value;
-    let seek = filter.seek.value;
-    filterClasses(term, type, seek);
+    filterClasses();
 });
 
 filter.seek.addEventListener("change", function () {
-    let term = filter.input.value;
-    let type = filter.type.value;
-    let seek = this.value;
-    filterClasses(term, type, seek);
+    filterClasses();
 })
