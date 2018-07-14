@@ -59,15 +59,15 @@ function addFilterClass(arr, type, term, seek, className) {
         let classStr = i.textContent;
         let entry    = i.closest(".entry");
 
-        if (seek === "starts") {
-            if (classStr.startsWith(term)) {
-                entry.classList.add(className);
-                i.classList.add("hit");
+        if (seek === "includes") {
+            if (classStr.includes(term)) {
+              entry.classList.add(className);
+              i.classList.add("hit");
             }
         } else {
-            if (classStr.includes(term)) {
-                entry.classList.add(className);
-                i.classList.add("hit");
+            if (classStr.startsWith(term)) {
+              entry.classList.add(className);
+              i.classList.add("hit");
             }
         }
     });
