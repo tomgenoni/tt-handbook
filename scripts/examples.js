@@ -3,8 +3,8 @@ const fs = require("fs-extra"),
     hb = require("handlebars");
 
 const examplesPath = "./docs/examples/";
-const exampleTemplate = "./docs/views/example.handlebars";
-const exampleIndexTemplate = "./docs/views/example-index.handlebars";
+const exampleTemplate = "./docs/views/page/example.handlebars";
+const exampleIndexTemplate = "./docs/views/page/example-index.handlebars";
 const dirExamples = "./dist/examples/";
 const examplesArr = [];
 

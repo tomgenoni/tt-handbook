@@ -1,0 +1,14 @@
+{{#each this}}
+    <div class="entry flex bb b--gray-300">
+        <code class="w-2/5 pv2 s:ph3 clipboard filter-class">{{className}}</code>
+        <code class="w-3/5 pv2 s:ph3" style="opacity: .7">
+            {{#each declarations}}
+                <div>
+                    <span class="filter-property">{{property}}</span>:
+                    <span class="filter-value">{{value}}</span>;
+                    {{{hex}}}
+                </div>
+            {{/each}}
+        </code>
+    </div>
+{{/each}}
