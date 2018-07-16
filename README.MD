@@ -8,4 +8,4 @@ Classes for building layouts with atomic css.
 yarn start
 ```
 
-This generates pages in the `dist` folder with an index file.
+This generates pages in the `dist` folder.
