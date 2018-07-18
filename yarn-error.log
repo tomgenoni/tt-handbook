@@ -1,5 +1,5 @@
 Arguments: 
-  /Users/tom/.nvm/versions/node/v8.9.4/bin/node /Users/tom/.nvm/versions/node/v8.9.4/bin/yarn build
+  /Users/tom/.nvm/versions/node/v8.9.4/bin/node /Users/tom/.nvm/versions/node/v8.9.4/bin/yarn start
 
 PATH: 
   /usr/local/opt/postgresql@9.6/bin:/usr/local/opt/postgresql@9.6/bin:/usr/local/go/bin:/usr/local/go/bin:/Users/tom/.nvm/versions/node/v8.9.4/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/jamf/bin
@@ -21,9 +21,7 @@ npm manifest:
     "main": "index.js",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "node app.js && node code-examples.js",
-      "browsersync": "browser-sync start --server 'dist' --files 'docs/*' 'packages/*'",
-      "start": "npm run build"
+      "start": "node scripts/assets.js && node scripts/doc.js && node scripts/examples.js && node scripts/index.js && node scripts/utils-filter.js"
     },
     "repository": {
       "type": "git",
@@ -2308,7 +2306,7 @@ Trace:
   Error: Command failed.
   Exit code: 1
   Command: sh
-  Arguments: -c node app.js && node code-examples.js
+  Arguments: -c node scripts/assets.js && node scripts/doc.js && node scripts/examples.js && node scripts/index.js && node scripts/utils-filter.js
   Directory: /Users/tom/Sites/tt-utils
   Output:
   

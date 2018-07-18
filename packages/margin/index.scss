@@ -320,6 +320,12 @@
 .ml-auto {
     margin-left: auto !important;
 }
+.mt-auto {
+    margin-top: auto !important;
+}
+.mb-auto {
+    margin-bottom: auto !important;
+}
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:ma0 {
@@ -639,6 +645,12 @@
     }
     .s\:ml-auto {
         margin-left: auto !important;
+    }
+    .s\:.mt-auto {
+        margin-top: auto !important;
+    }
+    .s\:.mb-auto {
+        margin-bottom: auto !important;
     }
 }
 
@@ -961,6 +973,12 @@
     .m\:ml-auto {
         margin-left: auto !important;
     }
+    .m\:.mt-auto {
+        margin-top: auto !important;
+    }
+    .m\:.mb-auto {
+        margin-bottom: auto !important;
+    }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
@@ -1279,7 +1297,13 @@
     .l\:mr-auto {
         margin-right: auto !important;
     }
-   .l\:ml-auto {
+    .l\:ml-auto {
         margin-left: auto !important;
+    }
+    .l\:.mt-auto {
+        margin-top: auto !important;
+    }
+    .l\:.mb-auto {
+        margin-bottom: auto !important;
     }
 }
