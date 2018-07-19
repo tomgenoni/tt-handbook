@@ -61,18 +61,34 @@
 
     <div class="fixed w5 h-100 z-1 br b--gray-300">
         <div class="pa4">
-            <div class="mb3">
-                <select id="filter-type" class="tp-select tp-select--small w-100">
-                    <option value="class">class</option>
-                    <option selected value="property">property</option>
-                    <option value="value">value</option>
-                </select>
+            <div class="mb4">
+                <div class="tp-input-wrap">
+                    <input type="radio" value="class" class="tp-radio-input" name="filter-type" id="filter-type-a" />
+                    <div class="tp-radio-image"></div>
+                    <label class="tp-label" for="filter-type-a">class</label>
+                </div>
+                <div class="tp-input-wrap">
+                    <input type="radio" value="property" class="tp-radio-input" name="filter-type" id="filter-type-b" checked />
+                    <div class="tp-radio-image"></div>
+                    <label class="tp-label" for="filter-type-b">property</label>
+                </div>
+                <div class="tp-input-wrap">
+                    <input type="radio" value="value" class="tp-radio-input" name="filter-type" id="filter-type-c" />
+                    <div class="tp-radio-image"></div>
+                    <label class="tp-label" for="filter-type-c">value</label>
+                </div>
             </div>
-            <div class="mb3">
-                <select id="filter-seek" class="tp-select tp-select--small w-100">
-                    <option selected value="starts with">starts with</option>
-                    <option value="includes">includes</option>
-                </select>
+            <div class="mb4">
+                <div class="tp-input-wrap">
+                    <input type="radio" value="starts with" class="tp-radio-input" name="filter-seek" id="filter-seek-a" checked="" />
+                    <div class="tp-radio-image"></div>
+                    <label class="tp-label" for="filter-seek-a">starts with</label>
+                </div>
+                <div class="tp-input-wrap">
+                    <input type="radio" value="includes" class="tp-radio-input" name="filter-seek" id="filter-seek-b" />
+                    <div class="tp-radio-image"></div>
+                    <label class="tp-label" for="filter-seek-b">includes</label>
+                </div>
             </div>
             <div class="relative flex items-center">
                 <input type="text" class="tp-text-input tp-text-input--small pr4" id="filter" name="filter" />

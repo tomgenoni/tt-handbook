@@ -8,8 +8,8 @@ const data = {
 };
 const filter = {
     input: document.querySelector("#filter"),
-    type: document.querySelector("#filter-type"),
-    seek: document.querySelector("#filter-seek"),
+    type: document.querySelectorAll("[name='filter-type']"),
+    seek: document.querySelectorAll("[name='filter-seek']"),
     clear: document.querySelector("#filter-clear")
 };
 
@@ -24,6 +24,16 @@ const enties = document.querySelectorAll(".entry");
 
 // Functions
 // --------------------------------
+
+function getRadioValue(arr) {
+    let value = "";
+    arr.forEach(function(i) {
+        if (i.checked) {
+            value = i.value;
+        }
+    });
+    return value;
+}
 
 function purgeMatches() {
     const hits = document.querySelectorAll(".hit");
@@ -82,8 +92,8 @@ function addFilterClass(arr, type, term, seek, className) {
 
 function filterClasses() {
     let term = filter.input.value;
-    let type = filter.type.value;
-    let seek = filter.seek.value;
+    let type = getRadioValue(filter.type);
+    let seek = getRadioValue(filter.seek);
 
     purgeMatches();
     highlightType(type);
@@ -104,15 +114,19 @@ function filterClasses() {
 // Event listeners
 // --------------------------------
 
+filter.type.forEach(function(i) {
+    i.addEventListener("change", function() {
+        filterClasses();
+    });
+});
+
+filter.seek.forEach(function(i) {
+    i.addEventListener("change", function() {
+        filterClasses();
+    });
+});
+
 filter.input.addEventListener("keyup", function() {
-    filterClasses();
-});
-
-filter.type.addEventListener("change", function() {
-    filterClasses();
-});
-
-filter.seek.addEventListener("change", function() {
     filterClasses();
 });
 
