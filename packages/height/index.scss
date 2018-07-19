@@ -18,8 +18,9 @@
     height: tp-spacer(32) !important;
 }
 
-/* Height Percentages - Based off of height of parent */
-
+.h-0 {
+    height: 0 !important;
+}
 .h-1\/4 {
     height: 25% !important;
 }
@@ -36,8 +37,6 @@
 .min-h-100 {
     min-height: 100% !important;
 }
-
-/* Screen Height Percentage */
 
 .vh-1\/4 {
     height: 25vh !important;
@@ -80,6 +79,9 @@
     }
     .s\:h5 {
         height: tp-spacer(32) !important;
+    }
+    .s\:h-0 {
+        height: 0 !important;
     }
     .s\:h-1\/4 {
         height: 25% !important;
@@ -135,6 +137,9 @@
     .m\:h5 {
         height: tp-spacer(32) !important;
     }
+    .m\:h-0 {
+        height: 0 !important;
+    }
     .m\:h-1\/4 {
         height: 25% !important;
     }
@@ -188,6 +193,9 @@
     }
     .l\:h5 {
         height: tp-spacer(32) !important;
+    }
+    .l\:h-0 {
+        height: 0 !important;
     }
     .l\:h-1\/4 {
         height: 25% !important;

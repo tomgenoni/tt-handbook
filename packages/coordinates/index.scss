@@ -2,18 +2,6 @@
 @import './node_modules/@thumbtack/tp-ui-core-function/_index';
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
-.top0 {
-    top: 0 !important;
-}
-.right0 {
-    right: 0 !important;
-}
-.bottom0 {
-    bottom: 0 !important;
-}
-.left0 {
-    left: 0 !important;
-}
 .top1 {
     top: tp-spacer(1) !important;
 }
@@ -69,6 +57,9 @@
     left: 0 !important;
 }
 
+.top-0 {
+    top: 0 !important;
+}
 .top-1 {
     top: 1px !important;
 }
@@ -83,6 +74,9 @@
 }
 .top-5 {
     top: 5px !important;
+}
+.right-0 {
+    right: 0 !important;
 }
 .right-1 {
     right: 1px !important;
@@ -99,6 +93,9 @@
 .right-5 {
     right: 5px !important;
 }
+.bottom-0 {
+    bottom: 0 !important;
+}
 .bottom-1 {
     bottom: 1px !important;
 }
@@ -113,6 +110,9 @@
 }
 .bottom-5 {
     bottom: 5px !important;
+}
+.left-0 {
+    left: 0 !important;
 }
 .left-1 {
     left: 1px !important;
@@ -191,23 +191,8 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:top0 {
-        top: 0 !important;
-    }
-    .s\:left0 {
-        left: 0 !important;
-    }
-    .s\:right0 {
-        right: 0 !important;
-    }
-    .s\:bottom0 {
-        bottom: 0 !important;
-    }
     .s\:top1 {
         top: tp-spacer(1) !important;
-    }
-    .s\:left1 {
-        left: tp-spacer(1) !important;
     }
     .s\:right1 {
         right: tp-spacer(1) !important;
@@ -215,17 +200,20 @@
     .s\:bottom1 {
         bottom: tp-spacer(1) !important;
     }
+    .s\:left1 {
+        left: tp-spacer(1) !important;
+    }
     .s\:top2 {
         top: tp-spacer(2) !important;
-    }
-    .s\:left2 {
-        left: tp-spacer(2) !important;
     }
     .s\:right2 {
         right: tp-spacer(2) !important;
     }
     .s\:bottom2 {
         bottom: tp-spacer(2) !important;
+    }
+    .s\:left2 {
+        left: tp-spacer(2) !important;
     }
     .s\:-top1 {
         top: tp-spacer(-1) !important;
@@ -258,6 +246,9 @@
         left: 0 !important;
     }
 
+    .s\:top-0 {
+        top: 0 !important;
+    }
     .s\:top-1 {
         top: 1px !important;
     }
@@ -272,6 +263,9 @@
     }
     .s\:top-5 {
         top: 5px !important;
+    }
+    .s\:right-0 {
+        right: 0 !important;
     }
     .s\:right-1 {
         right: 1px !important;
@@ -288,6 +282,9 @@
     .s\:right-5 {
         right: 5px !important;
     }
+    .s\:bottom-0 {
+        bottom: 0 !important;
+    }
     .s\:bottom-1 {
         bottom: 1px !important;
     }
@@ -302,6 +299,9 @@
     }
     .s\:bottom-5 {
         bottom: 5px !important;
+    }
+    .s\:left-0 {
+        left: 0 !important;
     }
     .s\:left-1 {
         left: 1px !important;
@@ -381,23 +381,8 @@
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:top0 {
-        top: 0 !important;
-    }
-    .m\:left0 {
-        left: 0 !important;
-    }
-    .m\:right0 {
-        right: 0 !important;
-    }
-    .m\:bottom0 {
-        bottom: 0 !important;
-    }
     .m\:top1 {
         top: tp-spacer(1) !important;
-    }
-    .m\:left1 {
-        left: tp-spacer(1) !important;
     }
     .m\:right1 {
         right: tp-spacer(1) !important;
@@ -405,17 +390,20 @@
     .m\:bottom1 {
         bottom: tp-spacer(1) !important;
     }
+    .m\:left1 {
+        left: tp-spacer(1) !important;
+    }
     .m\:top2 {
         top: tp-spacer(2) !important;
-    }
-    .m\:left2 {
-        left: tp-spacer(2) !important;
     }
     .m\:right2 {
         right: tp-spacer(2) !important;
     }
     .m\:bottom2 {
         bottom: tp-spacer(2) !important;
+    }
+    .m\:left2 {
+        left: tp-spacer(2) !important;
     }
     .m\:-top1 {
         top: tp-spacer(-1) !important;
@@ -448,6 +436,9 @@
         left: 0 !important;
     }
 
+    .m\:top-0 {
+        top: 0 !important;
+    }
     .m\:top-1 {
         top: 1px !important;
     }
@@ -462,6 +453,9 @@
     }
     .m\:top-5 {
         top: 5px !important;
+    }
+    .m\:right-0 {
+        right: 0 !important;
     }
     .m\:right-1 {
         right: 1px !important;
@@ -478,6 +472,9 @@
     .m\:right-5 {
         right: 5px !important;
     }
+    .m\:bottom-0 {
+        bottom: 0 !important;
+    }
     .m\:bottom-1 {
         bottom: 1px !important;
     }
@@ -492,6 +489,9 @@
     }
     .m\:bottom-5 {
         bottom: 5px !important;
+    }
+    .m\:left-0 {
+        left: 0 !important;
     }
     .m\:left-1 {
         left: 1px !important;
@@ -571,23 +571,8 @@
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:top0 {
-        top: 0 !important;
-    }
-    .l\:left0 {
-        left: 0 !important;
-    }
-    .l\:right0 {
-        right: 0 !important;
-    }
-    .l\:bottom0 {
-        bottom: 0 !important;
-    }
     .l\:top1 {
         top: tp-spacer(1) !important;
-    }
-    .l\:left1 {
-        left: tp-spacer(1) !important;
     }
     .l\:right1 {
         right: tp-spacer(1) !important;
@@ -595,17 +580,20 @@
     .l\:bottom1 {
         bottom: tp-spacer(1) !important;
     }
+    .l\:left1 {
+        left: tp-spacer(1) !important;
+    }
     .l\:top2 {
         top: tp-spacer(2) !important;
-    }
-    .l\:left2 {
-        left: tp-spacer(2) !important;
     }
     .l\:right2 {
         right: tp-spacer(2) !important;
     }
     .l\:bottom2 {
         bottom: tp-spacer(2) !important;
+    }
+    .l\:left2 {
+        left: tp-spacer(2) !important;
     }
     .l\:-top1 {
         top: tp-spacer(-1) !important;
@@ -638,6 +626,9 @@
         left: 0 !important;
     }
 
+    .l\:top-0 {
+        top: 0 !important;
+    }
     .l\:top-1 {
         top: 1px !important;
     }
@@ -652,6 +643,9 @@
     }
     .l\:top-5 {
         top: 5px !important;
+    }
+    .l\:right-0 {
+        right: 0 !important;
     }
     .l\:right-1 {
         right: 1px !important;
@@ -668,6 +662,9 @@
     .l\:right-5 {
         right: 5px !important;
     }
+    .l\:bottom-0 {
+        bottom: 0 !important;
+    }
     .l\:bottom-1 {
         bottom: 1px !important;
     }
@@ -682,6 +679,9 @@
     }
     .l\:bottom-5 {
         bottom: 5px !important;
+    }
+    .l\:left-0 {
+        left: 0 !important;
     }
     .l\:left-1 {
         left: 1px !important;
