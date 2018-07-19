@@ -7,7 +7,7 @@ Single-line truncation.
 
 ## Examples
 
-<div class="pa3 ba b--gray-300 mb4">
+<div class="pa3 ba b-gray-300 mb4">
     <div class="truncate mb3 b">In the era of instant-everything, it’s crazy that you still have to waste an entire afternoon researching, calling and comparing local pros whenever you need one.</div>
     <div class="flex">
         <div class="truncate flex-auto">Hi, good to meet you. When do you think we could set up the meeting to decide the needs of the conference?</div>

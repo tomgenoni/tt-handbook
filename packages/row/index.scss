@@ -16,19 +16,19 @@
     padding-left: tp-spacer(2) !important;
 }
 
-.row--wide {
+.row-wide {
     margin-left: tp-spacer(-4) !important;
 }
 
-.row--wide > .col {
+.row-wide > .col {
     padding-left: tp-spacer(4) !important;
 }
 
-.row--flush {
+.row-flush {
     margin-left: 0 !important;
 }
 
-.row--flush > .col {
+.row-flush > .col {
     padding-left: 0 !important;
 }
 
@@ -42,19 +42,19 @@
         padding-left: tp-spacer(2) !important;
     }
 
-    .s\:row--wide {
+    .s\:row-wide {
         margin-left: tp-spacer(-4) !important;
     }
 
-    .s\:row--wide > .col {
+    .s\:row-wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
-    .s\:row--flush {
+    .s\:row-flush {
         margin-left: 0 !important;
     }
 
-    .s\:row--flush > .col {
+    .s\:row-flush > .col {
         padding-left: 0 !important;
     }
 }
@@ -69,19 +69,19 @@
         padding-left: tp-spacer(2) !important;
     }
 
-    .m\:row--wide {
+    .m\:row-wide {
         margin-left: tp-spacer(-4) !important;
     }
 
-    .m\:row--wide > .col {
+    .m\:row-wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
-    .m\:row--flush {
+    .m\:row-flush {
         margin-left: 0 !important;
     }
 
-    .m\:row--flush > .col {
+    .m\:row-flush > .col {
         padding-left: 0 !important;
     }
 }
@@ -96,19 +96,19 @@
         padding-left: tp-spacer(2) !important;
     }
 
-    .l\:row--wide {
+    .l\:row-wide {
         margin-left: tp-spacer(-4) !important;
     }
 
-    .l\:row--wide > .col {
+    .l\:row-wide > .col {
         padding-left: tp-spacer(4) !important;
     }
 
-    .l\:row--flush {
+    .l\:row-flush {
         margin-left: 0 !important;
     }
 
-    .l\:row--flush > .col {
+    .l\:row-flush > .col {
         padding-left: 0 !important;
     }
 }

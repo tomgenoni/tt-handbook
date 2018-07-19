@@ -4,7 +4,7 @@ Add the `debug` class to any element and its children will be outlined. Helpful 
 
 ## Examples
 
-<div class="pa3 ba b--gray-300 debug">
+<div class="pa3 ba b-gray-300 debug">
     <h4>This is a title</h4>
     <p class="mb3">This is the description.</p>
     <div class="row">

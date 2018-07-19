@@ -35,7 +35,7 @@
 .dt-column-group {
     display: table-column-group !important;
 }
-.dt--fixed {
+.dt-fixed {
     table-layout: fixed !important;
     width: 100% !important;
 }
@@ -75,7 +75,7 @@
         display: table-column-group !important;
     }
 
-    .s\:dt--fixed {
+    .s\:dt-fixed {
         table-layout: fixed !important;
         width: 100% !important;
     }
@@ -116,7 +116,7 @@
         display: table-column-group !important;
     }
 
-    .m\:dt--fixed {
+    .m\:dt-fixed {
         table-layout: fixed !important;
         width: 100% !important;
     }
@@ -157,7 +157,7 @@
         display: table-column-group !important;
     }
 
-    .l\:dt--fixed {
+    .l\:dt-fixed {
         table-layout: fixed !important;
         width: 100% !important;
     }

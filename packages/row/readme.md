@@ -9,7 +9,7 @@ These classes should be used in place of `tp-grid`. That will be deprecated.
 
 ## Examples
 
-<div class="pa3 ba b--gray-300 mb4">
+<div class="pa3 ba b-gray-300 mb4">
     <div class="row">
         <div class="col s:w-1/4 mb3 s:mb0">
             <div class="bg-blue h3"></div>
