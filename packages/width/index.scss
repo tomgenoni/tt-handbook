@@ -3,19 +3,19 @@
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .w1 {
-    width: tp-spacer(2) !important;
+    width: 16px !important;
 }
 .w2 {
-    width: tp-spacer(4) !important;
+    width: 32px !important;
 }
 .w3 {
-    width: tp-spacer(8) !important;
+    width: 64px !important;
 }
 .w4 {
-    width: tp-spacer(16) !important;
+    width: 128px !important;
 }
 .w5 {
-    width: tp-spacer(32) !important;
+    width: 256px !important;
 }
 
 .w-1\/12 {
@@ -84,19 +84,19 @@
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:w1 {
-        width: tp-spacer(2) !important;
+        width: 16px !important;
     }
     .s\:w2 {
-        width: tp-spacer(4) !important;
+        width: 32px !important;
     }
     .s\:w3 {
-        width: tp-spacer(8) !important;
+        width: 64px !important;
     }
     .s\:w4 {
-        width: tp-spacer(16) !important;
+        width: 128px !important;
     }
     .s\:w5 {
-        width: tp-spacer(32) !important;
+        width: 256px !important;
     }
 
     .s\:w-1\/12 {
@@ -166,19 +166,19 @@
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:w1 {
-        width: tp-spacer(2) !important;
+        width: 16px !important;
     }
     .m\:w2 {
-        width: tp-spacer(4) !important;
+        width: 32px !important;
     }
     .m\:w3 {
-        width: tp-spacer(8) !important;
+        width: 64px !important;
     }
     .m\:w4 {
-        width: tp-spacer(16) !important;
+        width: 128px !important;
     }
     .m\:w5 {
-        width: tp-spacer(32) !important;
+        width: 256px !important;
     }
 
     .m\:w-1\/12 {
@@ -248,19 +248,19 @@
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:w1 {
-        width: tp-spacer(2) !important;
+        width: 16px !important;
     }
     .l\:w2 {
-        width: tp-spacer(4) !important;
+        width: 32px !important;
     }
     .l\:w3 {
-        width: tp-spacer(8) !important;
+        width: 64px !important;
     }
     .l\:w4 {
-        width: tp-spacer(16) !important;
+        width: 128px !important;
     }
     .l\:w5 {
-        width: tp-spacer(32) !important;
+        width: 256px !important;
     }
 
     .l\:w-1\/12 {

@@ -3,19 +3,19 @@
 @import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .h1 {
-    height: tp-spacer(2) !important;
+    height: 16px !important;
 }
 .h2 {
-    height: tp-spacer(4) !important;
+    height: 32px !important;
 }
 .h3 {
-    height: tp-spacer(8) !important;
+    height: 64px !important;
 }
 .h4 {
-    height: tp-spacer(16) !important;
+    height: 128px !important;
 }
 .h5 {
-    height: tp-spacer(32) !important;
+    height: 256px !important;
 }
 
 .h-0 {
@@ -66,19 +66,19 @@
 
 @include tp-respond-above($tp-breakpoint__small) {
     .s\:h1 {
-        height: tp-spacer(2) !important;
+        height: 16px !important;
     }
     .s\:h2 {
-        height: tp-spacer(4) !important;
+        height: 32px !important;
     }
     .s\:h3 {
-        height: tp-spacer(8) !important;
+        height: 64px !important;
     }
     .s\:h4 {
-        height: tp-spacer(16) !important;
+        height: 128px !important;
     }
     .s\:h5 {
-        height: tp-spacer(32) !important;
+        height: 256px !important;
     }
     .s\:h-0 {
         height: 0 !important;
@@ -123,19 +123,19 @@
 
 @include tp-respond-above($tp-breakpoint__medium) {
     .m\:h1 {
-        height: tp-spacer(2) !important;
+        height: 16px !important;
     }
     .m\:h2 {
-        height: tp-spacer(4) !important;
+        height: 32px !important;
     }
     .m\:h3 {
-        height: tp-spacer(8) !important;
+        height: 64px !important;
     }
     .m\:h4 {
-        height: tp-spacer(16) !important;
+        height: 128px !important;
     }
     .m\:h5 {
-        height: tp-spacer(32) !important;
+        height: 256px !important;
     }
     .m\:h-0 {
         height: 0 !important;
@@ -180,19 +180,19 @@
 
 @include tp-respond-above($tp-breakpoint__large) {
     .l\:h1 {
-        height: tp-spacer(2) !important;
+        height: 16px !important;
     }
     .l\:h2 {
-        height: tp-spacer(4) !important;
+        height: 32px !important;
     }
     .l\:h3 {
-        height: tp-spacer(8) !important;
+        height: 64px !important;
     }
     .l\:h4 {
-        height: tp-spacer(16) !important;
+        height: 128px !important;
     }
     .l\:h5 {
-        height: tp-spacer(32) !important;
+        height: 256px !important;
     }
     .l\:h-0 {
         height: 0 !important;
