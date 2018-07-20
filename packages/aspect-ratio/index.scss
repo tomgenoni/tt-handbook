@@ -1,28 +1,16 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import "./node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index";
+@import "./node_modules/@thumbtack/tp-ui-core-mixin/_index";
 
 .aspect-ratio {
-  height: 0 !important;
-  position: relative !important;
+    height: 0 !important;
+    position: relative !important;
 }
-
-.aspect-ratio-16x9 { padding-bottom: 56.25% !important; }
-.aspect-ratio-9x16 { padding-bottom: 177.77% !important; }
-
-.aspect-ratio-4x3 {  padding-bottom: 75% !important; }
-.aspect-ratio-3x4 {  padding-bottom: 133.33% !important; }
-
-.aspect-ratio-6x4 {  padding-bottom: 66.6% !important; }
-.aspect-ratio-4x6 {  padding-bottom: 150% !important; }
-
-.aspect-ratio-8x5 {  padding-bottom: 62.5% !important; }
-.aspect-ratio-5x8 {  padding-bottom: 160% !important; }
-
-.aspect-ratio-7x5 {  padding-bottom: 71.42% !important; }
-.aspect-ratio-5x7 {  padding-bottom: 140% !important; }
-
-.aspect-ratio-1x1 {  padding-bottom: 100% !important; }
-
+.aspect-ratio-8x5 {
+    padding-bottom: 62.5% !important;
+}
+.aspect-ratio-1x1 {
+    padding-bottom: 100% !important;
+}
 .aspect-ratio-object {
     position: absolute !important;
     top: 0 !important;
@@ -34,22 +22,17 @@
     z-index: 100 !important;
 }
 
-@include tp-respond-above($tp-breakpoint__small){
+@include tp-respond-above($tp-breakpoint__small) {
     .s\:aspect-ratio {
-      height: 0 !important;
-      position: relative !important;
+        height: 0 !important;
+        position: relative !important;
     }
-    .s\:aspect-ratio-16x9 { padding-bottom: 56.25% !important; }
-    .s\:aspect-ratio-9x16 { padding-bottom: 177.77% !important; }
-    .s\:aspect-ratio-4x3 {  padding-bottom: 75% !important; }
-    .s\:aspect-ratio-3x4 {  padding-bottom: 133.33% !important; }
-    .s\:aspect-ratio-6x4 {  padding-bottom: 66.6% !important; }
-    .s\:aspect-ratio-4x6 {  padding-bottom: 150% !important; }
-    .s\:aspect-ratio-8x5 {  padding-bottom: 62.5% !important; }
-    .s\:aspect-ratio-5x8 {  padding-bottom: 160% !important; }
-    .s\:aspect-ratio-7x5 {  padding-bottom: 71.42% !important; }
-    .s\:aspect-ratio-5x7 {  padding-bottom: 140% !important; }
-    .s\:aspect-ratio-1x1 {  padding-bottom: 100% !important; }
+    .s\:aspect-ratio-8x5 {
+        padding-bottom: 62.5% !important;
+    }
+    .s\:aspect-ratio-1x1 {
+        padding-bottom: 100% !important;
+    }
     .s\:aspect-ratio-object {
         position: absolute !important;
         top: 0 !important;
@@ -62,22 +45,17 @@
     }
 }
 
-@include tp-respond-above($tp-breakpoint__medium){
+@include tp-respond-above($tp-breakpoint__medium) {
     .m\:aspect-ratio {
-      height: 0 !important;
-      position: relative !important;
+        height: 0 !important;
+        position: relative !important;
     }
-    .m\:aspect-ratio-16x9 { padding-bottom: 56.25% !important; }
-    .m\:aspect-ratio-9x16 { padding-bottom: 177.77% !important; }
-    .m\:aspect-ratio-4x3 {  padding-bottom: 75% !important; }
-    .m\:aspect-ratio-3x4 {  padding-bottom: 133.33% !important; }
-    .m\:aspect-ratio-6x4 {  padding-bottom: 66.6% !important; }
-    .m\:aspect-ratio-4x6 {  padding-bottom: 150% !important; }
-    .m\:aspect-ratio-8x5 {  padding-bottom: 62.5% !important; }
-    .m\:aspect-ratio-5x8 {  padding-bottom: 160% !important; }
-    .m\:aspect-ratio-7x5 {  padding-bottom: 71.42% !important; }
-    .m\:aspect-ratio-5x7 {  padding-bottom: 140% !important; }
-    .m\:aspect-ratio-1x1 {  padding-bottom: 100% !important; }
+    .m\:aspect-ratio-8x5 {
+        padding-bottom: 62.5% !important;
+    }
+    .m\:aspect-ratio-1x1 {
+        padding-bottom: 100% !important;
+    }
     .m\:aspect-ratio-object {
         position: absolute !important;
         top: 0 !important;
@@ -90,22 +68,17 @@
     }
 }
 
-@include tp-respond-above($tp-breakpoint__large){
+@include tp-respond-above($tp-breakpoint__large) {
     .l\:aspect-ratio {
-      height: 0 !important;
-      position: relative !important;
+        height: 0 !important;
+        position: relative !important;
     }
-    .l\:aspect-ratio-16x9 { padding-bottom: 56.25% !important; }
-    .l\:aspect-ratio-9x16 { padding-bottom: 177.77% !important; }
-    .l\:aspect-ratio-4x3 {  padding-bottom: 75% !important; }
-    .l\:aspect-ratio-3x4 {  padding-bottom: 133.33% !important; }
-    .l\:aspect-ratio-6x4 {  padding-bottom: 66.6% !important; }
-    .l\:aspect-ratio-4x6 {  padding-bottom: 150% !important; }
-    .l\:aspect-ratio-8x5 {  padding-bottom: 62.5% !important; }
-    .l\:aspect-ratio-5x8 {  padding-bottom: 160% !important; }
-    .l\:aspect-ratio-7x5 {  padding-bottom: 71.42% !important; }
-    .l\:aspect-ratio-5x7 {  padding-bottom: 140% !important; }
-    .l\:aspect-ratio-1x1 {  padding-bottom: 100% !important; }
+    .l\:aspect-ratio-8x5 {
+        padding-bottom: 62.5% !important;
+    }
+    .l\:aspect-ratio-1x1 {
+        padding-bottom: 100% !important;
+    }
     .l\:aspect-ratio-object {
         position: absolute !important;
         top: 0 !important;
