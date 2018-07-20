@@ -9,8 +9,8 @@
     <div class="row">
         <div class="col w-1/2">
             <div>
-                <div class="aspect-ratio aspect-ratio-16x9 cover" style="background:url(https://placebear.com/420/320?image=2"></div>
-                <code class="mt1 clipboard">aspect-ratio aspect-ratio-16x9</code>
+                <div class="aspect-ratio aspect-ratio-8x5 cover" style="background:url(https://placebear.com/420/320?image=2"></div>
+                <code class="mt1 clipboard">aspect-ratio aspect-ratio-8x5</code>
             </div>
         </div>
         <div class="col w-1/2">
