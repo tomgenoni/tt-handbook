@@ -2,8 +2,8 @@
 
 Single-line truncation.
 
-- An ellipsis will show only on Webkit browsers, like Safari and Chrome.
-- Truncating to two or more lines requires custom CSS.
+* An ellipsis will show only on Webkit browsers, like Safari and Chrome.
+* Truncating to two or more lines requires custom CSS.
 
 ## Examples
 

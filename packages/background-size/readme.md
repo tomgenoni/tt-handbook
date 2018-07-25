@@ -1,7 +1,7 @@
 # Background Size
 
-- Determines how an background image will fill the container.
-- Use with [background-position](#background-position) classes to set image location.
+* Determines how an background image will fill the container.
+* Use with [background-position](#background-position) classes to set image location.
 
 ## Examples
 

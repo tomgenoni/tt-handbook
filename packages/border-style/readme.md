@@ -2,8 +2,8 @@
 
 Sets the style of the border.
 
-- By default this sets the border style for all sides.
-- Due to the way the CSS spec works if you want it to apply to only certain sides, you'll need to disable the sides you don't want.
+* By default this sets the border style for all sides.
+* Due to the way the CSS spec works if you want it to apply to only certain sides, you'll need to disable the sides you don't want.
 
 ## Examples
 

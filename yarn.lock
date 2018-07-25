@@ -120,6 +120,14 @@
     "@thumbtack/tp-ui-core-function" "^1.0.5"
     "@thumbtack/tp-ui-core-mixin" "^3.0.0"
 
+"@thumbtack/tp-ui-layout-grid@^1.3.1":
+  version "1.3.1"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-layout-grid/-/@thumbtack/tp-ui-layout-grid-1.3.1/320d339a7750cfbec30e52f523dfdb720f6a564b.tgz#320d339a7750cfbec30e52f523dfdb720f6a564b"
+  dependencies:
+    "@thumbtack/thumbprint-tokens" "^4.1.1"
+    "@thumbtack/tp-ui-core-function" "^1.0.5"
+    "@thumbtack/tp-ui-core-mixin" "^3.0.0"
+
 "@thumbtack/tp-ui-layout-wrap@^1.2.1":
   version "1.2.1"
   resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-layout-wrap/-/@thumbtack/tp-ui-layout-wrap-1.2.1/34c61cc8d9877fc85e3eb26afa1affcbb664a581.tgz#34c61cc8d9877fc85e3eb26afa1affcbb664a581"

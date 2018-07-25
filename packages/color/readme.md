@@ -1,7 +1,7 @@
 # Color
 
-- Colors for text and backgrounds.
-- Be sure to follow color usage guidelines.
+* Colors for text and backgrounds.
+* Be sure to follow color usage guidelines.
 
 ## Examples
 

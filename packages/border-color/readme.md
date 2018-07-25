@@ -2,7 +2,6 @@
 
 Applies border color to any active border.
 
-
 ## Examples
 
 <div class="pa3 ba b-gray-300 mb4">

@@ -1,7 +1,7 @@
 # Border
 
-- Set border on all sides or individual sides.
-- Use with [border-colors](#border-colors) classes.
+* Set border on all sides or individual sides.
+* Use with [border-colors](#border-colors) classes.
 
 ## Examples
 

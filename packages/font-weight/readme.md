@@ -1,7 +1,7 @@
 # Font Weight
 
-- Our Mark font only supports two weights: `400` and `700`.
-- Use only when [Type](https://thumbprint.thumbtack.com/ui/tp-ui-element-type) classes are not adequate.
+* Our Mark font only supports two weights: `400` and `700`.
+* Use only when [Type](https://thumbprint.thumbtack.com/ui/tp-ui-element-type) classes are not adequate.
 
 ## Examples
 

@@ -4,9 +4,11 @@
 .word-normal {
     word-break: normal !important;
 }
+
 .word-wrap {
     word-break: break-all !important;
 }
+
 .word-nowrap {
     word-break: keep-all !important;
 }
@@ -15,9 +17,11 @@
     .s\:word-normal {
         word-break: normal !important;
     }
+
     .s\:word-wrap {
         word-break: break-all !important;
     }
+
     .s\:word-nowrap {
         word-break: keep-all !important;
     }
@@ -27,9 +31,11 @@
     .m\:word-normal {
         word-break: normal !important;
     }
+
     .m\:word-wrap {
         word-break: break-all !important;
     }
+
     .m\:word-nowrap {
         word-break: keep-all !important;
     }
@@ -39,9 +45,11 @@
     .l\:word-normal {
         word-break: normal !important;
     }
+
     .l\:word-wrap {
         word-break: break-all !important;
     }
+
     .l\:word-nowrap {
         word-break: keep-all !important;
     }
