@@ -8,7 +8,7 @@ const fs = require("fs-extra"),
 // Options
 
 marked.setOptions({
-    highlight: function (code, lang) {
+    highlight: function(code, lang) {
         return Prism.highlight(code, Prism.languages[lang], lang);
     }
 });
@@ -20,7 +20,7 @@ const allContentObj = [];
 
 // Helper functions
 
-hb.registerHelper("formatTitle", function (str) {
+hb.registerHelper("formatTitle", function(str) {
     return str.replace(/(-)/g, " ");
 });
 
@@ -44,7 +44,7 @@ function buildDist(data) {
     let source = fs.readFileSync("./docs/views/page/doc.handlebars", "utf8");
     let template = hb.compile(source);
     let result = template(data);
-    fs.writeFile("./dist/doc.html", result, function () { });
+    fs.writeFile("./dist/doc.html", result, function() {});
 }
 
 // Build the Classes list
@@ -52,7 +52,10 @@ function cssDisplay(cssStr) {
     let json = cssjson.toJSON(cssStr.toString());
     let simpleJSON = [];
 
-    let source = fs.readFileSync("./docs/views/component/class-entry-doc.handlebars", "utf8");
+    let source = fs.readFileSync(
+        "./docs/views/component/class-entry-doc.handlebars",
+        "utf8"
+    );
     let template = hb.compile(source);
 
     function cleanJSON(data) {
@@ -88,7 +91,7 @@ function cssDisplay(cssStr) {
 // Read in all the date from the "readme" and "index.scss"
 function getContent(file) {
     // Convert readme
-    var rawReadme = fs.readFileSync(packages + file + "/readme.md").toString();
+    var rawReadme = fs.readFileSync(packages + file + "/README.md").toString();
     var markdown = marked(rawReadme);
 
     // Convert SCSS
@@ -103,7 +106,6 @@ function getContent(file) {
     });
 }
 
-
 //Get all the packages
 fs.readdir(packages, (err, files) => {
     files.forEach(file => {
@@ -114,5 +116,3 @@ fs.readdir(packages, (err, files) => {
     // allContentObj is created in getContent()
     buildDist(allContentObj);
 });
-
-
