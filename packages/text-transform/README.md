@@ -5,16 +5,16 @@ Manipulate case of text.
 ## Examples
 
 <div class="pa3 ba b-gray-300 mb4">
-    <div class="row">
-        <div class="col m:w-1/3 mb3 m:mb0">
+    <div class="tp-grid">
+        <div class="tp-col tp-col--12 tp-col--md-4 mb3 m:mb0">
             <div class="bg-gray-200 pa2 ttc">capitalize</div>
             <code class="mt1 clipboard">ttc</code>
         </div>
-        <div class="col m:w-1/3 mb3 m:mb0">
+        <div class="tp-col tp-col--12 tp-col--md-4 mb3 m:mb0">
             <div class="bg-gray-200 pa2 ttl">Lowercase</div>
             <code class="mt1 clipboard">ttl</code>
         </div>
-        <div class="col m:w-1/3">
+        <div class="tp-col tp-col--12 tp-col--md-4">
             <div class="bg-gray-200 pa2 ttu">uppercase</div>
             <code class="mt1 clipboard">ttu</code>
         </div>

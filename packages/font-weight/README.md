@@ -6,14 +6,14 @@
 ## Examples
 
 <div class="pa3 ba b-gray-300 mb4">
-    <div class="row">
-        <div class="col w-1/2">
+    <div class="tp-grid">
+        <div class="tp-col tp-col--6">
             <div>
                 <div class="normal">I am the default weight.</div>
                 <code class="mt1 clipboard">normal</code>
             </div>
         </div>
-        <div class="col w-1/2">
+        <div class="tp-col tp-col--6">
             <div>
                 <div class="b">I am the bold weight.</div>
                 <code class="mt1 clipboard">b</code>
