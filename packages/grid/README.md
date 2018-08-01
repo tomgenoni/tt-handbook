@@ -1,6 +1,6 @@
 # Grid
 
-These classes should be used in place of `tp-grid`. That will be deprecated.
+These classes should be used in place of `grid`. That will be deprecated.
 
 - Columns should be divisable by 12.
 - The immediate child of a `grid` will default to 100% width, which is common for mobile.
