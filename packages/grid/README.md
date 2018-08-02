@@ -48,7 +48,7 @@ These classes should be used in place of `grid`. That will be deprecated.
     </div>
 </div>
 
-- In the examples the columns default to stacked, then side-by-side above the small breakpoint based on col widths.
+- In the examples the columns default to stacked, then side-by-side above the small breakpoint based on column widths.
 - Note the margin-bottom classes that apply only below the small breakpoint when columns are stacked.
 
 ```html
