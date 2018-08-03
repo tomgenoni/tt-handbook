@@ -14,7 +14,7 @@ marked.setOptions({
 
 // Variables
 const packages = "./packages/";
-const jsonCSS  = [];
+const jsonCSS = [];
 
 // Helper functions
 
@@ -23,7 +23,8 @@ hb.registerHelper("formatTitle", function(str) {
 });
 
 function cleanClass(str) {
-    return str.replace(/(\.|\\)/g, "");
+    let string = str.replace(/(:hover|:focus)/g, "");
+    return string.replace(/(\.|\\)/g, "");
 }
 function noImportant(str) {
     return str.replace(/(\s!important)/g, "");
@@ -38,10 +39,13 @@ function getHex(str) {
 
 // Filter index
 function buildPage(data) {
-    const source   = fs.readFileSync("./docs/views/page/filter.handlebars", "utf8");
+    const source = fs.readFileSync(
+        "./docs/views/page/filter.handlebars",
+        "utf8"
+    );
     const template = hb.compile(source);
-    const result   = template(data);
-    fs.writeFile("./dist/filter.html", result, function () { });
+    const result = template(data);
+    fs.writeFile("./dist/filter.html", result, function() {});
 }
 
 function cleanJSON(data) {
@@ -76,8 +80,8 @@ function formatCSS(css) {
 
 function getCSS(file) {
     //  Compile SCSS
-    let compiled     = sass.renderSync({ file: packages + file + "/index.scss" });
-    let css          = compiled.css.toString();
+    let compiled = sass.renderSync({ file: packages + file + "/index.scss" });
+    let css = compiled.css.toString();
     var cssFormatted = formatCSS(css);
 }
 

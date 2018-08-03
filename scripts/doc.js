@@ -25,7 +25,8 @@ hb.registerHelper("formatTitle", function(str) {
 });
 
 function cleanClass(str) {
-    return str.replace(/(\.|\\)/g, "");
+    let string = str.replace(/(:hover|:focus)/g, "");
+    return string.replace(/(\.|\\)/g, "");
 }
 function noImportant(str) {
     return str.replace(/(\s!important)/g, "");
