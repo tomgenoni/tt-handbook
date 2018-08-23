@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .static {
     position: static !important;
@@ -18,55 +18,55 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:static {
+    .s_static {
         position: static !important;
     }
 
-    .s\:relative {
+    .s_relative {
         position: relative !important;
     }
 
-    .s\:absolute {
+    .s_absolute {
         position: absolute !important;
     }
 
-    .s\:fixed {
+    .s_fixed {
         position: fixed !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:static {
+    .m_static {
         position: static !important;
     }
 
-    .m\:relative {
+    .m_relative {
         position: relative !important;
     }
 
-    .m\:absolute {
+    .m_absolute {
         position: absolute !important;
     }
 
-    .m\:fixed {
+    .m_fixed {
         position: fixed !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:static {
+    .l_static {
         position: static !important;
     }
 
-    .l\:relative {
+    .l_relative {
         position: relative !important;
     }
 
-    .l\:absolute {
+    .l_absolute {
         position: absolute !important;
     }
 
-    .l\:fixed {
+    .l_fixed {
         position: fixed !important;
     }
 }

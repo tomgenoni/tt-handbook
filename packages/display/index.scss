@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .dn {
     display: none !important;
@@ -51,153 +51,153 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:dn {
+    .s_dn {
         display: none !important;
     }
 
-    .s\:di {
+    .s_di {
         display: inline !important;
     }
 
-    .s\:db {
+    .s_db {
         display: block !important;
     }
 
-    .s\:dib {
+    .s_dib {
         display: inline-block !important;
     }
 
-    .s\:dit {
+    .s_dit {
         display: inline-table !important;
     }
 
-    .s\:dt {
+    .s_dt {
         display: table !important;
     }
 
-    .s\:dtc {
+    .s_dtc {
         display: table-cell !important;
     }
 
-    .s\:dt-row {
+    .s_dt-row {
         display: table-row !important;
     }
 
-    .s\:dt-row-group {
+    .s_dt-row-group {
         display: table-row-group !important;
     }
 
-    .s\:dt-column {
+    .s_dt-column {
         display: table-column !important;
     }
 
-    .s\:dt-column-group {
+    .s_dt-column-group {
         display: table-column-group !important;
     }
 
-    .s\:dt-fixed {
+    .s_dt-fixed {
         table-layout: fixed !important;
         width: 100% !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:dn {
+    .m_dn {
         display: none !important;
     }
 
-    .m\:di {
+    .m_di {
         display: inline !important;
     }
 
-    .m\:db {
+    .m_db {
         display: block !important;
     }
 
-    .m\:dib {
+    .m_dib {
         display: inline-block !important;
     }
 
-    .m\:dit {
+    .m_dit {
         display: inline-table !important;
     }
 
-    .m\:dt {
+    .m_dt {
         display: table !important;
     }
 
-    .m\:dtc {
+    .m_dtc {
         display: table-cell !important;
     }
 
-    .m\:dt-row {
+    .m_dt-row {
         display: table-row !important;
     }
 
-    .m\:dt-row-group {
+    .m_dt-row-group {
         display: table-row-group !important;
     }
 
-    .m\:dt-column {
+    .m_dt-column {
         display: table-column !important;
     }
 
-    .m\:dt-column-group {
+    .m_dt-column-group {
         display: table-column-group !important;
     }
 
-    .m\:dt-fixed {
+    .m_dt-fixed {
         table-layout: fixed !important;
         width: 100% !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:dn {
+    .l_dn {
         display: none !important;
     }
 
-    .l\:di {
+    .l_di {
         display: inline !important;
     }
 
-    .l\:db {
+    .l_db {
         display: block !important;
     }
 
-    .l\:dib {
+    .l_dib {
         display: inline-block !important;
     }
 
-    .l\:dit {
+    .l_dit {
         display: inline-table !important;
     }
 
-    .l\:dt {
+    .l_dt {
         display: table !important;
     }
 
-    .l\:dtc {
+    .l_dtc {
         display: table-cell !important;
     }
 
-    .l\:dt-row {
+    .l_dt-row {
         display: table-row !important;
     }
 
-    .l\:dt-row-group {
+    .l_dt-row-group {
         display: table-row-group !important;
     }
 
-    .l\:dt-column {
+    .l_dt-column {
         display: table-column !important;
     }
 
-    .l\:dt-column-group {
+    .l_dt-column-group {
         display: table-column-group !important;
     }
 
-    .l\:dt-fixed {
+    .l_dt-fixed {
         table-layout: fixed !important;
         width: 100% !important;
     }

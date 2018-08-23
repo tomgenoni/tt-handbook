@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .strike {
     text-decoration: line-through !important;
@@ -14,43 +14,43 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:strike {
+    .s_strike {
         text-decoration: line-through !important;
     }
 
-    .s\:underline {
+    .s_underline {
         text-decoration: underline !important;
     }
 
-    .s\:no-underline {
+    .s_no-underline {
         text-decoration: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:strike {
+    .m_strike {
         text-decoration: line-through !important;
     }
 
-    .m\:underline {
+    .m_underline {
         text-decoration: underline !important;
     }
 
-    .m\:no-underline {
+    .m_no-underline {
         text-decoration: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:strike {
+    .l_strike {
         text-decoration: line-through !important;
     }
 
-    .l\:underline {
+    .l_underline {
         text-decoration: underline !important;
     }
 
-    .l\:no-underline {
+    .l_no-underline {
         text-decoration: none !important;
     }
 }

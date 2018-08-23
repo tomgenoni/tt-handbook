@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .br0 {
     border-radius: 0 !important;
@@ -10,23 +10,19 @@
 }
 
 .br2 {
-    border-radius: 4px !important;
+    border-radius: $tp-border__radius__base !important;
 }
 
 .br3 {
-    border-radius: 8px !important;
-}
-
-.br4 {
-    border-radius: 12px !important;
+    border-radius: $tp-border__radius__big !important;
 }
 
 .br-100 {
-    border-radius: 100% !important;
+    border-radius: $tp-border__radius__full !important;
 }
 
 .br-pill {
-    border-radius: 9999px !important;
+    border-radius: $tp-border__radius__sides !important;
 }
 
 .br-bottom {
@@ -50,150 +46,138 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:br0 {
+    .s_br0 {
         border-radius: 0 !important;
     }
 
-    .s\:br1 {
+    .s_br1 {
         border-radius: 2px !important;
     }
 
-    .s\:br2 {
-        border-radius: 4px !important;
+    .s_br2 {
+        border-radius: $tp-border__radius__base !important;
     }
 
-    .s\:br3 {
-        border-radius: 8px !important;
+    .s_br3 {
+        border-radius: $tp-border__radius__big !important;
     }
 
-    .s\:br4 {
-        border-radius: 12px !important;
+    .s_br-100 {
+        border-radius: $tp-border__radius__full !important;
     }
 
-    .s\:br-100 {
-        border-radius: 100% !important;
+    .s_br-pill {
+        border-radius: $tp-border__radius__sides !important;
     }
 
-    .s\:br-pill {
-        border-radius: 9999px !important;
-    }
-
-    .s\:br-bottom {
+    .s_br-bottom {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
     }
 
-    .s\:br-top {
+    .s_br-top {
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }
 
-    .s\:br-right {
+    .s_br-right {
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
     }
 
-    .s\:br-left {
+    .s_br-left {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:br0 {
+    .m_br0 {
         border-radius: 0 !important;
     }
 
-    .m\:br1 {
+    .m_br1 {
         border-radius: 2px !important;
     }
 
-    .m\:br2 {
-        border-radius: 4px !important;
+    .m_br2 {
+        border-radius: $tp-border__radius__base !important;
     }
 
-    .m\:br3 {
-        border-radius: 8px !important;
+    .m_br3 {
+        border-radius: $tp-border__radius__big !important;
     }
 
-    .m\:br4 {
-        border-radius: 12px !important;
+    .m_br-100 {
+        border-radius: $tp-border__radius__full !important;
     }
 
-    .m\:br-100 {
-        border-radius: 100% !important;
+    .m_br-pill {
+        border-radius: $tp-border__radius__sides !important;
     }
 
-    .m\:br-pill {
-        border-radius: 9999px !important;
-    }
-
-    .m\:br-bottom {
+    .m_br-bottom {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
     }
 
-    .m\:br-top {
+    .m_br-top {
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }
 
-    .m\:br-right {
+    .m_br-right {
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
     }
 
-    .m\:br-left {
+    .m_br-left {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:br0 {
+    .l_br0 {
         border-radius: 0 !important;
     }
 
-    .l\:br1 {
+    .l_br1 {
         border-radius: 2px !important;
     }
 
-    .l\:br2 {
-        border-radius: 4px !important;
+    .l_br2 {
+        border-radius: $tp-border__radius__base !important;
     }
 
-    .l\:br3 {
-        border-radius: 8px !important;
+    .l_br3 {
+        border-radius: $tp-border__radius__big !important;
     }
 
-    .l\:br4 {
-        border-radius: 12px !important;
+    .l_br-100 {
+        border-radius: $tp-border__radius__full !important;
     }
 
-    .l\:br-100 {
-        border-radius: 100% !important;
+    .l_br-pill {
+        border-radius: $tp-border__radius__sides !important;
     }
 
-    .l\:br-pill {
-        border-radius: 9999px !important;
-    }
-
-    .l\:br-bottom {
+    .l_br-bottom {
         border-top-left-radius: 0 !important;
         border-top-right-radius: 0 !important;
     }
 
-    .l\:br-top {
+    .l_br-top {
         border-bottom-left-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }
 
-    .l\:br-right {
+    .l_br-right {
         border-top-left-radius: 0 !important;
         border-bottom-left-radius: 0 !important;
     }
 
-    .l\:br-left {
+    .l_br-left {
         border-top-right-radius: 0 !important;
         border-bottom-right-radius: 0 !important;
     }

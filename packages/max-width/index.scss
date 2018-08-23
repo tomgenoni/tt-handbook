@@ -1,32 +1,32 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .mw-100 {
     max-width: 100% !important;
 }
 
 .mw1 {
-    max-width: 16px !important;
+    max-width: $tp-space__3 !important;
 }
 
 .mw2 {
-    max-width: 24px !important;
+    max-width: $tp-space__4 !important;
 }
 
 .mw3 {
-    max-width: 32px !important;
+    max-width: $tp-space__5 !important;
 }
 
 .mw4 {
-    max-width: 64px !important;
+    max-width: $tp-space__6 !important;
 }
 
 .mw5 {
-    max-width: 128px !important;
+    max-width: $tp-space__7 !important;
 }
 
 .mw6 {
-    max-width: 256px !important;
+    max-width: $tp-space__8 !important;
 }
 
 .mw7 {
@@ -38,7 +38,7 @@
 }
 
 .mw9 {
-    max-width: 1024px !important;
+    max-width: $tp-wrap__max-width !important;
 }
 
 .mw-none {
@@ -46,139 +46,139 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:mw-100 {
+    .s_mw-100 {
         max-width: 100% !important;
     }
 
-    .s\:mw1 {
-        max-width: 16px !important;
+    .s_mw1 {
+        max-width: $tp-space__3 !important;
     }
 
-    .s\:mw2 {
-        max-width: 24px !important;
+    .s_mw2 {
+        max-width: $tp-space__4 !important;
     }
 
-    .s\:mw3 {
-        max-width: 32px !important;
+    .s_mw3 {
+        max-width: $tp-space__5 !important;
     }
 
-    .s\:mw4 {
-        max-width: 64px !important;
+    .s_mw4 {
+        max-width: $tp-space__6 !important;
     }
 
-    .s\:mw5 {
-        max-width: 128px !important;
+    .s_mw5 {
+        max-width: $tp-space__7 !important;
     }
 
-    .s\:mw6 {
-        max-width: 256px !important;
+    .s_mw6 {
+        max-width: $tp-space__8 !important;
     }
 
-    .s\:mw7 {
+    .s_mw7 {
         max-width: 512px !important;
     }
 
-    .s\:mw8 {
+    .s_mw8 {
         max-width: 736px !important;
     }
 
-    .s\:mw9 {
-        max-width: 1024px !important;
+    .s_mw9 {
+        max-width: $tp-wrap__max-width !important;
     }
 
-    .s\:mw-none {
+    .s_mw-none {
         max-width: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:mw-100 {
+    .m_mw-100 {
         max-width: 100% !important;
     }
 
-    .m\:mw1 {
-        max-width: 16px !important;
+    .m_mw1 {
+        max-width: $tp-space__3 !important;
     }
 
-    .m\:mw2 {
-        max-width: 24px !important;
+    .m_mw2 {
+        max-width: $tp-space__4 !important;
     }
 
-    .m\:mw3 {
-        max-width: 32px !important;
+    .m_mw3 {
+        max-width: $tp-space__5 !important;
     }
 
-    .m\:mw4 {
-        max-width: 64px !important;
+    .m_mw4 {
+        max-width: $tp-space__6 !important;
     }
 
-    .m\:mw5 {
-        max-width: 128px !important;
+    .m_mw5 {
+        max-width: $tp-space__7 !important;
     }
 
-    .m\:mw6 {
-        max-width: 256px !important;
+    .m_mw6 {
+        max-width: $tp-space__8 !important;
     }
 
-    .m\:mw7 {
+    .m_mw7 {
         max-width: 512px !important;
     }
 
-    .m\:mw8 {
+    .m_mw8 {
         max-width: 736px !important;
     }
 
-    .m\:mw9 {
-        max-width: 1024px !important;
+    .m_mw9 {
+        max-width: $tp-wrap__max-width !important;
     }
 
-    .m\:mw-none {
+    .m_mw-none {
         max-width: none !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:mw-100 {
+    .l_mw-100 {
         max-width: 100% !important;
     }
 
-    .l\:mw1 {
-        max-width: 16px !important;
+    .l_mw1 {
+        max-width: $tp-space__3 !important;
     }
 
-    .l\:mw2 {
-        max-width: 24px !important;
+    .l_mw2 {
+        max-width: $tp-space__4 !important;
     }
 
-    .l\:mw3 {
-        max-width: 32px !important;
+    .l_mw3 {
+        max-width: $tp-space__5 !important;
     }
 
-    .l\:mw4 {
-        max-width: 64px !important;
+    .l_mw4 {
+        max-width: $tp-space__6 !important;
     }
 
-    .l\:mw5 {
-        max-width: 128px !important;
+    .l_mw5 {
+        max-width: $tp-space__7 !important;
     }
 
-    .l\:mw6 {
-        max-width: 256px !important;
+    .l_mw6 {
+        max-width: $tp-space__8 !important;
     }
 
-    .l\:mw7 {
+    .l_mw7 {
         max-width: 512px !important;
     }
 
-    .l\:mw8 {
+    .l_mw8 {
         max-width: 736px !important;
     }
 
-    .l\:mw9 {
-        max-width: 1024px !important;
+    .l_mw9 {
+        max-width: $tp-wrap__max-width !important;
     }
 
-    .l\:mw-none {
+    .l_mw-none {
         max-width: none !important;
     }
 }

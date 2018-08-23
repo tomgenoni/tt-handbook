@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@thumbtack/thumbprint-atomic@^1.0.0":
+  version "1.0.0"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-atomic/-/@thumbtack/thumbprint-atomic-1.0.0/001bdc96957b73a8be6b5fc495f6b8904461f501.tgz#001bdc96957b73a8be6b5fc495f6b8904461f501"
+
 "@thumbtack/thumbprint-tokens@^4.1.1":
   version "4.1.1"
   resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-tokens/-/@thumbtack/thumbprint-tokens-4.1.1/a0ade788deaa25ef225653e9ec9c017d6dd7164a.tgz#a0ade788deaa25ef225653e9ec9c017d6dd7164a"
@@ -9,6 +13,10 @@
 "@thumbtack/thumbprint-tokens@^6.1.3":
   version "6.1.3"
   resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-tokens/-/@thumbtack/thumbprint-tokens-6.1.3/4fe786bb1e7d51a5ca7117e926d01ec0c3a11d17.tgz#4fe786bb1e7d51a5ca7117e926d01ec0c3a11d17"
+
+"@thumbtack/thumbprint-tokens@^6.2.0":
+  version "6.2.0"
+  resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-tokens/-/@thumbtack/thumbprint-tokens-6.2.0/558fe1b3b521999bce4de23014e97f9305a9dff0.tgz#558fe1b3b521999bce4de23014e97f9305a9dff0"
 
 "@thumbtack/tp-ui-component-avatar@^1.3.4":
   version "1.3.4"

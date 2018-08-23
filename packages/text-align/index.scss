@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .tl {
     text-align: left !important;
@@ -18,55 +18,55 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:tl {
+    .s_tl {
         text-align: left !important;
     }
 
-    .s\:tr {
+    .s_tr {
         text-align: right !important;
     }
 
-    .s\:tc {
+    .s_tc {
         text-align: center !important;
     }
 
-    .s\:tj {
+    .s_tj {
         text-align: justify !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:tl {
+    .m_tl {
         text-align: left !important;
     }
 
-    .m\:tr {
+    .m_tr {
         text-align: right !important;
     }
 
-    .m\:tc {
+    .m_tc {
         text-align: center !important;
     }
 
-    .m\:tj {
+    .m_tj {
         text-align: justify !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:tl {
+    .l_tl {
         text-align: left !important;
     }
 
-    .l\:tr {
+    .l_tr {
         text-align: right !important;
     }
 
-    .l\:tc {
+    .l_tc {
         text-align: center !important;
     }
 
-    .l\:tj {
+    .l_tj {
         text-align: justify !important;
     }
 }

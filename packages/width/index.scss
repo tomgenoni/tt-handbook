@@ -2,27 +2,27 @@
 @import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .w1 {
-    width: 16px !important;
+    width: $tp-space__3 !important;
 }
 
 .w2 {
-    width: 24px !important;
+    width: $tp-space__4 !important;
 }
 
 .w3 {
-    width: 32px !important;
+    width: $tp-space__5 !important;
 }
 
 .w4 {
-    width: 64px !important;
+    width: $tp-space__6 !important;
 }
 
 .w5 {
-    width: 128px !important;
+    width: $tp-space__7 !important;
 }
 
 .w6 {
-    width: 256px !important;
+    width: $tp-space__8 !important;
 }
 
 .w-10 {
@@ -86,259 +86,259 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:w1 {
-        width: 16px !important;
+    .s_w1 {
+        width: $tp-space__3 !important;
     }
 
-    .s\:w2 {
-        width: 24px !important;
+    .s_w2 {
+        width: $tp-space__4 !important;
     }
 
-    .s\:w3 {
-        width: 32px !important;
+    .s_w3 {
+        width: $tp-space__5 !important;
     }
 
-    .s\:w4 {
-        width: 64px !important;
+    .s_w4 {
+        width: $tp-space__6 !important;
     }
 
-    .s\:w5 {
-        width: 128px !important;
+    .s_w5 {
+        width: $tp-space__7 !important;
     }
 
-    .s\:w6 {
-        width: 256px !important;
+    .s_w6 {
+        width: $tp-space__8 !important;
     }
 
-    .s\:w-10 {
+    .s_w-10 {
         width: 10% !important;
     }
 
-    .s\:w-20 {
+    .s_w-20 {
         width: 20% !important;
     }
 
-    .s\:w-25 {
+    .s_w-25 {
         width: 25% !important;
     }
 
-    .s\:w-30 {
+    .s_w-30 {
         width: 30% !important;
     }
 
-    .s\:w-33 {
+    .s_w-33 {
         width: 33.333333% !important;
     }
 
-    .s\:w-40 {
+    .s_w-40 {
         width: 40% !important;
     }
 
-    .s\:w-50 {
+    .s_w-50 {
         width: 50% !important;
     }
 
-    .s\:w-60 {
+    .s_w-60 {
         width: 60% !important;
     }
 
-    .s\:w-66 {
+    .s_w-66 {
         width: 66.666666% !important;
     }
 
-    .s\:w-70 {
+    .s_w-70 {
         width: 70% !important;
     }
 
-    .s\:w-75 {
+    .s_w-75 {
         width: 75% !important;
     }
 
-    .s\:w-80 {
+    .s_w-80 {
         width: 80% !important;
     }
 
-    .s\:w-90 {
+    .s_w-90 {
         width: 90% !important;
     }
 
-    .s\:w-100 {
+    .s_w-100 {
         width: 100% !important;
     }
 
-    .s\:w-auto {
+    .s_w-auto {
         width: auto !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:w1 {
-        width: 16px !important;
+    .m_w1 {
+        width: $tp-space__3 !important;
     }
 
-    .m\:w2 {
-        width: 24px !important;
+    .m_w2 {
+        width: $tp-space__4 !important;
     }
 
-    .m\:w3 {
-        width: 32px !important;
+    .m_w3 {
+        width: $tp-space__5 !important;
     }
 
-    .m\:w4 {
-        width: 64px !important;
+    .m_w4 {
+        width: $tp-space__6 !important;
     }
 
-    .m\:w5 {
-        width: 128px !important;
+    .m_w5 {
+        width: $tp-space__7 !important;
     }
 
-    .m\:w6 {
-        width: 256px !important;
+    .m_w6 {
+        width: $tp-space__8 !important;
     }
 
-    .m\:w-10 {
+    .m_w-10 {
         width: 10% !important;
     }
 
-    .m\:w-20 {
+    .m_w-20 {
         width: 20% !important;
     }
 
-    .m\:w-25 {
+    .m_w-25 {
         width: 25% !important;
     }
 
-    .m\:w-30 {
+    .m_w-30 {
         width: 30% !important;
     }
 
-    .m\:w-33 {
+    .m_w-33 {
         width: 33.333333% !important;
     }
 
-    .m\:w-40 {
+    .m_w-40 {
         width: 40% !important;
     }
 
-    .m\:w-50 {
+    .m_w-50 {
         width: 50% !important;
     }
 
-    .m\:w-60 {
+    .m_w-60 {
         width: 60% !important;
     }
 
-    .m\:w-66 {
+    .m_w-66 {
         width: 66.666666% !important;
     }
 
-    .m\:w-70 {
+    .m_w-70 {
         width: 70% !important;
     }
 
-    .m\:w-75 {
+    .m_w-75 {
         width: 75% !important;
     }
 
-    .m\:w-80 {
+    .m_w-80 {
         width: 80% !important;
     }
 
-    .m\:w-90 {
+    .m_w-90 {
         width: 90% !important;
     }
 
-    .m\:w-100 {
+    .m_w-100 {
         width: 100% !important;
     }
 
-    .m\:w-auto {
+    .m_w-auto {
         width: auto !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:w1 {
-        width: 16px !important;
+    .l_w1 {
+        width: $tp-space__3 !important;
     }
 
-    .l\:w2 {
-        width: 24px !important;
+    .l_w2 {
+        width: $tp-space__4 !important;
     }
 
-    .l\:w3 {
-        width: 32px !important;
+    .l_w3 {
+        width: $tp-space__5 !important;
     }
 
-    .l\:w4 {
-        width: 64px !important;
+    .l_w4 {
+        width: $tp-space__6 !important;
     }
 
-    .l\:w5 {
-        width: 128px !important;
+    .l_w5 {
+        width: $tp-space__7 !important;
     }
 
-    .l\:w6 {
-        width: 256px !important;
+    .l_w6 {
+        width: $tp-space__8 !important;
     }
 
-    .l\:w-10 {
+    .l_w-10 {
         width: 10% !important;
     }
 
-    .l\:w-20 {
+    .l_w-20 {
         width: 20% !important;
     }
 
-    .l\:w-25 {
+    .l_w-25 {
         width: 25% !important;
     }
 
-    .l\:w-30 {
+    .l_w-30 {
         width: 30% !important;
     }
 
-    .l\:w-33 {
+    .l_w-33 {
         width: 33.333333% !important;
     }
 
-    .l\:w-40 {
+    .l_w-40 {
         width: 40% !important;
     }
 
-    .l\:w-50 {
+    .l_w-50 {
         width: 50% !important;
     }
 
-    .l\:w-60 {
+    .l_w-60 {
         width: 60% !important;
     }
 
-    .l\:w-66 {
+    .l_w-66 {
         width: 66.666666% !important;
     }
 
-    .l\:w-70 {
+    .l_w-70 {
         width: 70% !important;
     }
 
-    .l\:w-75 {
+    .l_w-75 {
         width: 75% !important;
     }
 
-    .l\:w-80 {
+    .l_w-80 {
         width: 80% !important;
     }
 
-    .l\:w-90 {
+    .l_w-90 {
         width: 90% !important;
     }
 
-    .l\:w-100 {
+    .l_w-100 {
         width: 100% !important;
     }
 
-    .l\:w-auto {
+    .l_w-auto {
         width: auto !important;
     }
 }

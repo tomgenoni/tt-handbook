@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .ws-normal {
     white-space: normal !important;
@@ -14,43 +14,43 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:ws-normal {
+    .s_ws-normal {
         white-space: normal !important;
     }
 
-    .s\:nowrap {
+    .s_nowrap {
         white-space: nowrap !important;
     }
 
-    .s\:pre {
+    .s_pre {
         white-space: pre !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:ws-normal {
+    .m_ws-normal {
         white-space: normal !important;
     }
 
-    .m\:nowrap {
+    .m_nowrap {
         white-space: nowrap !important;
     }
 
-    .m\:pre {
+    .m_pre {
         white-space: pre !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:ws-normal {
+    .l_ws-normal {
         white-space: normal !important;
     }
 
-    .l\:nowrap {
+    .l_nowrap {
         white-space: nowrap !important;
     }
 
-    .l\:pre {
+    .l_pre {
         white-space: pre !important;
     }
 }

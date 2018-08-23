@@ -35,7 +35,7 @@ npm manifest:
     },
     "homepage": "https://github.com/tomgenoni/tt-utils#readme",
     "dependencies": {
-      "@thumbtack/thumbprint-tokens": "^6.1.3",
+      "@thumbtack/thumbprint-tokens": "^6.2.0",
       "@thumbtack/tp-ui-component-avatar": "^1.3.4",
       "@thumbtack/tp-ui-component-loader": "^1.3.3",
       "@thumbtack/tp-ui-core-font-face": "^2.0.3",
@@ -54,6 +54,7 @@ npm manifest:
       "@thumbtack/tp-ui-element-textarea": "^2.0.2",
       "@thumbtack/tp-ui-element-type": "^4.0.3",
       "@thumbtack/tp-ui-layout-form": "^3.0.4",
+      "@thumbtack/tp-ui-layout-grid": "^1.3.1",
       "@thumbtack/tp-ui-layout-wrap": "^1.2.1",
       "browsersync": "^0.0.1-security",
       "chokidar": "^2.0.4",
@@ -81,6 +82,10 @@ Lockfile:
   "@thumbtack/thumbprint-tokens@^6.1.3":
     version "6.1.3"
     resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-tokens/-/@thumbtack/thumbprint-tokens-6.1.3/4fe786bb1e7d51a5ca7117e926d01ec0c3a11d17.tgz#4fe786bb1e7d51a5ca7117e926d01ec0c3a11d17"
+  
+  "@thumbtack/thumbprint-tokens@^6.2.0":
+    version "6.2.0"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/thumbprint-tokens/-/@thumbtack/thumbprint-tokens-6.2.0/558fe1b3b521999bce4de23014e97f9305a9dff0.tgz#558fe1b3b521999bce4de23014e97f9305a9dff0"
   
   "@thumbtack/tp-ui-component-avatar@^1.3.4":
     version "1.3.4"
@@ -189,6 +194,14 @@ Lockfile:
     resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-layout-form/-/@thumbtack/tp-ui-layout-form-3.0.4/627466029964031239b9f015a861e93f9574cf48.tgz#627466029964031239b9f015a861e93f9574cf48"
     dependencies:
       "@thumbtack/thumbprint-tokens" "^6.1.3"
+      "@thumbtack/tp-ui-core-function" "^1.0.5"
+      "@thumbtack/tp-ui-core-mixin" "^3.0.0"
+  
+  "@thumbtack/tp-ui-layout-grid@^1.3.1":
+    version "1.3.1"
+    resolved "https://production-npm.thumbtack.com/@thumbtack/tp-ui-layout-grid/-/@thumbtack/tp-ui-layout-grid-1.3.1/320d339a7750cfbec30e52f523dfdb720f6a564b.tgz#320d339a7750cfbec30e52f523dfdb720f6a564b"
+    dependencies:
+      "@thumbtack/thumbprint-tokens" "^4.1.1"
       "@thumbtack/tp-ui-core-function" "^1.0.5"
       "@thumbtack/tp-ui-core-mixin" "^3.0.0"
   

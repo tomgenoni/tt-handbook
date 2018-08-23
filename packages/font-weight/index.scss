@@ -1,40 +1,40 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .normal {
-    font-weight: 400 !important;
+    font-weight: $tp-font__weight__normal !important;
 }
 
 .b {
-    font-weight: 700 !important;
+    font-weight: $tp-font__weight__bold !important;
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:normal {
-        font-weight: 400 !important;
+    .s_normal {
+        font-weight: $tp-font__weight__normal !important;
     }
 
-    .s\:b {
-        font-weight: 700 !important;
+    .s_b {
+        font-weight: $tp-font__weight__bold !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:normal {
-        font-weight: 400 !important;
+    .m_normal {
+        font-weight: $tp-font__weight__normal !important;
     }
 
-    .m\:b {
-        font-weight: 700 !important;
+    .m_b {
+        font-weight: $tp-font__weight__bold !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:normal {
-        font-weight: 400 !important;
+    .l_normal {
+        font-weight: $tp-font__weight__normal !important;
     }
 
-    .l\:b {
-        font-weight: 700 !important;
+    .l_b {
+        font-weight: $tp-font__weight__bold !important;
     }
 }

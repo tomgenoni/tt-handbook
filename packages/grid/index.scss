@@ -1,23 +1,23 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .grid {
-    margin-left: -16px !important;
+    margin-left: -$tp-space__3 !important;
     display: flex !important;
     flex-wrap: wrap !important;
 }
 
 .grid > * {
-    padding-left: 16px !important;
+    padding-left: $tp-space__3 !important;
     width: 100% !important;
 }
 
 .grid-wide {
-    margin-left: -32px !important;
+    margin-left: -$tp-space__5 !important;
 }
 
 .grid-wide > * {
-    padding-left: 32px !important;
+    padding-left: $tp-space__5 !important;
 }
 
 .grid-flush {
@@ -53,7 +53,7 @@
 }
 
 .col-7 {
-    width: 58.333333 !important;
+    width: 58.333333% !important;
 }
 
 .col-8 {
@@ -77,232 +77,232 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:grid {
-        margin-left: -16px !important;
+    .s_grid {
+        margin-left: -$tp-space__3 !important;
         display: flex !important;
         flex-wrap: wrap !important;
     }
 
-    .s\:grid > * {
-        padding-left: 16px !important;
+    .s_grid > * {
+        padding-left: $tp-space__3 !important;
         width: 100% !important;
     }
 
-    .s\:grid-wide {
-        margin-left: -32px !important;
+    .s_grid-wide {
+        margin-left: -$tp-space__5 !important;
     }
 
-    .s\:grid-wide > * {
-        padding-left: 32px !important;
+    .s_grid-wide > * {
+        padding-left: $tp-space__5 !important;
     }
 
-    .s\:grid-flush {
+    .s_grid-flush {
         margin-left: 0 !important;
     }
 
-    .s\:grid-flush > * {
+    .s_grid-flush > * {
         padding-left: 0 !important;
     }
 
-    .s\:col-1 {
+    .s_col-1 {
         width: 8.333333% !important;
     }
 
-    .s\:col-2 {
+    .s_col-2 {
         width: 16.666666% !important;
     }
 
-    .s\:col-3 {
+    .s_col-3 {
         width: 25% !important;
     }
 
-    .s\:col-4 {
+    .s_col-4 {
         width: 33.333333% !important;
     }
 
-    .s\:col-5 {
+    .s_col-5 {
         width: 41.666666% !important;
     }
 
-    .s\:col-6 {
+    .s_col-6 {
         width: 50% !important;
     }
 
-    .s\:col-7 {
-        width: 58.333333 !important;
+    .s_col-7 {
+        width: 58.333333% !important;
     }
 
-    .s\:col-8 {
+    .s_col-8 {
         width: 66.666666% !important;
     }
 
-    .s\:col-9 {
+    .s_col-9 {
         width: 75% !important;
     }
 
-    .s\:col-10 {
+    .s_col-10 {
         width: 83.333333% !important;
     }
 
-    .s\:col-11 {
+    .s_col-11 {
         width: 91.666666% !important;
     }
 
-    .s\:col-12 {
+    .s_col-12 {
         width: 100% !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:grid {
-        margin-left: -16px !important;
+    .m_grid {
+        margin-left: -$tp-space__3 !important;
         display: flex !important;
         flex-wrap: wrap !important;
     }
 
-    .m\:grid > * {
-        padding-left: 16px !important;
+    .m_grid > * {
+        padding-left: $tp-space__3 !important;
         width: 100% !important;
     }
 
-    .m\:grid-wide {
-        margin-left: -32px !important;
+    .m_grid-wide {
+        margin-left: -$tp-space__5 !important;
     }
 
-    .m\:grid-wide > * {
-        padding-left: 32px !important;
+    .m_grid-wide > * {
+        padding-left: $tp-space__5 !important;
     }
 
-    .m\:grid-flush {
+    .m_grid-flush {
         margin-left: 0 !important;
     }
 
-    .m\:grid-flush > * {
+    .m_grid-flush > * {
         padding-left: 0 !important;
     }
 
-    .m\:col-1 {
+    .m_col-1 {
         width: 8.333333% !important;
     }
 
-    .m\:col-2 {
+    .m_col-2 {
         width: 16.666666% !important;
     }
 
-    .m\:col-3 {
+    .m_col-3 {
         width: 25% !important;
     }
 
-    .m\:col-4 {
+    .m_col-4 {
         width: 33.333333% !important;
     }
 
-    .m\:col-5 {
+    .m_col-5 {
         width: 41.666666% !important;
     }
 
-    .m\:col-6 {
+    .m_col-6 {
         width: 50% !important;
     }
 
-    .m\:col-7 {
-        width: 58.333333 !important;
+    .m_col-7 {
+        width: 58.333333% !important;
     }
 
-    .m\:col-8 {
+    .m_col-8 {
         width: 66.666666% !important;
     }
 
-    .m\:col-9 {
+    .m_col-9 {
         width: 75% !important;
     }
 
-    .m\:col-10 {
+    .m_col-10 {
         width: 83.333333% !important;
     }
 
-    .m\:col-11 {
+    .m_col-11 {
         width: 91.666666% !important;
     }
 
-    .m\:col-12 {
+    .m_col-12 {
         width: 100% !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:grid {
-        margin-left: -16px !important;
+    .l_grid {
+        margin-left: -$tp-space__3 !important;
         display: flex !important;
         flex-wrap: wrap !important;
     }
 
-    .l\:grid > * {
-        padding-left: 16px !important;
+    .l_grid > * {
+        padding-left: $tp-space__3 !important;
         width: 100% !important;
     }
 
-    .l\:grid-wide {
-        margin-left: -32px !important;
+    .l_grid-wide {
+        margin-left: -$tp-space__5 !important;
     }
 
-    .l\:grid-wide > * {
-        padding-left: 32px !important;
+    .l_grid-wide > * {
+        padding-left: $tp-space__5 !important;
     }
 
-    .l\:grid-flush {
+    .l_grid-flush {
         margin-left: 0 !important;
     }
 
-    .l\:grid-flush > * {
+    .l_grid-flush > * {
         padding-left: 0 !important;
     }
 
-    .l\:col-1 {
+    .l_col-1 {
         width: 8.333333% !important;
     }
 
-    .l\:col-2 {
+    .l_col-2 {
         width: 16.666666% !important;
     }
 
-    .l\:col-3 {
+    .l_col-3 {
         width: 25% !important;
     }
 
-    .l\:col-4 {
+    .l_col-4 {
         width: 33.333333% !important;
     }
 
-    .l\:col-5 {
+    .l_col-5 {
         width: 41.666666% !important;
     }
 
-    .l\:col-6 {
+    .l_col-6 {
         width: 50% !important;
     }
 
-    .l\:col-7 {
-        width: 58.333333 !important;
+    .l_col-7 {
+        width: 58.333333% !important;
     }
 
-    .l\:col-8 {
+    .l_col-8 {
         width: 66.666666% !important;
     }
 
-    .l\:col-9 {
+    .l_col-9 {
         width: 75% !important;
     }
 
-    .l\:col-10 {
+    .l_col-10 {
         width: 83.333333% !important;
     }
 
-    .l\:col-11 {
+    .l_col-11 {
         width: 91.666666% !important;
     }
 
-    .l\:col-12 {
+    .l_col-12 {
         width: 100% !important;
     }
 }

@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .cover {
     background-size: cover !important;
@@ -10,31 +10,31 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:cover {
+    .s_cover {
         background-size: cover !important;
     }
 
-    .s\:contain {
+    .s_contain {
         background-size: contain !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:cover {
+    .m_cover {
         background-size: cover !important;
     }
 
-    .m\:contain {
+    .m_contain {
         background-size: contain !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:cover {
+    .l_cover {
         background-size: cover !important;
     }
 
-    .l\:contain {
+    .l_contain {
         background-size: contain !important;
     }
 }

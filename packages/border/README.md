@@ -1,9 +1,9 @@
-# Border
+## Border
 
 * Set border on all sides or individual sides.
 * Use with [border-colors](#border-colors) classes.
 
-## Examples
+### Examples
 
 <div class="pa3 ba b-gray-300 mb4">
     <div class="grid">

@@ -1,5 +1,5 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .bg-center {
     background-repeat: no-repeat !important;
@@ -27,81 +27,81 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:bg-center {
+    .s_bg-center {
         background-repeat: no-repeat !important;
         background-position: center center !important;
     }
 
-    .s\:bg-top {
+    .s_bg-top {
         background-repeat: no-repeat !important;
         background-position: top center !important;
     }
 
-    .s\:bg-right {
+    .s_bg-right {
         background-repeat: no-repeat !important;
         background-position: center right !important;
     }
 
-    .s\:bg-bottom {
+    .s_bg-bottom {
         background-repeat: no-repeat !important;
         background-position: bottom center !important;
     }
 
-    .s\:bg-left {
+    .s_bg-left {
         background-repeat: no-repeat !important;
         background-position: center left !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:bg-center {
+    .m_bg-center {
         background-repeat: no-repeat !important;
         background-position: center center !important;
     }
 
-    .m\:bg-top {
+    .m_bg-top {
         background-repeat: no-repeat !important;
         background-position: top center !important;
     }
 
-    .m\:bg-right {
+    .m_bg-right {
         background-repeat: no-repeat !important;
         background-position: center right !important;
     }
 
-    .m\:bg-bottom {
+    .m_bg-bottom {
         background-repeat: no-repeat !important;
         background-position: bottom center !important;
     }
 
-    .m\:bg-left {
+    .m_bg-left {
         background-repeat: no-repeat !important;
         background-position: center left !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:bg-center {
+    .l_bg-center {
         background-repeat: no-repeat !important;
         background-position: center center !important;
     }
 
-    .l\:bg-top {
+    .l_bg-top {
         background-repeat: no-repeat !important;
         background-position: top center !important;
     }
 
-    .l\:bg-right {
+    .l_bg-right {
         background-repeat: no-repeat !important;
         background-position: center right !important;
     }
 
-    .l\:bg-bottom {
+    .l_bg-bottom {
         background-repeat: no-repeat !important;
         background-position: bottom center !important;
     }
 
-    .l\:bg-left {
+    .l_bg-left {
         background-repeat: no-repeat !important;
         background-position: center left !important;
     }

@@ -1,28 +1,28 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .h1 {
-    height: 16px !important;
+    height: $tp-space__3 !important;
 }
 
 .h2 {
-    height: 24px !important;
+    height: $tp-space__4 !important;
 }
 
 .h3 {
-    height: 32px !important;
+    height: $tp-space__5 !important;
 }
 
 .h4 {
-    height: 64px !important;
+    height: $tp-space__6 !important;
 }
 
 .h5 {
-    height: 128px !important;
+    height: $tp-space__7 !important;
 }
 
 .h6 {
-    height: 256px !important;
+    height: $tp-space__8 !important;
 }
 
 .h-0 {
@@ -78,235 +78,235 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:h1 {
-        height: 16px !important;
+    .s_h1 {
+        height: $tp-space__3 !important;
     }
 
-    .s\:h2 {
-        height: 24px !important;
+    .s_h2 {
+        height: $tp-space__4 !important;
     }
 
-    .s\:h3 {
-        height: 32px !important;
+    .s_h3 {
+        height: $tp-space__5 !important;
     }
 
-    .s\:h4 {
-        height: 64px !important;
+    .s_h4 {
+        height: $tp-space__6 !important;
     }
 
-    .s\:h5 {
-        height: 128px !important;
+    .s_h5 {
+        height: $tp-space__7 !important;
     }
 
-    .s\:h6 {
-        height: 256px !important;
+    .s_h6 {
+        height: $tp-space__8 !important;
     }
 
-    .s\:h-0 {
+    .s_h-0 {
         height: 0 !important;
     }
 
-    .s\:h-1\/4 {
+    .s_h-1\/4 {
         height: 25% !important;
     }
 
-    .s\:h-1\/2 {
+    .s_h-1\/2 {
         height: 50% !important;
     }
 
-    .s\:h-3\/4 {
+    .s_h-3\/4 {
         height: 75% !important;
     }
 
-    .s\:h-100 {
+    .s_h-100 {
         height: 100% !important;
     }
 
-    .s\:min-h-100 {
+    .s_min-h-100 {
         min-height: 100% !important;
     }
 
-    .s\:vh-1\/4 {
+    .s_vh-1\/4 {
         height: 25vh !important;
     }
 
-    .s\:vh-1\/2 {
+    .s_vh-1\/2 {
         height: 50vh !important;
     }
 
-    .s\:vh-3\/4 {
+    .s_vh-3\/4 {
         height: 75vh !important;
     }
 
-    .s\:vh-100 {
+    .s_vh-100 {
         height: 100vh !important;
     }
 
-    .s\:min-vh-100 {
+    .s_min-vh-100 {
         min-height: 100vh !important;
     }
 
-    .s\:h-auto {
+    .s_h-auto {
         height: auto !important;
     }
 
-    .s\:h-inherit {
+    .s_h-inherit {
         height: inherit !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:h1 {
-        height: 16px !important;
+    .m_h1 {
+        height: $tp-space__3 !important;
     }
 
-    .m\:h2 {
-        height: 24px !important;
+    .m_h2 {
+        height: $tp-space__4 !important;
     }
 
-    .m\:h3 {
-        height: 32px !important;
+    .m_h3 {
+        height: $tp-space__5 !important;
     }
 
-    .m\:h4 {
-        height: 64px !important;
+    .m_h4 {
+        height: $tp-space__6 !important;
     }
 
-    .m\:h5 {
-        height: 128px !important;
+    .m_h5 {
+        height: $tp-space__7 !important;
     }
 
-    .m\:h6 {
-        height: 256px !important;
+    .m_h6 {
+        height: $tp-space__8 !important;
     }
 
-    .m\:h-0 {
+    .m_h-0 {
         height: 0 !important;
     }
 
-    .m\:h-1\/4 {
+    .m_h-1\/4 {
         height: 25% !important;
     }
 
-    .m\:h-1\/2 {
+    .m_h-1\/2 {
         height: 50% !important;
     }
 
-    .m\:h-3\/4 {
+    .m_h-3\/4 {
         height: 75% !important;
     }
 
-    .m\:h-100 {
+    .m_h-100 {
         height: 100% !important;
     }
 
-    .m\:min-h-100 {
+    .m_min-h-100 {
         min-height: 100% !important;
     }
 
-    .m\:vh-1\/4 {
+    .m_vh-1\/4 {
         height: 25vh !important;
     }
 
-    .m\:vh-1\/2 {
+    .m_vh-1\/2 {
         height: 50vh !important;
     }
 
-    .m\:vh-3\/4 {
+    .m_vh-3\/4 {
         height: 75vh !important;
     }
 
-    .m\:vh-100 {
+    .m_vh-100 {
         height: 100vh !important;
     }
 
-    .m\:min-vh-100 {
+    .m_min-vh-100 {
         min-height: 100vh !important;
     }
 
-    .m\:h-auto {
+    .m_h-auto {
         height: auto !important;
     }
 
-    .m\:h-inherit {
+    .m_h-inherit {
         height: inherit !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:h1 {
-        height: 16px !important;
+    .l_h1 {
+        height: $tp-space__3 !important;
     }
 
-    .l\:h2 {
-        height: 24px !important;
+    .l_h2 {
+        height: $tp-space__4 !important;
     }
 
-    .l\:h3 {
-        height: 32px !important;
+    .l_h3 {
+        height: $tp-space__5 !important;
     }
 
-    .l\:h4 {
-        height: 64px !important;
+    .l_h4 {
+        height: $tp-space__6 !important;
     }
 
-    .l\:h5 {
-        height: 128px !important;
+    .l_h5 {
+        height: $tp-space__7 !important;
     }
 
-    .l\:h6 {
-        height: 256px !important;
+    .l_h6 {
+        height: $tp-space__8 !important;
     }
 
-    .l\:h-0 {
+    .l_h-0 {
         height: 0 !important;
     }
 
-    .l\:h-1\/4 {
+    .l_h-1\/4 {
         height: 25% !important;
     }
 
-    .l\:h-1\/2 {
+    .l_h-1\/2 {
         height: 50% !important;
     }
 
-    .l\:h-3\/4 {
+    .l_h-3\/4 {
         height: 75% !important;
     }
 
-    .l\:h-100 {
+    .l_h-100 {
         height: 100% !important;
     }
 
-    .l\:min-h-100 {
+    .l_min-h-100 {
         min-height: 100% !important;
     }
 
-    .l\:vh-1\/4 {
+    .l_vh-1\/4 {
         height: 25vh !important;
     }
 
-    .l\:vh-1\/2 {
+    .l_vh-1\/2 {
         height: 50vh !important;
     }
 
-    .l\:vh-3\/4 {
+    .l_vh-3\/4 {
         height: 75vh !important;
     }
 
-    .l\:vh-100 {
+    .l_vh-100 {
         height: 100vh !important;
     }
 
-    .l\:min-vh-100 {
+    .l_min-vh-100 {
         min-height: 100vh !important;
     }
 
-    .l\:h-auto {
+    .l_h-auto {
         height: auto !important;
     }
 
-    .l\:h-inherit {
+    .l_h-inherit {
         height: inherit !important;
     }
 }

@@ -1,8 +1,8 @@
-# Border Width
+## Border Width
 
 Border widths are set to `1px` by default, these classes increase border width.
 
-## Examples
+### Examples
 
 <div class="pa3 ba b-gray-300 mb4">
     <div class="grid">

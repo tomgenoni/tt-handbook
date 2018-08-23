@@ -1,11 +1,11 @@
-# Truncate
+## Truncate
 
 Single-line truncation.
 
 * An ellipsis will show only on Webkit browsers, like Safari and Chrome.
 * Truncating to two or more lines requires custom CSS.
 
-## Examples
+### Examples
 
 <div class="pa3 ba b-gray-300 mb4">
     <div class="truncate mb3 b">In the era of instant-everything, it’s crazy that you still have to waste an entire afternoon researching, calling and comparing local pros whenever you need one.</div>

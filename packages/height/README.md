@@ -1,8 +1,8 @@
-# Height
+## Height
 
 Options for setting fixed heights.
 
-## Examples
+### Examples
 
 <div class="pa3 ba b-gray-300 mb4">
     <div class="grid">

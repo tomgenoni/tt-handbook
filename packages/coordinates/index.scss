@@ -1,68 +1,68 @@
-@import './node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
-@import './node_modules/@thumbtack/tp-ui-core-mixin/_index';
+@import '../../node_modules/@thumbtack/thumbprint-tokens/dist/scss/_index';
+@import '../../node_modules/@thumbtack/tp-ui-core-mixin/_index';
 
 .top1 {
-    top: 8px !important;
+    top: $tp-space__2 !important;
 }
 
 .right1 {
-    right: 8px !important;
+    right: $tp-space__2 !important;
 }
 
 .bottom1 {
-    bottom: 8px !important;
+    bottom: $tp-space__2 !important;
 }
 
 .left1 {
-    left: 8px !important;
+    left: $tp-space__2 !important;
 }
 
 .top2 {
-    top: 16px !important;
+    top: $tp-space__3 !important;
 }
 
 .right2 {
-    right: 16px !important;
+    right: $tp-space__3 !important;
 }
 
 .bottom2 {
-    bottom: 16px !important;
+    bottom: $tp-space__3 !important;
 }
 
 .left2 {
-    left: 16px !important;
+    left: $tp-space__3 !important;
 }
 
 .-top1 {
-    top: -8px !important;
+    top: -$tp-space__2 !important;
 }
 
 .-right1 {
-    right: -8px !important;
+    right: -$tp-space__2 !important;
 }
 
 .-bottom1 {
-    bottom: -8px !important;
+    bottom: -$tp-space__2 !important;
 }
 
 .-left1 {
-    left: -8px !important;
+    left: -$tp-space__2 !important;
 }
 
 .-top2 {
-    top: -16px !important;
+    top: -$tp-space__3 !important;
 }
 
 .-right2 {
-    right: -16px !important;
+    right: -$tp-space__3 !important;
 }
 
 .-bottom2 {
-    bottom: -16px !important;
+    bottom: -$tp-space__3 !important;
 }
 
 .-left2 {
-    left: -16px !important;
+    left: -$tp-space__3 !important;
 }
 
 .absolute-fill {
@@ -249,748 +249,748 @@
 }
 
 @include tp-respond-above($tp-breakpoint__small) {
-    .s\:top1 {
-        top: 8px !important;
+    .s_top1 {
+        top: $tp-space__2 !important;
     }
 
-    .s\:right1 {
-        right: 8px !important;
+    .s_right1 {
+        right: $tp-space__2 !important;
     }
 
-    .s\:bottom1 {
-        bottom: 8px !important;
+    .s_bottom1 {
+        bottom: $tp-space__2 !important;
     }
 
-    .s\:left1 {
-        left: 8px !important;
+    .s_left1 {
+        left: $tp-space__2 !important;
     }
 
-    .s\:top2 {
-        top: 16px !important;
+    .s_top2 {
+        top: $tp-space__3 !important;
     }
 
-    .s\:right2 {
-        right: 16px !important;
+    .s_right2 {
+        right: $tp-space__3 !important;
     }
 
-    .s\:bottom2 {
-        bottom: 16px !important;
+    .s_bottom2 {
+        bottom: $tp-space__3 !important;
     }
 
-    .s\:left2 {
-        left: 16px !important;
+    .s_left2 {
+        left: $tp-space__3 !important;
     }
 
-    .s\:-top1 {
-        top: -8px !important;
+    .s_-top1 {
+        top: -$tp-space__2 !important;
     }
 
-    .s\:-right1 {
-        right: -8px !important;
+    .s_-right1 {
+        right: -$tp-space__2 !important;
     }
 
-    .s\:-bottom1 {
-        bottom: -8px !important;
+    .s_-bottom1 {
+        bottom: -$tp-space__2 !important;
     }
 
-    .s\:-left1 {
-        left: -8px !important;
+    .s_-left1 {
+        left: -$tp-space__2 !important;
     }
 
-    .s\:-top2 {
-        top: -16px !important;
+    .s_-top2 {
+        top: -$tp-space__3 !important;
     }
 
-    .s\:-right2 {
-        right: -16px !important;
+    .s_-right2 {
+        right: -$tp-space__3 !important;
     }
 
-    .s\:-bottom2 {
-        bottom: -16px !important;
+    .s_-bottom2 {
+        bottom: -$tp-space__3 !important;
     }
 
-    .s\:-left2 {
-        left: -16px !important;
+    .s_-left2 {
+        left: -$tp-space__3 !important;
     }
 
-    .s\:absolute-fill {
+    .s_absolute-fill {
         top: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
         left: 0 !important;
     }
 
-    .s\:top-0 {
+    .s_top-0 {
         top: 0 !important;
     }
 
-    .s\:top-1 {
+    .s_top-1 {
         top: 1px !important;
     }
 
-    .s\:top-2 {
+    .s_top-2 {
         top: 2px !important;
     }
 
-    .s\:top-3 {
+    .s_top-3 {
         top: 3px !important;
     }
 
-    .s\:top-4 {
+    .s_top-4 {
         top: 4px !important;
     }
 
-    .s\:top-5 {
+    .s_top-5 {
         top: 5px !important;
     }
 
-    .s\:right-0 {
+    .s_right-0 {
         right: 0 !important;
     }
 
-    .s\:right-1 {
+    .s_right-1 {
         right: 1px !important;
     }
 
-    .s\:right-2 {
+    .s_right-2 {
         right: 2px !important;
     }
 
-    .s\:right-3 {
+    .s_right-3 {
         right: 3px !important;
     }
 
-    .s\:right-4 {
+    .s_right-4 {
         right: 4px !important;
     }
 
-    .s\:right-5 {
+    .s_right-5 {
         right: 5px !important;
     }
 
-    .s\:bottom-0 {
+    .s_bottom-0 {
         bottom: 0 !important;
     }
 
-    .s\:bottom-1 {
+    .s_bottom-1 {
         bottom: 1px !important;
     }
 
-    .s\:bottom-2 {
+    .s_bottom-2 {
         bottom: 2px !important;
     }
 
-    .s\:bottom-3 {
+    .s_bottom-3 {
         bottom: 3px !important;
     }
 
-    .s\:bottom-4 {
+    .s_bottom-4 {
         bottom: 4px !important;
     }
 
-    .s\:bottom-5 {
+    .s_bottom-5 {
         bottom: 5px !important;
     }
 
-    .s\:left-0 {
+    .s_left-0 {
         left: 0 !important;
     }
 
-    .s\:left-1 {
+    .s_left-1 {
         left: 1px !important;
     }
 
-    .s\:left-2 {
+    .s_left-2 {
         left: 2px !important;
     }
 
-    .s\:left-3 {
+    .s_left-3 {
         left: 3px !important;
     }
 
-    .s\:left-4 {
+    .s_left-4 {
         left: 4px !important;
     }
 
-    .s\:left-5 {
+    .s_left-5 {
         left: 5px !important;
     }
 
-    .s\:-top-1 {
+    .s_-top-1 {
         top: -1px !important;
     }
 
-    .s\:-top-2 {
+    .s_-top-2 {
         top: -2px !important;
     }
 
-    .s\:-top-3 {
+    .s_-top-3 {
         top: -3px !important;
     }
 
-    .s\:-top-4 {
+    .s_-top-4 {
         top: -4px !important;
     }
 
-    .s\:-top-5 {
+    .s_-top-5 {
         top: -5px !important;
     }
 
-    .s\:-right-1 {
+    .s_-right-1 {
         right: -1px !important;
     }
 
-    .s\:-right-2 {
+    .s_-right-2 {
         right: -2px !important;
     }
 
-    .s\:-right-3 {
+    .s_-right-3 {
         right: -3px !important;
     }
 
-    .s\:-right-4 {
+    .s_-right-4 {
         right: -4px !important;
     }
 
-    .s\:-right-5 {
+    .s_-right-5 {
         right: -5px !important;
     }
 
-    .s\:-bottom-1 {
+    .s_-bottom-1 {
         bottom: -1px !important;
     }
 
-    .s\:-bottom-2 {
+    .s_-bottom-2 {
         bottom: -2px !important;
     }
 
-    .s\:-bottom-3 {
+    .s_-bottom-3 {
         bottom: -3px !important;
     }
 
-    .s\:-bottom-4 {
+    .s_-bottom-4 {
         bottom: -4px !important;
     }
 
-    .s\:-bottom-5 {
+    .s_-bottom-5 {
         bottom: -5px !important;
     }
 
-    .s\:-left-1 {
+    .s_-left-1 {
         left: -1px !important;
     }
 
-    .s\:-left-2 {
+    .s_-left-2 {
         left: -2px !important;
     }
 
-    .s\:-left-3 {
+    .s_-left-3 {
         left: -3px !important;
     }
 
-    .s\:-left-4 {
+    .s_-left-4 {
         left: -4px !important;
     }
 
-    .s\:-left-5 {
+    .s_-left-5 {
         left: -5px !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__medium) {
-    .m\:top1 {
-        top: 8px !important;
+    .m_top1 {
+        top: $tp-space__2 !important;
     }
 
-    .m\:right1 {
-        right: 8px !important;
+    .m_right1 {
+        right: $tp-space__2 !important;
     }
 
-    .m\:bottom1 {
-        bottom: 8px !important;
+    .m_bottom1 {
+        bottom: $tp-space__2 !important;
     }
 
-    .m\:left1 {
-        left: 8px !important;
+    .m_left1 {
+        left: $tp-space__2 !important;
     }
 
-    .m\:top2 {
-        top: 16px !important;
+    .m_top2 {
+        top: $tp-space__3 !important;
     }
 
-    .m\:right2 {
-        right: 16px !important;
+    .m_right2 {
+        right: $tp-space__3 !important;
     }
 
-    .m\:bottom2 {
-        bottom: 16px !important;
+    .m_bottom2 {
+        bottom: $tp-space__3 !important;
     }
 
-    .m\:left2 {
-        left: 16px !important;
+    .m_left2 {
+        left: $tp-space__3 !important;
     }
 
-    .m\:-top1 {
-        top: -8px !important;
+    .m_-top1 {
+        top: -$tp-space__2 !important;
     }
 
-    .m\:-right1 {
-        right: -8px !important;
+    .m_-right1 {
+        right: -$tp-space__2 !important;
     }
 
-    .m\:-bottom1 {
-        bottom: -8px !important;
+    .m_-bottom1 {
+        bottom: -$tp-space__2 !important;
     }
 
-    .m\:-left1 {
-        left: -8px !important;
+    .m_-left1 {
+        left: -$tp-space__2 !important;
     }
 
-    .m\:-top2 {
-        top: -16px !important;
+    .m_-top2 {
+        top: -$tp-space__3 !important;
     }
 
-    .m\:-right2 {
-        right: -16px !important;
+    .m_-right2 {
+        right: -$tp-space__3 !important;
     }
 
-    .m\:-bottom2 {
-        bottom: -16px !important;
+    .m_-bottom2 {
+        bottom: -$tp-space__3 !important;
     }
 
-    .m\:-left2 {
-        left: -16px !important;
+    .m_-left2 {
+        left: -$tp-space__3 !important;
     }
 
-    .m\:absolute-fill {
+    .m_absolute-fill {
         top: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
         left: 0 !important;
     }
 
-    .m\:top-0 {
+    .m_top-0 {
         top: 0 !important;
     }
 
-    .m\:top-1 {
+    .m_top-1 {
         top: 1px !important;
     }
 
-    .m\:top-2 {
+    .m_top-2 {
         top: 2px !important;
     }
 
-    .m\:top-3 {
+    .m_top-3 {
         top: 3px !important;
     }
 
-    .m\:top-4 {
+    .m_top-4 {
         top: 4px !important;
     }
 
-    .m\:top-5 {
+    .m_top-5 {
         top: 5px !important;
     }
 
-    .m\:right-0 {
+    .m_right-0 {
         right: 0 !important;
     }
 
-    .m\:right-1 {
+    .m_right-1 {
         right: 1px !important;
     }
 
-    .m\:right-2 {
+    .m_right-2 {
         right: 2px !important;
     }
 
-    .m\:right-3 {
+    .m_right-3 {
         right: 3px !important;
     }
 
-    .m\:right-4 {
+    .m_right-4 {
         right: 4px !important;
     }
 
-    .m\:right-5 {
+    .m_right-5 {
         right: 5px !important;
     }
 
-    .m\:bottom-0 {
+    .m_bottom-0 {
         bottom: 0 !important;
     }
 
-    .m\:bottom-1 {
+    .m_bottom-1 {
         bottom: 1px !important;
     }
 
-    .m\:bottom-2 {
+    .m_bottom-2 {
         bottom: 2px !important;
     }
 
-    .m\:bottom-3 {
+    .m_bottom-3 {
         bottom: 3px !important;
     }
 
-    .m\:bottom-4 {
+    .m_bottom-4 {
         bottom: 4px !important;
     }
 
-    .m\:bottom-5 {
+    .m_bottom-5 {
         bottom: 5px !important;
     }
 
-    .m\:left-0 {
+    .m_left-0 {
         left: 0 !important;
     }
 
-    .m\:left-1 {
+    .m_left-1 {
         left: 1px !important;
     }
 
-    .m\:left-2 {
+    .m_left-2 {
         left: 2px !important;
     }
 
-    .m\:left-3 {
+    .m_left-3 {
         left: 3px !important;
     }
 
-    .m\:left-4 {
+    .m_left-4 {
         left: 4px !important;
     }
 
-    .m\:left-5 {
+    .m_left-5 {
         left: 5px !important;
     }
 
-    .m\:-top-1 {
+    .m_-top-1 {
         top: -1px !important;
     }
 
-    .m\:-top-2 {
+    .m_-top-2 {
         top: -2px !important;
     }
 
-    .m\:-top-3 {
+    .m_-top-3 {
         top: -3px !important;
     }
 
-    .m\:-top-4 {
+    .m_-top-4 {
         top: -4px !important;
     }
 
-    .m\:-top-5 {
+    .m_-top-5 {
         top: -5px !important;
     }
 
-    .m\:-right-1 {
+    .m_-right-1 {
         right: -1px !important;
     }
 
-    .m\:-right-2 {
+    .m_-right-2 {
         right: -2px !important;
     }
 
-    .m\:-right-3 {
+    .m_-right-3 {
         right: -3px !important;
     }
 
-    .m\:-right-4 {
+    .m_-right-4 {
         right: -4px !important;
     }
 
-    .m\:-right-5 {
+    .m_-right-5 {
         right: -5px !important;
     }
 
-    .m\:-bottom-1 {
+    .m_-bottom-1 {
         bottom: -1px !important;
     }
 
-    .m\:-bottom-2 {
+    .m_-bottom-2 {
         bottom: -2px !important;
     }
 
-    .m\:-bottom-3 {
+    .m_-bottom-3 {
         bottom: -3px !important;
     }
 
-    .m\:-bottom-4 {
+    .m_-bottom-4 {
         bottom: -4px !important;
     }
 
-    .m\:-bottom-5 {
+    .m_-bottom-5 {
         bottom: -5px !important;
     }
 
-    .m\:-left-1 {
+    .m_-left-1 {
         left: -1px !important;
     }
 
-    .m\:-left-2 {
+    .m_-left-2 {
         left: -2px !important;
     }
 
-    .m\:-left-3 {
+    .m_-left-3 {
         left: -3px !important;
     }
 
-    .m\:-left-4 {
+    .m_-left-4 {
         left: -4px !important;
     }
 
-    .m\:-left-5 {
+    .m_-left-5 {
         left: -5px !important;
     }
 }
 
 @include tp-respond-above($tp-breakpoint__large) {
-    .l\:top1 {
-        top: 8px !important;
+    .l_top1 {
+        top: $tp-space__2 !important;
     }
 
-    .l\:right1 {
-        right: 8px !important;
+    .l_right1 {
+        right: $tp-space__2 !important;
     }
 
-    .l\:bottom1 {
-        bottom: 8px !important;
+    .l_bottom1 {
+        bottom: $tp-space__2 !important;
     }
 
-    .l\:left1 {
-        left: 8px !important;
+    .l_left1 {
+        left: $tp-space__2 !important;
     }
 
-    .l\:top2 {
-        top: 16px !important;
+    .l_top2 {
+        top: $tp-space__3 !important;
     }
 
-    .l\:right2 {
-        right: 16px !important;
+    .l_right2 {
+        right: $tp-space__3 !important;
     }
 
-    .l\:bottom2 {
-        bottom: 16px !important;
+    .l_bottom2 {
+        bottom: $tp-space__3 !important;
     }
 
-    .l\:left2 {
-        left: 16px !important;
+    .l_left2 {
+        left: $tp-space__3 !important;
     }
 
-    .l\:-top1 {
-        top: -8px !important;
+    .l_-top1 {
+        top: -$tp-space__2 !important;
     }
 
-    .l\:-right1 {
-        right: -8px !important;
+    .l_-right1 {
+        right: -$tp-space__2 !important;
     }
 
-    .l\:-bottom1 {
-        bottom: -8px !important;
+    .l_-bottom1 {
+        bottom: -$tp-space__2 !important;
     }
 
-    .l\:-left1 {
-        left: -8px !important;
+    .l_-left1 {
+        left: -$tp-space__2 !important;
     }
 
-    .l\:-top2 {
-        top: -16px !important;
+    .l_-top2 {
+        top: -$tp-space__3 !important;
     }
 
-    .l\:-right2 {
-        right: -16px !important;
+    .l_-right2 {
+        right: -$tp-space__3 !important;
     }
 
-    .l\:-bottom2 {
-        bottom: -16px !important;
+    .l_-bottom2 {
+        bottom: -$tp-space__3 !important;
     }
 
-    .l\:-left2 {
-        left: -16px !important;
+    .l_-left2 {
+        left: -$tp-space__3 !important;
     }
 
-    .l\:absolute-fill {
+    .l_absolute-fill {
         top: 0 !important;
         right: 0 !important;
         bottom: 0 !important;
         left: 0 !important;
     }
 
-    .l\:top-0 {
+    .l_top-0 {
         top: 0 !important;
     }
 
-    .l\:top-1 {
+    .l_top-1 {
         top: 1px !important;
     }
 
-    .l\:top-2 {
+    .l_top-2 {
         top: 2px !important;
     }
 
-    .l\:top-3 {
+    .l_top-3 {
         top: 3px !important;
     }
 
-    .l\:top-4 {
+    .l_top-4 {
         top: 4px !important;
     }
 
-    .l\:top-5 {
+    .l_top-5 {
         top: 5px !important;
     }
 
-    .l\:right-0 {
+    .l_right-0 {
         right: 0 !important;
     }
 
-    .l\:right-1 {
+    .l_right-1 {
         right: 1px !important;
     }
 
-    .l\:right-2 {
+    .l_right-2 {
         right: 2px !important;
     }
 
-    .l\:right-3 {
+    .l_right-3 {
         right: 3px !important;
     }
 
-    .l\:right-4 {
+    .l_right-4 {
         right: 4px !important;
     }
 
-    .l\:right-5 {
+    .l_right-5 {
         right: 5px !important;
     }
 
-    .l\:bottom-0 {
+    .l_bottom-0 {
         bottom: 0 !important;
     }
 
-    .l\:bottom-1 {
+    .l_bottom-1 {
         bottom: 1px !important;
     }
 
-    .l\:bottom-2 {
+    .l_bottom-2 {
         bottom: 2px !important;
     }
 
-    .l\:bottom-3 {
+    .l_bottom-3 {
         bottom: 3px !important;
     }
 
-    .l\:bottom-4 {
+    .l_bottom-4 {
         bottom: 4px !important;
     }
 
-    .l\:bottom-5 {
+    .l_bottom-5 {
         bottom: 5px !important;
     }
 
-    .l\:left-0 {
+    .l_left-0 {
         left: 0 !important;
     }
 
-    .l\:left-1 {
+    .l_left-1 {
         left: 1px !important;
     }
 
-    .l\:left-2 {
+    .l_left-2 {
         left: 2px !important;
     }
 
-    .l\:left-3 {
+    .l_left-3 {
         left: 3px !important;
     }
 
-    .l\:left-4 {
+    .l_left-4 {
         left: 4px !important;
     }
 
-    .l\:left-5 {
+    .l_left-5 {
         left: 5px !important;
     }
 
-    .l\:-top-1 {
+    .l_-top-1 {
         top: -1px !important;
     }
 
-    .l\:-top-2 {
+    .l_-top-2 {
         top: -2px !important;
     }
 
-    .l\:-top-3 {
+    .l_-top-3 {
         top: -3px !important;
     }
 
-    .l\:-top-4 {
+    .l_-top-4 {
         top: -4px !important;
     }
 
-    .l\:-top-5 {
+    .l_-top-5 {
         top: -5px !important;
     }
 
-    .l\:-right-1 {
+    .l_-right-1 {
         right: -1px !important;
     }
 
-    .l\:-right-2 {
+    .l_-right-2 {
         right: -2px !important;
     }
 
-    .l\:-right-3 {
+    .l_-right-3 {
         right: -3px !important;
     }
 
-    .l\:-right-4 {
+    .l_-right-4 {
         right: -4px !important;
     }
 
-    .l\:-right-5 {
+    .l_-right-5 {
         right: -5px !important;
     }
 
-    .l\:-bottom-1 {
+    .l_-bottom-1 {
         bottom: -1px !important;
     }
 
-    .l\:-bottom-2 {
+    .l_-bottom-2 {
         bottom: -2px !important;
     }
 
-    .l\:-bottom-3 {
+    .l_-bottom-3 {
         bottom: -3px !important;
     }
 
-    .l\:-bottom-4 {
+    .l_-bottom-4 {
         bottom: -4px !important;
     }
 
-    .l\:-bottom-5 {
+    .l_-bottom-5 {
         bottom: -5px !important;
     }
 
-    .l\:-left-1 {
+    .l_-left-1 {
         left: -1px !important;
     }
 
-    .l\:-left-2 {
+    .l_-left-2 {
         left: -2px !important;
     }
 
-    .l\:-left-3 {
+    .l_-left-3 {
         left: -3px !important;
     }
 
-    .l\:-left-4 {
+    .l_-left-4 {
         left: -4px !important;
     }
 
-    .l\:-left-5 {
+    .l_-left-5 {
         left: -5px !important;
     }
 }

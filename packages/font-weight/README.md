@@ -1,9 +1,9 @@
-# Font Weight
+## Font Weight
 
 * Our Mark font only supports two weights: `400` and `700`.
-* Use only when [Type](https://thumbprint.thumbtack.com/ui/tp-ui-element-type) classes are not adequate.
+* Use only when [Type](https://thumbprint.design/api/components/tp-ui-element-type) classes are not adequate.
 
-## Examples
+### Examples
 
 <div class="pa3 ba b-gray-300 mb4">
     <div class="grid">

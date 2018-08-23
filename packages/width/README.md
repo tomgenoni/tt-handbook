@@ -1,8 +1,9 @@
-# Width
+## Width
 
 * Fixed and percentage widths.
+* Use to set the column widths in [Columns](#columns).
 
-## Examples
+### Examples
 
 <div class="pa3 ba b-gray-300 mb4">
     <div class="mb3">
